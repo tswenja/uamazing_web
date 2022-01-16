@@ -290,6 +290,24 @@ figure {
 
 }
 
+.bgAnimation, .bgAnimation.index-fixed-bg {
+  background-size: 100% auto;
+  background-position: top left;
+  &.start {
+    background-size: 110% auto;
+    transition: background-size 6s;
+    transition-timing-function: ease-out;
+  }
+  &.image2 {
+    background-size: 110% auto;
+    background-image: url(../public/images/slogan_image_2.jpg)!important;
+    background-position: top right;
+    &.start {
+      background-size: 100% auto;
+    }
+  }
+}
+
 @import 'app_md.scss';
 @import 'activity.scss';
 @import 'activity_md.scss';

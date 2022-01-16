@@ -19,7 +19,8 @@
     top: 0;
     bottom: 0;
     width: 88px;
-    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0; }
 
   .sidebar, .indexNavbar {
     flex-direction: column;

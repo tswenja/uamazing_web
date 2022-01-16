@@ -1,4 +1,6 @@
 (function() {
+  AOS.init();
+
   document.addEventListener('scroll', function(e) {
     document.querySelectorAll('.fixed-bg').forEach(function(el) {
       var a = (window.scrollY < el.offsetTop && el.scrollTop != 0),
@@ -12,4 +14,17 @@
       }
     });
   });
+
+  var count = 0;
+  function bgAnimationStart() {
+    //count++;
+    $('.bgAnimation').addClass('start')
+    //if (count >= 3) return;
+    setTimeout(function() {
+      $('.bgAnimation').removeClass('start')
+      $('.bgAnimation').toggleClass('image2');
+      setTimeout(bgAnimationStart, 1);
+    }, 6100);
+  }
+  setTimeout(bgAnimationStart, 1);
 })();
