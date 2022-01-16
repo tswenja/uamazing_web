@@ -1,3 +1,6 @@
+html {
+  font-size: 14px; }
+
 body {
   background-color: #241E20;
   font-family: 'Noto Sans TC', sans-serif; }
@@ -51,48 +54,36 @@ li {
     border-color: #B3292C;
     background-color: #B3292C; }
 
-.logo {
-  width: 5.625rem; }
+.indexBrand > img {
+  width: 3.75rem; }
 
-.sidebar {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  bottom: 0;
-  width: 88px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5); }
+.sidebar, .indexNavbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-.sidebar {
-  padding-top: 8.125rem; }
-  .sidebar > .logo {
-    position: fixed;
-    top: 1.25rem;
-    left: 2.625rem; }
+.sidebar > .indexBrand, .indexNavbar > .indexBrand {
+  margin-bottom: calc(-1 * 3.75rem / 2); }
 
-.sidebarMenu {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
+.sidebarMenu, .indexNavbarMenu {
   height: 100%;
   overflow-y: auto; }
 
-.sidebarMenuItem > a {
+.sidebarMenuItem > a, .indexNavbarMenuItem > a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.25rem;
-  width: 1.25rem; }
+  text-align: right; }
 
-.sidebarMenuItem > a {
-  font-size: 1.25rem;
+.sidebarMenuItem > a, .indexNavbarMenuItem > a {
   line-height: 1.2;
+  letter-spacing: .1em;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7); }
-  .sidebarMenuItem > a:hover {
+  .sidebarMenuItem > a:hover, .indexNavbarMenuItem > a:hover {
     color: white; }
 
-.sidebarMenuItem {
+.sidebarMenuItem, .indexNavbarMenuItem {
   position: relative; }
-  .sidebarMenuItem > a::after {
+  .sidebarMenuItem > a::after, .indexNavbarMenuItem > a::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -102,37 +93,28 @@ li {
     background-color: white;
     transition: top .3s, bottom .3s;
     transition-timing-function: ease-out; }
-  .sidebarMenuItem > a:hover::after {
+  .sidebarMenuItem > a:hover::after, .indexNavbarMenuItem > a:hover::after {
     top: -1rem;
     bottom: -1rem; }
-
-.margin-left-sidebar {
-  margin-left: 5.5rem; }
 
 .index-h2 {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.08em; }
 
-.index-margin-left {
-  margin-left: 9.5rem; }
-
 .index-fixed-bg {
-  padding-top: 100vh;
-  height: 100vh;
+  padding-top: 59.0277778%;
   background: no-repeat top center/100% auto;
   overflow: auto; }
 
 .index-content-overlap {
   position: relative;
-  top: -5.625rem;
-  margin-bottom: -5.625rem; }
+  top: -1rem;
+  margin-bottom: -1em; }
 
 .index-portfolios-figure {
   position: relative;
-  margin: 0;
-  width: 20.125rem;
-  height: 24rem; }
+  margin: 0; }
   .index-portfolios-figure > figcaption {
     position: absolute;
     bottom: 1em;
@@ -165,36 +147,37 @@ li {
 
 .list-bubble {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 20rem; }
+  min-height: 22.2222222vw; }
 
 .list-bubble-item {
   border-radius: 50%;
   overflow: hidden; }
   .list-bubble-item:first-of-type {
-    margin-top: 1.875rem;
-    width: 7.5rem;
-    height: 7.5rem; }
+    margin-top: 2.0833333vw;
+    width: calc(8.3333333vw * 2);
+    height: calc(8.3333333vw * 2); }
   .list-bubble-item:nth-of-type(2) {
-    margin-top: 6.5625rem;
-    margin-left: 6.25rem;
-    width: 12.5rem;
-    height: 12.5rem;
+    margin-top: 7.2916667vw;
+    margin-left: 6.9444444vw;
+    width: calc(13.8888889vw * 2);
+    height: calc(13.8888889vw * 2);
     z-index: 20; }
   .list-bubble-item:nth-of-type(3) {
-    margin-left: -2rem;
-    width: 15.625rem;
-    height: 15.625rem; }
+    margin-left: -2.2222222vw;
+    width: calc(17.3611111vw * 2);
+    height: calc(17.3611111vw * 2); }
   .list-bubble-item:nth-of-type(4) {
-    margin-top: 10.375rem;
-    margin-left: 2.375rem;
-    width: 7.5rem;
-    height: 7.5rem; }
+    margin-top: .5277778vw;
+    margin-left: -8.6388889vw;
+    width: calc(12.5vw * 2);
+    height: calc(12.5vw * 2); }
   .list-bubble-item:nth-of-type(5) {
-    margin-top: 3.5625rem;
-    margin-left: 7.3125rem;
-    width: 11.25rem;
-    height: 11.25rem; }
+    margin-top: 4.9583333vw;
+    margin-left: 24.125vw;
+    width: calc(8.3333333vw * 2);
+    height: calc(8.3333333vw * 2); }
 
 .footer {
   min-height: 50vh; }
@@ -203,7 +186,7 @@ li {
   margin: 0 auto;
   width: 80%;
   max-width: 60rem;
-  padding: 9.375rem 0 2rem;
+  padding: 5rem 0 1rem;
   color: #929295; }
 
 .footer-body a, .footer-body a:hover, .footer-body a:active, .footer-body a:visited {
@@ -233,5 +216,118 @@ li {
   .fixed-bg p {
     height: 150vh;
     background: blue; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  .indexBrand > img {
+    width: 5.625rem; }
+
+  .navbar {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .navbar-expand-md .navbar-collapse {
+    display: block !important;
+    width: 100%; }
+
+  .sidebar, .indexNavbar {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    width: 88px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+  .sidebar, .indexNavbar {
+    flex-direction: column;
+    padding-top: 8.125rem; }
+    .sidebar > .indexBrand, .indexNavbar > .indexBrand {
+      position: fixed;
+      top: 1.25rem;
+      left: 2.625rem; }
+
+  .sidebarMenu, .indexNavbarMenu {
+    padding-bottom: 1rem;
+    height: 100%;
+    overflow-y: auto; }
+
+  .sidebarMenuItem > a, .indexNavbarMenuItem > a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.25rem;
+    width: 1.25rem; }
+
+  .sidebarMenuItem > a, .indexNavbarMenuItem > a {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: auto;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); }
+    .sidebarMenuItem > a:hover, .indexNavbarMenuItem > a:hover {
+      color: white; }
+
+  .sidebarMenuItem, .indexNavbarMenuItem {
+    position: relative; }
+    .sidebarMenuItem > a::after, .indexNavbarMenuItem > a::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      left: calc(100% - 3px);
+      width: 5px;
+      background-color: white;
+      transition: top .3s, bottom .3s;
+      transition-timing-function: ease-out; }
+    .sidebarMenuItem > a:hover::after, .indexNavbarMenuItem > a:hover::after {
+      top: -1rem;
+      bottom: -1rem; }
+
+  .margin-md-left-sidebar {
+    margin-left: 5.5rem; }
+
+  .index-margin-left {
+    margin-left: 9.5rem; }
+
+  .index-fixed-bg {
+    padding-top: 100vh;
+    height: 100vh;
+    background: no-repeat top center/cover;
+    overflow: auto; }
+
+  .index-content-overlap {
+    position: relative;
+    top: -5.625rem;
+    margin-bottom: -5.625rem; }
+
+  .list-bubble-item:first-of-type {
+    margin-top: 2.0833333vw;
+    width: 8.3333333vw;
+    height: 8.3333333vw; }
+  .list-bubble-item:nth-of-type(2) {
+    margin-top: 7.2916667vw;
+    margin-left: 6.9444444vw;
+    width: 13.8888889vw;
+    height: 13.8888889vw;
+    z-index: 20; }
+  .list-bubble-item:nth-of-type(3) {
+    margin-left: -2.2222222vw;
+    width: 17.3611111vw;
+    height: 17.3611111vw; }
+  .list-bubble-item:nth-of-type(4) {
+    margin-top: 11.5277778vw;
+    margin-left: 2.6388889vw;
+    width: 8.3333333vw;
+    height: 8.3333333vw; }
+  .list-bubble-item:nth-of-type(5) {
+    margin-top: 3.9583333vw;
+    margin-left: 8.125vw;
+    width: 12.5vw;
+    height: 12.5vw; }
+
+  .footer-body {
+    padding: 9.375rem 0 2rem; } }
 
 /*# sourceMappingURL=app.css.map */
