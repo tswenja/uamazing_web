@@ -5,11 +5,11 @@
   .indexBrand > img {
     width: 5.625rem; }
 
-  .navbar {
+  .indexNavbar.navbar {
     padding-left: 0;
     padding-right: 0; }
 
-  .navbar-expand-md .navbar-collapse {
+  .indexNavbar .navbar-collapse {
     display: block !important;
     width: 100%; }
 
