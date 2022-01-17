@@ -14,6 +14,10 @@ body.activity {
   background-color: #ffffff;
   color: #4C4C4C;
 }
+body.content {
+  background-color: #F1F1F3;
+  color: #4C4C4C;
+}
 a, a:hover, a:active, a:visited {
   color: #241E20;
   text-decoration: none;
@@ -39,6 +43,10 @@ h1, figure {
 .text-h3 {
   font-size: 1.75rem;
 }
+.text-loose {
+  letter-spacing: 0.062em;
+  line-height: 1.588235294em;
+}
 .text-blue {
   color: $color-blue;
 }
@@ -59,6 +67,22 @@ h1, figure {
 }
 .bg-balls {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto;
+}
+
+.figure-hr-43,
+.figure-hr-67,
+.figure-wide-md {
+  background-size: cover;
+  background-position: center;
+}
+.figure-hr-43 {
+  padding-bottom: 42.7966102%;
+}
+.figure-hr-67 {
+  padding-bottom: 67.1428571%;
+}
+.figure-wide-md {
+  padding-bottom: 53.5714286%;
 }
 
 .btn, a.btn {
@@ -322,3 +346,5 @@ h1, figure {
 @import 'app_md.scss';
 @import 'activity.scss';
 @import 'activity_md.scss';
+@import 'about.scss';
+@import 'about_md.scss';

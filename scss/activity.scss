@@ -19,6 +19,9 @@
   background-color: white;
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.1);
 }
+.content .activityNavbar {
+  background-color: rgba(241,241,241,.97);
+}
 .activityBrand > img {
   width: 3.75rem;
   height: 3.75rem;
@@ -93,6 +96,9 @@
   &.press {
     background-image: url(../assets/h2-deco-press.svg);
   }
+  &.about {
+    background-image: url(../assets/h2-deco-about.svg);
+  }
 }
 
 .item-pill {
@@ -150,16 +156,4 @@
       opacity: 1;
     }
   }
-}
-
-.figure-hr-67,
-.figure-wide-md {
-  background-size: cover;
-  background-position: center;
-}
-.figure-hr-67 {
-  padding-bottom: 67.1428571%;
-}
-.figure-wide-md {
-  padding-bottom: 53.5714286%;
 }

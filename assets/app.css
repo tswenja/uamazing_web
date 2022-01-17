@@ -11,6 +11,10 @@ body.activity {
   background-color: #ffffff;
   color: #4C4C4C; }
 
+body.content {
+  background-color: #F1F1F3;
+  color: #4C4C4C; }
+
 a, a:hover, a:active, a:visited {
   color: #241E20;
   text-decoration: none; }
@@ -35,6 +39,10 @@ h1, figure {
 .text-h3 {
   font-size: 1.75rem; }
 
+.text-loose {
+  letter-spacing: 0.062em;
+  line-height: 1.588235294em; }
+
 .text-blue {
   color: #5FAACE; }
 
@@ -55,6 +63,21 @@ h1, figure {
 
 .bg-balls {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto; }
+
+.figure-hr-43,
+.figure-hr-67,
+.figure-wide-md {
+  background-size: cover;
+  background-position: center; }
+
+.figure-hr-43 {
+  padding-bottom: 42.7966102%; }
+
+.figure-hr-67 {
+  padding-bottom: 67.1428571%; }
+
+.figure-wide-md {
+  padding-bottom: 53.5714286%; }
 
 .btn, a.btn {
   font-size: 0.9375rem;
@@ -415,6 +438,9 @@ h1, figure {
   background-color: white;
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1); }
 
+.content .activityNavbar {
+  background-color: rgba(241, 241, 241, 0.97); }
+
 .activityBrand > img {
   width: 3.75rem;
   height: 3.75rem; }
@@ -473,6 +499,8 @@ h1, figure {
     background-image: url(../assets/h2-deco-photos.svg); }
   .activity-h2-deco.press {
     background-image: url(../assets/h2-deco-press.svg); }
+  .activity-h2-deco.about {
+    background-image: url(../assets/h2-deco-about.svg); }
 
 .item-pill {
   font-size: 1.125rem;
@@ -523,17 +551,6 @@ h1, figure {
     .pagination-round > li.active, .pagination-round > li:hover {
       opacity: 1; }
 
-.figure-hr-67,
-.figure-wide-md {
-  background-size: cover;
-  background-position: center; }
-
-.figure-hr-67 {
-  padding-bottom: 67.1428571%; }
-
-.figure-wide-md {
-  padding-bottom: 53.5714286%; }
-
 @media (min-width: 768px) {
   .activity-framing-x {
     width: 88%;
@@ -583,6 +600,36 @@ h1, figure {
     .activity-h2-deco.photos {
       width: 19.9375rem; }
     .activity-h2-deco.press {
-      width: 15.4375rem; } }
+      width: 15.4375rem; }
+    .activity-h2-deco.about {
+      width: 16.875rem; } }
+.about-kv {
+  position: relative; }
+  .about-kv > figcaption {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: -5% 10% 0;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); }
+
+.about-kv-logo {
+  width: 60px; }
+
+@media (min-width: 768px) {
+  .about-kv > figcaption {
+    position: absolute;
+    top: 0;
+    margin-top: 3.8%;
+    right: -6.2%;
+    width: 21.5254237%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); }
+
+  .about-kv-logo {
+    width: 100px; } }
 
 /*# sourceMappingURL=app.css.map */
