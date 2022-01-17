@@ -43,6 +43,9 @@ h1, figure {
 .text-h3 {
   font-size: 1.75rem;
 }
+.text-smaller {
+  font-size: 0.8em;
+}
 .text-loose {
   letter-spacing: 0.062em;
   line-height: 1.588235294em;
@@ -101,27 +104,32 @@ h1, figure {
   color: $color-primary;
   border-color: $color-primary;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:visited, &:focus,
+  &.hover, &.active, &.visited, &.focus {
     border-color: $color-primary;
     background-color: $color-primary;
   }
 }
 
 
+.pt-navbar {
+  padding-top: 48px;
+}
 .indexBrand > img {
   width: 3.75rem;
 }
 .sidebar, .indexNavbar {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  width: 100%;
+  background-color: #241E20;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .sidebar, .indexNavbar {
   & > .indexBrand {
     margin-bottom: calc(-1 * 3.75rem / 2);
   }
-}
-.sidebarMenu, .indexNavbarMenu {
-  height: 100%;
-  overflow-y: auto;
 }
 .sidebarMenuItem, .indexNavbarMenuItem {
   & > a {
