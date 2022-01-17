@@ -634,6 +634,7 @@ h1, figure {
   .about-kv > figcaption {
     position: absolute;
     top: 0;
+    margin: 0;
     margin-top: 3.8%;
     right: -6.2%;
     width: 21.5254237%;
