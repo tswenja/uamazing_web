@@ -70,6 +70,12 @@
     background-image: url(../assets/h2-deco-teachors.svg); }
   .activity-h2-deco.cource {
     background-image: url(../assets/h2-deco-cource.svg); }
+  .activity-h2-deco.on-air {
+    background-image: url(../assets/h2-deco-on-air.svg); }
+  .activity-h2-deco.photos {
+    background-image: url(../assets/h2-deco-photos.svg); }
+  .activity-h2-deco.press {
+    background-image: url(../assets/h2-deco-press.svg); }
 
 .item-pill {
   font-size: 1.125rem;

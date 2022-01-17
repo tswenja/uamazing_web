@@ -21,7 +21,7 @@ ul {
 li {
   display: block; }
 
-figure {
+h1, figure {
   margin-bottom: 0; }
 
 .img-cover {
@@ -467,6 +467,12 @@ figure {
     background-image: url(../assets/h2-deco-teachors.svg); }
   .activity-h2-deco.cource {
     background-image: url(../assets/h2-deco-cource.svg); }
+  .activity-h2-deco.on-air {
+    background-image: url(../assets/h2-deco-on-air.svg); }
+  .activity-h2-deco.photos {
+    background-image: url(../assets/h2-deco-photos.svg); }
+  .activity-h2-deco.press {
+    background-image: url(../assets/h2-deco-press.svg); }
 
 .item-pill {
   font-size: 1.125rem;
@@ -571,6 +577,12 @@ figure {
     .activity-h2-deco.teachors {
       width: 25.375rem; }
     .activity-h2-deco.cource {
-      width: 20rem; } }
+      width: 20rem; }
+    .activity-h2-deco.on-air {
+      width: 17.9375rem; }
+    .activity-h2-deco.photos {
+      width: 19.9375rem; }
+    .activity-h2-deco.press {
+      width: 15.4375rem; } }
 
 /*# sourceMappingURL=app.css.map */
