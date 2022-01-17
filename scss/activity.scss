@@ -17,18 +17,20 @@
   width: 100%;
   padding: 1.25rem 1.5625rem;
   background-color: white;
+  box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.1);
 }
 .activityBrand > img {
   width: 3.75rem;
   height: 3.75rem;
 }
-.activityNavbarMenuItem {
-  & > a {
-    color: #4c4c4c;
-    font-size: 1.25rem;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-  }
+.activityBrand,
+.activityNavbarMenuItem > a {
+  color: #4c4c4c;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+.activityBrand {
+  font-size: 1.25rem;
 }
 
 .carousel-article {
