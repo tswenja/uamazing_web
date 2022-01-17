@@ -76,8 +76,15 @@
   .index-fixed-bg {
     padding-top: 100vh;
     height: 100vh;
-    background: no-repeat top center/cover;
+    background-size: cover;
     overflow: auto; }
+
+  .bg-slogan1 {
+    background-position: top 18vh left 12.8472222vw, top center;
+    background-size: auto, cover; }
+
+  .bg-slogan2 {
+    background-size: auto, cover; }
 
   .index-content-overlap {
     position: relative;
@@ -110,6 +117,19 @@
     height: 12.5vw; }
 
   .footer-body {
-    padding: 9.375rem 0 2rem; } }
+    padding: 9.375rem 0 2rem; }
+
+  .bgAnimation, .bgAnimation.bg-slogan1 {
+    background-position: top 18vh left 12.8472222vw, top left;
+    background-size: auto, 100% auto; }
+    .bgAnimation.start, .bgAnimation.bg-slogan1.start {
+      background-size: auto, 110% auto;
+      transition: background-size 8s;
+      transition-timing-function: linear; }
+    .bgAnimation.bg-slogan2, .bgAnimation.bg-slogan1.bg-slogan2 {
+      background-position: top 23.125vw left 12.9166667vw, top left;
+      background-size: auto, 110% auto; }
+      .bgAnimation.bg-slogan2.start, .bgAnimation.bg-slogan1.bg-slogan2.start {
+        background-size: auto, 100% auto; } }
 
 /*# sourceMappingURL=app_md.css.map */

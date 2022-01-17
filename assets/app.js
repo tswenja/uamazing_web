@@ -22,9 +22,9 @@
     //if (count >= 3) return;
     setTimeout(function() {
       $('.bgAnimation').removeClass('start')
-      $('.bgAnimation').toggleClass('image2');
+      $('.bgAnimation').toggleClass('bg-slogan2');
       setTimeout(bgAnimationStart, 1);
-    }, 6100);
+    }, 8100);
   }
   setTimeout(bgAnimationStart, 1);
 })();

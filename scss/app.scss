@@ -147,6 +147,16 @@ figure {
   background: no-repeat top center/100% auto;
   overflow: auto;
 }
+.bg-slogan1 {
+  background-image: url(../assets/slogan_text1.svg), url(../assets/slogan_bg1.jpg);
+  background-position: top 10.625vw left 12.8472222vw, top center;
+  background-size: 41.8055556%, 100% auto;
+}
+.bg-slogan2 {
+  background-image: url(../assets/slogan_text2.svg), url(../assets/slogan_bg2.jpg);
+  background-position: top 23.125vw left 12.9166667vw, top center;
+  background-size: 28.8888889%, 100% auto;
+}
 
 .index-content-overlap {
   position: relative;
@@ -290,20 +300,21 @@ figure {
 
 }
 
-.bgAnimation, .bgAnimation.index-fixed-bg {
-  background-size: 100% auto;
-  background-position: top left;
+.bgAnimation, .bgAnimation.bg-slogan1 {
+  background-position: top 10.625vw left 12.8472222vw, top left;
+  background-size: 41.8055556%, 100% auto;
+
   &.start {
-    background-size: 110% auto;
-    transition: background-size 6s;
-    transition-timing-function: ease-out;
+    background-size: 41.8055556%, 110% auto;
+    transition: background-size 8s;
+    transition-timing-function: linear;
   }
-  &.image2 {
-    background-size: 110% auto;
-    background-image: url(../public/images/slogan_image_2.jpg)!important;
-    background-position: top right;
+  &.bg-slogan2 {
+    background-position: top 23.125vw left 12.9166667vw, top center;
+    background-size: 28.8888889%, auto 66vw;
+
     &.start {
-      background-size: 100% auto;
+      background-size: 28.8888889%, auto 60vw;
     }
   }
 }
