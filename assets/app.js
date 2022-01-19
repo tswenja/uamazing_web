@@ -1,6 +1,8 @@
 (function() {
+  // AOS
   AOS.init();
 
+  // fixed-bg
   document.addEventListener('scroll', function(e) {
     document.querySelectorAll('.fixed-bg').forEach(function(el) {
       var a = (window.scrollY < el.offsetTop && el.scrollTop != 0),
@@ -15,6 +17,7 @@
     });
   });
 
+  // bgAnimation
   var count = 0;
   function bgAnimationStart() {
     //count++;
@@ -27,4 +30,22 @@
     }, 8100);
   }
   setTimeout(bgAnimationStart, 1);
+
+  // carouselBox
+  document.querySelectorAll('[data-carousel-box]').forEach(function(el) {
+    let targetBox = document.getElementById(el.getAttribute('data-carousel-box'));
+    if (!targetBox) return;
+
+    el.addEventListener('click', function(e) {
+      let targetNumber = $(e.target).data('carousel-target');
+      console.log(targetNumber);
+      if (!targetNumber) return;
+      if (targetNumber > targetBox.children.length) return;
+
+      $(e.currentTarget.children).removeClass('active');
+      $(e.target).addClass('active');
+      targetBox.className = "carouselBox";
+      $(targetBox).addClass('show-nth-' + targetNumber)
+    });
+  });
 })();
