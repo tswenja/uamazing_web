@@ -1,0 +1,38 @@
+.carouselBox {
+  position: relative;
+  overflow: hidden;
+
+  & > :nth-child(n) {
+    transition: left 0.6s;
+    transition-timing-function: ease-in-out;
+  }
+
+  & > :first-child {
+    position: relative;
+  }
+
+  & > :nth-child(n+2) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @for $i from 1 through 5 {
+    & > :nth-child(#{$i}) {
+      left: ($i - 1) * 100%;
+    }
+    &.show-nth-#{$i} {
+      @for $j from 1 through 5 {
+        & > :nth-child(#{$j}) {
+          left: ($j - $i) * 100%;
+        }
+      }
+    }
+  }
+}
+
+.carouselControl {
+  position: relative;
+  z-index: 10;
+}

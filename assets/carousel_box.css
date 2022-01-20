@@ -1,0 +1,79 @@
+.carouselBox {
+  position: relative;
+  overflow: hidden; }
+  .carouselBox > :nth-child(n) {
+    transition: left 0.6s;
+    transition-timing-function: ease-in-out; }
+  .carouselBox > :first-child {
+    position: relative; }
+  .carouselBox > :nth-child(n+2) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+  .carouselBox > :nth-child(1) {
+    left: 0%; }
+  .carouselBox.show-nth-1 > :nth-child(1) {
+    left: 0%; }
+  .carouselBox.show-nth-1 > :nth-child(2) {
+    left: 100%; }
+  .carouselBox.show-nth-1 > :nth-child(3) {
+    left: 200%; }
+  .carouselBox.show-nth-1 > :nth-child(4) {
+    left: 300%; }
+  .carouselBox.show-nth-1 > :nth-child(5) {
+    left: 400%; }
+  .carouselBox > :nth-child(2) {
+    left: 100%; }
+  .carouselBox.show-nth-2 > :nth-child(1) {
+    left: -100%; }
+  .carouselBox.show-nth-2 > :nth-child(2) {
+    left: 0%; }
+  .carouselBox.show-nth-2 > :nth-child(3) {
+    left: 100%; }
+  .carouselBox.show-nth-2 > :nth-child(4) {
+    left: 200%; }
+  .carouselBox.show-nth-2 > :nth-child(5) {
+    left: 300%; }
+  .carouselBox > :nth-child(3) {
+    left: 200%; }
+  .carouselBox.show-nth-3 > :nth-child(1) {
+    left: -200%; }
+  .carouselBox.show-nth-3 > :nth-child(2) {
+    left: -100%; }
+  .carouselBox.show-nth-3 > :nth-child(3) {
+    left: 0%; }
+  .carouselBox.show-nth-3 > :nth-child(4) {
+    left: 100%; }
+  .carouselBox.show-nth-3 > :nth-child(5) {
+    left: 200%; }
+  .carouselBox > :nth-child(4) {
+    left: 300%; }
+  .carouselBox.show-nth-4 > :nth-child(1) {
+    left: -300%; }
+  .carouselBox.show-nth-4 > :nth-child(2) {
+    left: -200%; }
+  .carouselBox.show-nth-4 > :nth-child(3) {
+    left: -100%; }
+  .carouselBox.show-nth-4 > :nth-child(4) {
+    left: 0%; }
+  .carouselBox.show-nth-4 > :nth-child(5) {
+    left: 100%; }
+  .carouselBox > :nth-child(5) {
+    left: 400%; }
+  .carouselBox.show-nth-5 > :nth-child(1) {
+    left: -400%; }
+  .carouselBox.show-nth-5 > :nth-child(2) {
+    left: -300%; }
+  .carouselBox.show-nth-5 > :nth-child(3) {
+    left: -200%; }
+  .carouselBox.show-nth-5 > :nth-child(4) {
+    left: -100%; }
+  .carouselBox.show-nth-5 > :nth-child(5) {
+    left: 0%; }
+
+.carouselControl {
+  position: relative;
+  z-index: 10; }
+
+/*# sourceMappingURL=carousel_box.css.map */
