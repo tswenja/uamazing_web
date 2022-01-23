@@ -530,7 +530,7 @@ h1, figure {
 .borderedBox-topImage {
   position: relative;
   z-index: 10;
-  margin-bottom: -20%;
+  margin-bottom: -10%;
   left: 50%;
   width: 68%;
   margin-left: calc( -0.5 * 68%);
