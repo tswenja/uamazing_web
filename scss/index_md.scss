@@ -15,12 +15,6 @@
   position: absolute;
 }
 
-.index-content-overlap {
-  position: relative;
-  top: -16.25rem;
-  margin-bottom: -16.25rem;
-}
-
 .borderedBox-light {
   width: 100%;
 }
@@ -37,23 +31,23 @@
 .index-page-control {
   display: block;
   position: absolute;
-  top: 0;
+  bottom: -4.1666667vw;
   right: 0;
   overflow: hidden;
 
   .index-page-button {
-    margin-right: -3.75rem;
+    margin-right: -4.1666667vw;
     margin-bottom: 0;
-    width: 20rem;
-    height: 20rem;
-    line-height: 20rem;
+    width: 22.2222222vw;
+    height: 22.2222222vw;
+    line-height: 22.2222222vw;
     border: 1px solid #fff;
     border-radius: 50%;
     opacity: .2;
 
     color: #fff;
     font-family: 'Josefin Sans';
-    font-size: 6rem;
+    font-size: 6.66vw;
     font-weight: 100;
 
     &.active {
@@ -62,7 +56,7 @@
   }
 
   & > :nth-child(n + 2) {
-    margin-top: -3.75rem;
+    margin-top: -4.1666667vw;
   }
 }
 
