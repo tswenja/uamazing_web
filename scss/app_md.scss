@@ -38,6 +38,7 @@ html {
 
   .sidebarMenu, .indexNavbarMenu {
     position: absolute;
+    top: 0;
     bottom: 0;
     width: 100%;
     padding-bottom: 1rem;
@@ -54,9 +55,9 @@ html {
   }
 }
 .sidebarMenuItem > a, .indexNavbarMenuItem > a {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.2;
-  letter-spacing: auto;
+  letter-spacing: initial;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 
@@ -83,9 +84,11 @@ html {
   }
 }
 
+/*
 .margin-md-left-sidebar {
   margin-left: 5.5rem;
 }
+*/
 .index-margin-left {
   margin-left: 9.5rem;
 }
@@ -104,44 +107,6 @@ html {
   background-size: auto, cover;
 }
 
-.index-content-overlap {
-  position: relative;
-  top: -5.625rem;
-  margin-bottom: -5.625rem;
-}
-
-.list-bubble-item {
-  &:first-of-type {
-    margin-top: 2.0833333vw;
-    width: 8.3333333vw;
-    height: 8.3333333vw;
-  }
-  &:nth-of-type(2) {
-    margin-top: 7.2916667vw;
-    margin-left: 6.9444444vw;
-    width: 13.8888889vw;
-    height: 13.8888889vw;
-    z-index: 20;
-  }
-  &:nth-of-type(3) {
-    margin-left: -2.2222222vw;
-    width: 17.3611111vw;
-    height: 17.3611111vw;
-  }
-  &:nth-of-type(4) {
-    margin-top: 11.5277778vw;
-    margin-left: 2.6388889vw;
-    width: 8.3333333vw;
-    height: 8.3333333vw;
-  }
-  &:nth-of-type(5) {
-    margin-top: 3.9583333vw;
-    margin-left: 8.125vw;
-    width: 12.5vw;
-    height: 12.5vw;
-  }
-}
-
 .footer-body {
   padding: 6.2rem 0 2rem;
 }
@@ -156,11 +121,11 @@ html {
     transition-timing-function: linear;
   }
   &.bg-slogan2 {
-    background-position: top 23.125vw left 12.9166667vw, top left;
-    background-size: auto, 110% auto;
+    background-position: top 23.125vw left 12.9166667vw, top right;
+    background-size: auto, auto 110%;
 
     &.start {
-      background-size: auto, 100% auto;
+      background-size: auto, auto 100%;
     }
   }
 }

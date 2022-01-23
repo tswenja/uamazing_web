@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+.bg-purple {
+  background-size: cover;
+}
+
+.index-h2 {
+  font-size: 2.5rem;
+}
+.index-h2-deco {
+  height: auto;
+}
+
+
+.index-title-school {
+  position: absolute;
+}
+
+.index-content-overlap {
+  position: relative;
+  top: -16.25rem;
+  margin-bottom: -16.25rem;
+}
+
+.borderedBox-light {
+  width: 100%;
+}
+.borderedBox-topImage {
+  margin-bottom: -33.6275375%;
+  width: 47.6610768%;
+  margin-left: calc( -0.5 * 47.6610768%);
+}
+
+.index-activity-poster {
+  width: 75%;
+}
+
+.index-page-control {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+
+  .index-page-button {
+    margin-right: -3.75rem;
+    margin-bottom: 0;
+    width: 20rem;
+    height: 20rem;
+    line-height: 20rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: .2;
+
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-size: 6rem;
+    font-weight: 100;
+
+    &.active {
+      opacity: .67;
+    }
+  }
+
+  & > :nth-child(n + 2) {
+    margin-top: -3.75rem;
+  }
+}
+
+.index-bg-press {
+  background-position: 350% 67%;
+}
+
+}

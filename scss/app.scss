@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');@import 'carousel_box.scss';
+@import 'bubbles.scss';
+
 $color-primary: #B3292C;
 $color-blue: #5FAACE;
 
@@ -43,6 +46,13 @@ h1, figure {
 .text-h3 {
   font-size: 1.75rem;
 }
+.text-h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.text-14px {
+  font-size: 14px;
+}
 .text-smaller {
   font-size: 0.8em;
 }
@@ -50,8 +60,17 @@ h1, figure {
   letter-spacing: 0.062em;
   line-height: 1.588235294em;
 }
+.text-loose-2 {
+  letter-spacing: .2em;
+}
 .text-blue {
   color: $color-blue;
+}
+.text-gray-4 {
+  color: #4c4c4c;
+}
+.text-gray-8 {
+  color: #8c8c8c;
 }
 .shadow-darker {
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.25);
@@ -62,9 +81,6 @@ h1, figure {
 .text-shadow-white {
   text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
 }
-.bg-purple {
-  background: url(../assets/bg-purple.jpg) top center/auto 100%;
-}
 .bg-gray {
   background-color: #F1F1F3;
 }
@@ -72,6 +88,7 @@ h1, figure {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto;
 }
 
+.figure-fixed-ratio,
 .figure-hr-43,
 .figure-hr-67,
 .figure-wide-md {
@@ -80,6 +97,9 @@ h1, figure {
 }
 .figure-hr-43 {
   padding-bottom: 42.7966102%;
+}
+.figure-hr-53 {
+  padding-bottom: 53.3333333%;
 }
 .figure-hr-67 {
   padding-bottom: 67.1428571%;
@@ -168,12 +188,6 @@ h1, figure {
   }
 }
 
-.index-h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-}
-
 .index-fixed-bg {
   padding-top: 59.0277778%;
   background: no-repeat top center/100% auto;
@@ -190,99 +204,6 @@ h1, figure {
   background-size: 28.8888889%, 100% auto;
 }
 
-.index-content-overlap {
-  position: relative;
-  top: -1rem;
-  margin-bottom: -1em;
-}
-
-.index-portfolios-figure {
-  position: relative;
-  margin: 0;
-
-  & > figcaption {
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-    text-align: center;
-  }
-  & > figcaption {
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    color: white;
-  }
-}
-
-.datalist {
-  & > dt {
-    font-size: 1.25rem;
-    letter-spacing: 0.08%;
-  }
-  & > dt, & > dd {
-    font-weight: 700;
-    letter-spacing: 0.038%;
-  }
-  & > dt:not(:first-of-type) {
-    margin-top: 2.8125rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid transparent;
-  }
-}
-.datalist-white {
-  & > dt {
-    color: white;
-    text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.3);
-  }
-  & > dt:not(:first-of-type) {
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  & > dd {
-    color: #ECECEC;
-  }
-}
-
-.list-bubble {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 22.2222222vw;
-}
-.list-bubble-item {
-  border-radius: 50%;
-  overflow: hidden;
-
-  &:first-of-type {
-    margin-top: 2.0833333vw;
-    width: calc(8.3333333vw * 2);
-    height: calc(8.3333333vw * 2);
-  }
-  &:nth-of-type(2) {
-    margin-top: 7.2916667vw;
-    margin-left: 6.9444444vw;
-    width: calc(13.8888889vw * 2);
-    height: calc(13.8888889vw * 2);
-    z-index: 20;
-  }
-  &:nth-of-type(3) {
-    margin-left: -2.2222222vw;
-    width: calc(17.3611111vw * 2);
-    height: calc(17.3611111vw * 2);
-  }
-  &:nth-of-type(4) {
-    margin-top: -1.5277778vw;
-    margin-left: -8.6388889vw;
-    width: calc(12.5vw * 2);
-    height: calc(12.5vw * 2);
-  }
-  &:nth-of-type(5) {
-    margin-top: 8.9583333vw;
-    margin-left: 24.125vw;
-    width: calc(8.3333333vw * 2);
-    height: calc(8.3333333vw * 2);
-  }
-}
-
 .footer {
   min-height: 50vh;
   background-color: #241E20;
@@ -297,6 +218,10 @@ h1, figure {
 .footer-body {
   a, a:hover, a:active, a:visited {
     color: #929295;
+
+    &.text-blue {
+      color: $color-blue;
+    }
   }
 }
 .footer-title {
@@ -334,10 +259,10 @@ h1, figure {
 
 .bgAnimation, .bgAnimation.bg-slogan1 {
   background-position: top 10.625vw left 12.8472222vw, top left;
-  background-size: 41.8055556%, 100% auto;
+  background-size: 41.8055556%, auto 100%;
 
   &.start {
-    background-size: 41.8055556%, 110% auto;
+    background-size: 41.8055556%, auto 110%;
     transition: background-size 8s;
     transition-timing-function: linear;
   }
@@ -352,8 +277,9 @@ h1, figure {
 }
 
 @import 'app_md.scss';
+@import 'index.scss';
+@import 'index_md.scss';
 @import 'activity.scss';
 @import 'activity_md.scss';
 @import 'about.scss';
 @import 'about_md.scss';
-@import 'carousel_box.scss';
