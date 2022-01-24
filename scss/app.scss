@@ -228,14 +228,17 @@ h1, figure {
   color: #EAE9ED;
   font-size: 1.5rem;
   font-weight: 900;
+  letter-spacing: .2em;
 }
 .footer-dl {
   & > dt {
     margin-bottom: .25rem;
     font-weight: 900;
   }
+  & > dd + dt {
+    margin-top: 2rem;
+  }
   & > dd {
-    margin-bottom: 2rem;
     color: #929295;
   }
 }
