@@ -1,18 +1,23 @@
 @media (min-width: 768px) {
 .activity-framing-x {
-  width: 88%;
-  max-width: 72.75rem;
+  max-width: 83.75rem;
+}
+.activity-framing-t,
+.activity-framing-y {
+  padding-top: 5.625rem;
 }
 .activity-framing-b,
 .activity-framing-y {
   padding-bottom: 9.375rem;
 }
+.activity-indent-x {
+  padding: 0 1.875rem;
+}
 .activityNavbar {
-  box-shadow: none;
 }
 .carousel-article {
   position: absolute;
-  bottom: -10rem;
+  bottom: 0rem;
   width: 44.6735395%;
 }
 .article-lg {
@@ -61,6 +66,19 @@
   }
   &.about {
     width: 16.875rem;
+  }
+}
+
+.activitySection-imageArticle {
+  .activity-h2 {
+    position: absolute;
+    top: 4.375rem;
+    right: 0;
+  }
+  .pagination-round {
+    position: absolute;
+    right: 0;
+    bottom: 3.25rem;
   }
 }
 }

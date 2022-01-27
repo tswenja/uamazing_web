@@ -12,9 +12,11 @@
     <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/aos.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+    <link rel="preload" as="font" href="assets/msjh.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/msjhbd.ttf" type="font/ttf" crossorigin="anonymous">
     <title>必紅國際 U.AMAZING | 必紅學院</title>
   </head>
-  <body class="activity">
+  <body class="school">
     <nav class="activityNavbar navbar navbar-light">
       <a class="activityBrand" href="index.html"><img src="assets/logo@2x.png" /></a>
       <h1 class="activityBrand ml-auto ml-md-3 mr-md-auto" data-toggle="collapse" data-target="#navbar">必紅學院</h1>
@@ -40,17 +42,13 @@
       </div>
     </nav>
 
-    <main class="pt-5">
-      <section class="my-2 my-md-5 pb-md-5">
-        <div class="position-relative activity-framing-x">
-          <div class="position-absolute mt-n5">
-            <ul class="pagination-round">
-              <li class="active">1</li>
-            </ul>
-          </div>
+    <main class="">
+      <section class="mb-2 mb-md-5 pb-md-5">
+        <div class="position-relative">
           <div class="carousel">
-            <img src="public/images/singer1.jpg" class="img-cover">
+            <img src="public/images/singer1.jpg" class="img-fluid">
           </div>
+          <!--
           <div class="carousel-article">
             <div class="article-bg-deco">
               <article class="article-lg">
@@ -61,9 +59,56 @@
               </article>
             </div>
           </div>
+          -->
         </div>
       </section>
 
+      <section class="activity-framing-x">
+        <h2 class="activity-h2 px-3 mt-5 px-md-0 mt-md-0">
+          <span class="h2-deco mr-md-2" data-text="Trainning">Trainning</span>
+          <span class="d-inline-block">學院培訓計畫</span>
+        </h2>
+        <div class="activity-indent-x mt-4 pt-3">
+          <figure><img src="public/images/singer1.jpg" class="img-fluid" /></figure>
+
+          <ul class="row no-gutters mt-3 mb-4">
+            <li class="col-12 col-md-4 mb-3 pr-md-2">
+              <a href="#" class="d-block" data-toggle="modal" data-target="#googleFormJoin">
+                <div class="coloredBox coloredBox-red p-5">
+                  <h6 class='coloredBox-title'>初級課程</h6>
+                  <p class="my-4 pt-4">
+                    直播技巧、行銷概念、唱歌技巧 直播技巧、行銷概念、唱歌技巧
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="col-12 col-md-4 mb-3 px-md-1">
+              <a href="#" class="d-block" data-toggle="modal" data-target="#googleFormJoin">
+                <div class="coloredBox coloredBox-yellow p-5">
+                  <h6 class='coloredBox-title'>中級課程</h6>
+                  <p class="my-4 pt-4">
+                    直播技巧、行銷概念、唱歌技巧 直播技巧、行銷概念、唱歌技巧
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="col-12 col-md-4 mb-3 pl-md-2">
+              <a href="#" class="d-block" data-toggle="modal" data-target="#googleFormJoin">
+                <div class="coloredBox p-5">
+                  <h6 class='coloredBox-title'>初級課程</h6>
+                  <p class="my-4 pt-4">
+                    直播技巧、行銷概念、唱歌技巧 直播技巧、行銷概念、唱歌技巧
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <figure><img src="public/index/banner2.jpg" class="img-fluid"></figure>
+
+      <!--
       <section class="bg-gray pt-4 pb-5" data-aos="fade-up">
         <h2 class="activity-h2 text-center mt-3">學院培訓計畫</h2>
         <ul class="d-flex flex-wrap justify-content-center mb-0 mb-md-3 pt-3">
@@ -78,49 +123,32 @@
           <li class="item-pill mt-4 mx-2" data-aos="fade-up"><a>垂直發展</a></li>
         </ul>
       </section>
+      -->
 
       <section data-aos="fade-up">
-        <div class="">
-          <h2 class="activity-h2 activity-framing-x activity-framing-t px-3 px-md-0">
-            <span class="activity-h2-deco portfolio"></span>
-            最新作品
+        <div class="activity-framing-x activity-framing-t">
+          <h2 class="activity-h2 px-3 px-md-0">
+            <span class="h2-deco mr-md-2" data-text="PORTFOLIO">PORTFOLIO</span>
+            <span class="d-inline-block">最新作品</span>
           </h2>
-          <div class="bg-balls activity-framing-b">
-            <ul class="activity-framing-x row mt-4 px-3 px-md-0">
-              <li class="col-12 col-md-4 mt-4 mb-5 my-md-5">
+          <div class="activity-indent-x">
+            <ul class="row my-4 mb-md-5">
+              <li class="col-12 col-md-4 my-3 my-md-5">
                 <div>
-                  <figure class="activity-grid-img" style="background-image:url(public/index/portfolio2.jpg)"></figure>
-                  <div>
-                    <div class="activity-grid-title mt-4">網紅初級課程成果發表</div>
-                    <div class="activity-grid-p mt-2">初級網紅技能、網紅海中生存必備基本方案。每堂課一個超實用小技巧。</div>
-                  </div>
+                  <figure class="figure-fixed-ratio figure-hr-100" style="background-image:url(public/index/portfolio2.jpg)"></figure>
+                  <div class="activity-grid-title mt-3">網紅初級課程成果發表</div>
                 </div>
               </li>
-              <li class="col-12 col-md-4 mt-4 mb-5 my-md-5">
+              <li class="col-12 col-md-4 my-3 my-md-5">
                 <div>
-                  <figure class="activity-grid-img" style="background-image:url(public/index/portfolio1.jpg)"></figure>
-                  <div>
-                    <div class="activity-grid-title mt-4">網紅初級課程成果發表</div>
-                    <div class="activity-grid-p mt-2">初級網紅技能、網紅海中生存必備基本方案。每堂課一個超實用小技巧。</div>
-                  </div>
+                  <figure class="figure-fixed-ratio figure-hr-100" style="background-image:url(public/index/portfolio2.jpg)"></figure>
+                  <div class="activity-grid-title mt-3">網紅初級課程成果發表</div>
                 </div>
               </li>
-              <li class="col-12 col-md-4 mt-4 mb-5 my-md-5">
+              <li class="col-12 col-md-4 my-3 my-md-5">
                 <div>
-                  <figure class="activity-grid-img" style="background-image:url(public/index/portfolio4.jpg)"></figure>
-                  <div>
-                    <div class="activity-grid-title mt-4">網紅初級課程成果發表</div>
-                    <div class="activity-grid-p mt-2">初級網紅技能、網紅海中生存必備基本方案。每堂課一個超實用小技巧。</div>
-                  </div>
-                </div>
-              </li>
-              <li class="col-12 col-md-4 mt-4 mb-5 my-md-5">
-                <div>
-                  <figure class="activity-grid-img" style="background-image:url(public/index/portfolio2.jpg)"></figure>
-                  <div>
-                    <div class="activity-grid-title mt-4">網紅初級課程成果發表</div>
-                    <div class="activity-grid-p mt-2">初級網紅技能、網紅海中生存必備基本方案。每堂課一個超實用小技巧。</div>
-                  </div>
+                  <figure class="figure-fixed-ratio figure-hr-100" style="background-image:url(public/index/portfolio2.jpg)"></figure>
+                  <div class="activity-grid-title mt-3">網紅初級課程成果發表</div>
                 </div>
               </li>
             </ul>
@@ -128,28 +156,34 @@
         </div>
       </section>
 
-      <section class="bg-gray">
-        <div class="activity-framing-x activity-framing-y" data-aos="fade-up">
-          <h2 class="activity-h2">
-            <span class="activity-h2-deco cource"></span>
-            網紅就業聯盟
-          </h2>
-          <div class="row no-gutters mt-5 pt-4">
-            <div class="col-12 col-md-7">
-              <figure class="figure-hr-67" style="background-image:url(public/images/good_voice_final.jpg)"></figure>
+      <figure><img src="public/index/banner2.jpg" class="img-fluid"></figure>
+
+      <section class="activitySection-imageArticle">
+        <div class="" data-aos="fade-up">
+          <div class="position-relative activity-framing-x mt-5 mb-4 my-md-0">
+            <h2 class="activity-h2 text-md-right activity-indent-x">
+              <span class="h2-deco mr-5 mr-md-0" data-text="WORKS!">WORKS!</span><br>
+              <span class="d-inline-block">網紅就業聯盟</span>
+            </h2>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6">
+              <figure class="figure-fixed-ratio figure-hr-100" style="background-image:url(public/images/good_voice_final.jpg)"></figure>
             </div>
-            <div class="col-12 col-md-5 px-4 pl-md-5 pr-md-0">
-              <div class="text-h3 text-blue text-shadow-blue mt-4 mt-md-5 pt-md-5">讓自己發光發熱</div>
-              <p class="mt-4 mt-md-5">
-                累積3萬間企業合作 與 學院培育的約聘網紅資料，網紅資料搜尋引擎。
-                <br>
-                <br>
-                不僅是藝人網紅培育學院，更擁有100,000筆以上網紅藝人資訊，娛樂行銷媒合的好夥伴，您需要的各項才藝才子佳人，等您來挖掘！
-              </p>
+            <div class="col-12 col-md-6 px-4 px-md-5 pr-md-0">
+              <div class="d-flex flex-column justify-content-center h-100">
+                <div class="text-h3 text-blue text-shadow-blue mt-4 mt-md-5 pt-md-5">讓自己發光發熱</div>
+                <p class="activity-grid-p mt-4 mt-md-5">
+                  累積3萬間企業合作 與 學院培育的約聘網紅資料，網紅資料搜尋引擎。
+                  <br>
+                  <br>
+                  不僅是藝人網紅培育學院，更擁有100,000筆以上網紅藝人資訊，娛樂行銷媒合的好夥伴，您需要的各項才藝才子佳人，等您來挖掘！
+                </p>
+              </div>
             </div>
           </div>
-          <div class="mt-5 mt-md-n5 mr-5">
-            <ul class="pagination-round justify-content-end">
+          <div class="activity-framing-x position-relative">
+            <ul class="pagination-round justify-content-center justify-content-md-end activity-indent-x mt-3 mb-4">
               <li class="active">1</li>
               <li>2</li>
               <li>3</li>
@@ -159,64 +193,184 @@
         </div>
       </section>
 
-      <section data-aos="fade-up">
-        <div class="activity-framing-x activity-framing-y px-4 px-md-0">
-          <h2 class="activity-h2">
+      <section class="bg-gray">
+        <div class="activity-framing-x activity-framing-t">
+          <h2 class="activity-h2 px-4 px-md-0" data-aos="fade-up">
             <span class="activity-h2-deco teachors"></span>
-            專業師資
+            <span class="d-inline-block">專業師資</span>
           </h2>
-          <div class="row mt-5 pt-3">
-            <div class="col-12 col-md-6 mb-4">
-              <figure class="figure-wide-md" style="background-image:url(public/images/teachors.jpg)"></figure>
-              <div class="w-85 mx-auto">
-                <div class="text-h3 text-blue text-shadow-blue text-center mt-4 pt-1">短期講座</div>
-                <p class="mt-4 pt-1">
-                  單次講座<br>
-                  身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。<br>
-                  <br>
-                  <br>
-                  <a href="#">素人共學</a>
-                  <br>
-                  身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。
-                </p>
+          <div class="activity-indent-x mt-5 pt-md-3 pb-md-5">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4" data-aos="fade-up">
+                <figure class="figure-wide-md" style="background-image:url(public/images/teachors.jpg)"></figure>
+                <div class="w-75">
+                  <div class="text-h3 text-blue text-shadow-blue mt-3 pt-1">短期講座</div>
+                  <p class="activity-grid-p mt-3 pt-1">
+                    單次講座<br>
+                    身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。<br>
+                    <br>
+                    <a href="#">素人共學</a>
+                    <br>
+                    身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 mb-4">
-              <figure class="figure-wide-md" style="background-image:url(public/images/good_voice_reward2.jpg)"></figure>
-              <div class="w-85 mx-auto">
-                <div class="text-h3 text-blue text-shadow-blue text-center mt-4 pt-1">培訓規劃</div>
-                <p class="mt-4 pt-1">
-                  必紅國際學院培訓規劃
-                  <br>
-                  <br>
-                  身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。<br>
-                  <br>
-                  身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。
-                </p>
+              <div class="col-12 col-md-6 mb-4" data-aos="fade-up">
+                <figure class="figure-wide-md" style="background-image:url(public/images/good_voice_reward2.jpg)"></figure>
+                <div class="w-75">
+                  <div class="text-h3 text-blue text-shadow-blue mt-3 pt-1">培訓規劃</div>
+                  <p class="activity-grid-p mt-3 pt-1">
+                    必紅國際學院培訓規劃
+                    <br>
+                    <br>
+                    身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。<br>
+                    <br>
+                    身兼設計師、內容創作者、藝術指導等工作，Angle 的穿搭示範正是都會女性的絕佳範本。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <figure><img src="public/index/banner2.jpg" class="img-fluid"></figure>
+
+      <section class="bg-gray p-3 p-md-5">
+        <div class="card card-lg p-4 p-md-5">
+          <h2 class="activity-h2 text-center mt-3">
+            <span class="h2-deco mr-5 mr-md-2" data-text="JOIN">JOIN</span>
+            <span class="d-inline-block">加入培訓計畫</span>
+          </h2>
+
+          <p class="activity-grid-p text-center mt-4">
+            你也有才華、有夢想，勇敢大步去追求吧！<br>
+            必紅演藝學院將助你累積經驗，現在就送出資料，邁出夢想第一步
+          </p>
+
+          <form id="openPrefilledForm">
+            <div class="row mt-3 pt-md-5">
+              <div class="col-12 col-lg-3 ml-auto">
+                <div class="px-xl-2">
+                  <fieldset>
+                    <label>真實姓名*</label>
+                    <input name="1301810627" type="text" required class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>暱稱或別名</label>
+                    <input name="1184395625" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>性別</label>
+                    <input name="1790231031" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>年齡</label>
+                    <input name="504374366" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>居住地</label>
+                    <input name="1018834967" type="text" class="form-control" />
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                  <div class="px-xl-2">
+                  <fieldset>
+                    <label>隸屬單位或組織</label>
+                    <input name="957639552" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>學校</label>
+                    <input name="2003557845" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>電話</label>
+                    <input name="652132419" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>手機*</label>
+                    <input name="1690256522" type="text" required class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>電子郵件</label>
+                    <input name="612139892" type="email" class="form-control" />
+                  </fieldset>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 mr-auto">
+                <div class="px-xl-2">
+                  <fieldset>
+                    <label>Instagram ID</label>
+                    <input name="1616990692" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>LINE ID</label>
+                    <input name="2043432786" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>Facebook ID</label>
+                    <input name="811882461" type="text" class="form-control" />
+                  </fieldset>
+                  <fieldset>
+                    <label>擅長才藝</label>
+                    <textarea name="290531087" class="form-control" row="5"></textarea>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <button class="btn btn-primary-red btn-xl">送出</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div id="googleFormJoin" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="background-color:#f6f6f6">
+            <div class="modal-body px-0">
+              <button type="button" class="close pr-3" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="d-md-none">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCKDCN-jKl8Xnu9U8FiN40EQhDNvNPBNsrhprp60kmCsiqzg/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+              </div>
+              <div class="d-none d-md-block">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCKDCN-jKl8Xnu9U8FiN40EQhDNvNPBNsrhprp60kmCsiqzg/viewform?embedded=true" width="498" height="1600" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer">
-      <div class="footer-body">
-        <div class="footer-title">全球必紅國際有限公司</div>
-        <div class="d-flex flex-wrap align-items-end mt-5 pt-md-3">
-          <dl class="footer-dl mw-100 mr-5">
-            <dt class="text-blue">國際合作企業發展 GS1 Taiwan</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp" target="_blank">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">線上教育平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">共學教育平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
+      <div class="footer-body pl-md-4">
+        <div class="footer-title">必紅國際股份有限公司</div>
+        <div class="d-flex flex-wrap align-items-start mt-5 pt-md-3">
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue"><a href="#" class="text-blue">大型活動</a></dt>
+            <dd class="text-break"><a href="#">音樂節</a></dd>
+            <dd class="text-break"><a href="#">鄉鎮市集活動</a></dd>
           </dl>
-          <dl class="footer-dl mw-100">
-            <dt class="text-blue">我享平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">必紅TV</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue"><a href="#" class="text-blue">校園活動</a></dt>
+            <dd class="text-break"><a href="#">校園海選</a></dd>
+            <dd class="text-break"><a href="#">校園特派記者</a></dd>
+          </dl>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue">培訓資源</a></dt>
+            <dd class="text-break"><a href="#">線上教育平台</a></dd>
+            <dd class="text-break"><a href="#">共學教育平台</a></dd>
+          </dl>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue">聯盟組織</a></dt>
+            <dd class="text-break"><a href="https://www.gs1tw.org/twct/web/about.jsp">國際合作企業發展 GS1 Taiwan</a></dd>
+            <dd class="text-break"><a href="#">我享平台</a></dd>
+            <dd class="text-break"><a href="#">必紅TV</a></dd>
           </dl>
         </div>
         <div class="mt-3 mt-md-5">
@@ -237,6 +391,22 @@
         </div>
       </div>
     </footer>
+
     <script src="assets/app.js"></script>
+    <script>
+      $('#openPrefilledForm').on('submit', function(e) {
+        e.preventDefault();
+
+        var fgUrl = "https://docs.google.com/forms/d/e/1FAIpQLScCKDCN-jKl8Xnu9U8FiN40EQhDNvNPBNsrhprp60kmCsiqzg/viewform?embedded=true";
+
+        e.target.querySelectorAll('input[type=text], input[type=email], textarea').forEach(function(el) {
+          fgUrl += "&entry." + el.name + "=" + el.value;
+        });
+        $('#googleFormJoin').modal('show');
+        $('#googleFormJoin').find('iframe').attr('src', fgUrl);
+
+        return false;
+      });
+    </script>
   </body>
 </html>

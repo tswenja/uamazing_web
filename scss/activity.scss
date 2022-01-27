@@ -4,20 +4,24 @@
 }
 .activity-framing-t,
 .activity-framing-y {
-  padding-top: 5.625rem;
+  padding-top: 40px;
 }
 .activity-framing-b,
 .activity-framing-y {
   padding-bottom: 3.625rem;
 }
+.activity-indent-x {
+  padding: 0 16px;
+}
 
 .activityNavbar {
   position: fixed;
+  top: 0;
   z-index: 10;
   width: 100%;
-  padding: 1.25rem 1.5625rem;
-  background-color: white;
-  box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.1);
+  padding: .62rem 1rem;
+  background-color: rgba(255, 255, 255, .99);
+  box-shadow: 0 0 1.25rem rgba(0,0,0,.05);
 }
 .content .activityNavbar {
   background-color: rgba(241,241,241,.97);
@@ -66,14 +70,14 @@
 .activity-h2 {
   color: #303136;
   font-size: 1.875rem;
-  line-height: 1;
   letter-spacing: .2em;
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
 }
 .activity-h2-deco {
   display: inline-block;
   height: 3.5rem;
+  line-height: 1;
   width: 100%;
   background: no-repeat top center;
   background-size: contain;
@@ -124,16 +128,13 @@
     border-color: #fff;
   }
 }
-.activity-grid-title, .activity-grid-p {
-  font-weight: 700;
-}
 .activity-grid-title {
-  color: #363636;
-  font-size: 1.375rem;
+  color: #303136;
+  font-size: 1.25rem;
   letter-spacing: 0.01em;
 }
 .activity-grid-p {
-  color: #5c5c5c;
+  color: #4c4c4c;
   line-height: 1.625;
   letter-spacing: 0.038em;
 }
