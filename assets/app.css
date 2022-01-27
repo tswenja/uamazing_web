@@ -441,7 +441,7 @@ fieldset {
   padding-bottom: 53.5714286%; }
 
 .h2-deco {
-  font-size: 2.75rem;
+  font-size: 3rem;
   line-height: 1;
   display: inline-block;
   position: relative;
@@ -492,6 +492,9 @@ fieldset {
 @media (min-width: 768px) {
   fieldset {
     margin-bottom: 1.5rem; }
+
+  .w-md-75 {
+    width: 75% !important; }
 
   .h2-deco {
     font-size: 3.75rem; }
