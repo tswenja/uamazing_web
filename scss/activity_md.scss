@@ -15,6 +15,9 @@
 }
 
 .activityNavbar {
+  background-color: rgba(0, 0, 0, .25);
+  background-color: #3A3536;
+
   .activity-nav-link {
     color: #fff;
     &:hover, &.hover, &:active, &.active, &:visited, &.visited {
@@ -38,11 +41,10 @@
 }
 $logoWidth: 5rem;
 .activityNavbar, .activityBrand {
-  padding: 1rem 1.5rem;
+  padding: .75rem 1rem;
 }
 .activityNavbar {
-  padding-left: 1.5rem + $logoWidth;
-  background-color: rgba(0, 0, 0, .25);
+  padding-left: 1rem + $logoWidth;
 }
 .activityBrand > img {
   width: $logoWidth;

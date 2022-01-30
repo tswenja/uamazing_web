@@ -16,6 +16,7 @@
 
 .activityNavbar {
   background-color: #fff;
+
   .activity-nav-link {
     color: #241E20;
     &:hover, &.hover, &:active, &.active, &:visited, &.visited {
@@ -29,12 +30,37 @@
     }
   }
 }
+.activityNavbar {
+  background-color: rgba(0, 0, 0, .25);
+  background-color: #3A3536;
+
+  .activity-nav-link {
+    color: #fff;
+    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+      color: #fff;
+    }
+  }
+  .activity-nav-link-secondary {
+    color: #EAE9ED;
+    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+      color: #EAE9ED;
+    }
+  }
+  .activity-nav-link, .activity-nav-link-secondary {
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
+
+    opacity: 0.8;
+    &:hover, &.hover {
+      opacity: 1;
+    }
+  }
+}
 .content .activityNavbar {
   background-color: rgba(241,241,241,.97);
 }
 $logoWidth: 3.75rem;
 .activityNavbar, .activityBrand {
-  padding: .62rem 1rem;
+  padding: .5rem 1rem;
 }
 .activityNavbar {
   position: fixed;
