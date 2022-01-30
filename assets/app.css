@@ -150,7 +150,7 @@
   font-display: auto;
   src: local("Microsoft JhengHei"), url("../assets/msjhbd.ttf") format("ttf"); }
 html {
-  font-size: 14px; }
+  font-size: 16px; }
 
 body {
   font-family: 'Noto Sans TC', "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -321,7 +321,9 @@ fieldset {
   width: 85%; }
 
 .text-h3 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.062em; }
 
 .text-h5 {
   font-size: 1.125rem;
@@ -341,7 +343,8 @@ fieldset {
   letter-spacing: .2em; }
 
 .text-blue {
-  color: #5FAACE !important; }
+  color: #5FAACE !important;
+  color: #54AED9 !important; }
 
 .text-gray-4 {
   color: #4c4c4c; }
@@ -446,11 +449,12 @@ fieldset {
   display: inline-block;
   position: relative;
   max-width: 100%;
-  padding-left: 0.75em;
-  background: url(../assets/h2Deco.svg) no-repeat left top 46%/0.333333333em auto;
+  padding-left: 0;
+  padding-top: 20px;
+  background: url(../assets/h2Deco.svg) no-repeat left 4px top 0/0.333333333em auto;
   font-family: 'Josefin Sans';
   font-weight: 100;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   color: inherit;
   opacity: .75;
   text-transform: uppercase;
@@ -460,29 +464,47 @@ fieldset {
   .h2-deco::before, .h2-deco::after {
     content: attr(data-text);
     position: absolute;
-    top: 0;
-    left: 0.833333333em; }
+    top: 20px;
+    left: 0.083333333em; }
   .h2-deco::after {
-    left: 0.75em;
+    left: 0;
     font-weight: bold;
-    letter-spacing: .055em;
+    letter-spacing: 0;
     opacity: 0.2; }
 
 .coloredBox {
+  position: relative;
   border-radius: 2px;
   background: #5FAACE;
-  color: white;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.5em;
-  letter-spacing: .062em; }
+  letter-spacing: .062em;
+  overflow: hidden; }
+  .coloredBox.deco-step::before {
+    position: absolute;
+    top: -1.25rem;
+    left: 66.8292683%;
+    line-height: 16.25rem;
+    font-size: 18.75rem;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    opacity: 0.1; }
+  .coloredBox.deco-step-1::before {
+    content: "1"; }
+  .coloredBox.deco-step-2::before {
+    content: "2"; }
+  .coloredBox.deco-step-3::before {
+    content: "3"; }
   .coloredBox.coloredBox-red {
     background: #D15648; }
   .coloredBox.coloredBox-yellow {
     background: #E1BC56; }
   .coloredBox .coloredBox-title {
-    font-size: 1.875em;
-    font-weight: bold;
-    letter-spacing: .12em; }
+    color: white;
+    font-size: 2.25em;
+    font-weight: 900;
+    letter-spacing: .12em;
+    text-shadow: 0px 0px 60px rgba(255, 255, 255, 0.25); }
 
 .card.card-lg {
   border: none;
@@ -497,10 +519,21 @@ fieldset {
     width: 75% !important; }
 
   .h2-deco {
-    font-size: 3.75rem; }
+    font-size: 4.5rem;
+    padding-left: 0.75em;
+    padding-top: 0;
+    background-position: left top 46%; }
+    .h2-deco::before, .h2-deco::after {
+      top: 0;
+      left: 0.833333333em; }
+    .h2-deco::after {
+      left: 0.75em; }
 
   .form-control {
-    border-width: 2px; } }
+    border-width: 2px; }
+
+  .coloredBox.deco-step::before {
+    left: 66.8292683%; } }
 @media (min-width: 768px) {
   html {
     font-size: 16px; }
@@ -812,10 +845,9 @@ fieldset {
 
 .activity-h2 {
   color: #303136;
-  font-size: 1.875rem;
-  letter-spacing: .2em;
-  font-weight: 300;
-  text-align: center; }
+  font-size: 1.5rem;
+  letter-spacing: .06em;
+  font-weight: 300; }
 
 .activity-h2-deco {
   display: inline-block;
@@ -861,12 +893,14 @@ fieldset {
     border-color: #fff; }
 
 .activity-grid-title {
-  color: #303136;
+  color: #3A3536;
   font-size: 1.25rem;
-  letter-spacing: 0.01em; }
+  font-weight: 500;
+  letter-spacing: 0.02em; }
 
 .activity-grid-p {
   color: #4c4c4c;
+  font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.038em; }
 
@@ -920,7 +954,7 @@ fieldset {
       padding-bottom: 2rem; }
 
   .activity-h2 {
-    text-align: left; }
+    font-size: 1.875rem; }
 
   .activity-h2-deco {
     margin-right: 1.2rem;

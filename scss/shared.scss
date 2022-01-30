@@ -32,6 +32,8 @@ fieldset {
 
 .text-h3 {
   font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.062em;
 }
 .text-h5 {
   font-size: 1.125rem;
@@ -52,6 +54,7 @@ fieldset {
 }
 .text-blue {
   color: $color-blue !important;
+  color: #54AED9 !important;
 }
 .text-gray-4 {
   color: #4c4c4c;
@@ -165,17 +168,19 @@ fieldset {
 .h2-deco {
   font-size: 3rem;
   line-height: 1;
-  $padding-left: 0.75em;
+  $padding-left: 0;
+  $padding-top: 20px;
 
   display: inline-block;
   position: relative;
   max-width: 100%;
   padding-left: $padding-left;
-  background: url(../assets/h2Deco.svg) no-repeat left top 46%/0.333333333em auto;
+  padding-top: $padding-top;
+  background: url(../assets/h2Deco.svg) no-repeat left 4px top 0/0.333333333em auto;
 
   font-family: 'Josefin Sans';
   font-weight: 100;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   color: inherit;
   opacity: .75;
 
@@ -187,27 +192,44 @@ fieldset {
   &::before, &::after {
     content: attr(data-text);
     position: absolute;
-    top: 0;
+    top: $padding-top;
     left: $padding-left + 0.083333333em;
   }
 
   &::after {
     left: $padding-left;
     font-weight: bold;
-    letter-spacing: .055em;
+    letter-spacing: 0;
     opacity: 0.2;
   }
 }
 
 .coloredBox {
+  position: relative;
   border-radius: 2px;
   background: #5FAACE;
-  color: white;
+  color: rgba(255, 255, 255, .9);
 
-  font-weight: 500;
   line-height: 1.5em;
   letter-spacing: .062em;
 
+  overflow: hidden;
+
+  &.deco-step::before {
+    position: absolute;
+    top: -1.25rem;
+    left: 66.8292683%;
+    line-height: 16.25rem;
+    font-size: 18.75rem;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    opacity: 0.1;
+  }
+  @for $i from 1 through 3 {
+    &.deco-step-#{$i}::before {
+      content: '#{$i}';
+    }
+  }
 
   &.coloredBox-red {
     background: #D15648;
@@ -217,9 +239,11 @@ fieldset {
   }
 
   .coloredBox-title {
-    font-size: 1.875em;
-    font-weight: bold;
+    color: white;
+    font-size: 2.25em;
+    font-weight: 900;
     letter-spacing: .12em;
+    text-shadow: 0px 0px 60px rgba(255, 255, 255, 0.25);
   }
 }
 

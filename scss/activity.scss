@@ -69,10 +69,9 @@
 
 .activity-h2 {
   color: #303136;
-  font-size: 1.875rem;
-  letter-spacing: .2em;
+  font-size: 1.5rem;
+  letter-spacing: .06em;
   font-weight: 300;
-  text-align: center;
 }
 .activity-h2-deco {
   display: inline-block;
@@ -129,12 +128,14 @@
   }
 }
 .activity-grid-title {
-  color: #303136;
+  color: #3A3536;
   font-size: 1.25rem;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .activity-grid-p {
   color: #4c4c4c;
+  font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.038em;
 }

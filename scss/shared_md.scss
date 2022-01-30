@@ -6,9 +6,28 @@ fieldset {
   width: 75% !important;
 }
 .h2-deco {
-  font-size: 3.75rem;
+  font-size: 4.5rem;
+  $padding-left: 0.75em;
+  $padding-top: 0;
+
+  padding-left: $padding-left;
+  padding-top: $padding-top;
+  background-position: left top 46%;
+
+  &::before, &::after {
+    top: $padding-top;
+    left: $padding-left + 0.083333333em;
+  }
+  &::after {
+    left: $padding-left;
+  }
 }
 .form-control {
   border-width: 2px;
+}
+.coloredBox {
+  &.deco-step::before {
+    left: 66.8292683%;
+  }
 }
 }
