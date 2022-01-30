@@ -55,7 +55,7 @@ body.content {
   top: 0;
   width: 100%;
   background-color: #241E20;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
 }
 .sidebar, .indexNavbar {
   & > .indexBrand {
@@ -76,7 +76,7 @@ body.content {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 
-  &:hover {
+  &:hover, &.hover, &:active, &.active, &:visited, &.visited {
     color: rgba(255, 255, 255, 1);
   }
 }
