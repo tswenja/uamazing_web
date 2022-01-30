@@ -1,6 +1,9 @@
 (function() {
   // AOS
-  AOS.init();
+  AOS.init({
+    duration: 600,
+    offset: 60
+  });
 
   // fixed-bg
   document.addEventListener('scroll', function(e) {
