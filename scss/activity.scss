@@ -14,8 +14,7 @@
   padding: 0 16px;
 }
 
-/*
-.activityNavbar {
+.activityNavbar-light {
   background-color: #fff;
 
   .activity-nav-link {
@@ -30,11 +29,17 @@
       color: #5D5C61;
     }
   }
+  .activity-nav-icon.white {
+    display: none;
+  }
+  .activity-nav-icon.black {
+    display: block;
+  }
 }
-*/
-.activityNavbar {
+.activityNavbar-dark {
   background-color: rgba(0, 0, 0, .25);
   background-color: #3A3536;
+  background-color: #241E20;
 
   .activity-nav-link {
     color: #fff;
@@ -55,6 +60,12 @@
     &:hover, &.hover {
       opacity: 1;
     }
+  }
+  .activity-nav-icon.white {
+    display: block;
+  }
+  .activity-nav-icon.black {
+    display: none;
   }
 }
 .content .activityNavbar {

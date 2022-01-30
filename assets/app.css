@@ -802,40 +802,42 @@ fieldset {
 .activity-indent-x {
   padding: 0 16px; }
 
-/*
-.activityNavbar {
-  background-color: #fff;
+.activityNavbar-light {
+  background-color: #fff; }
+  .activityNavbar-light .activity-nav-link {
+    color: #241E20; }
+    .activityNavbar-light .activity-nav-link:hover, .activityNavbar-light .activity-nav-link.hover, .activityNavbar-light .activity-nav-link:active, .activityNavbar-light .activity-nav-link.active, .activityNavbar-light .activity-nav-link:visited, .activityNavbar-light .activity-nav-link.visited {
+      color: #241E20; }
+  .activityNavbar-light .activity-nav-link-secondary {
+    color: #5D5C61; }
+    .activityNavbar-light .activity-nav-link-secondary:hover, .activityNavbar-light .activity-nav-link-secondary.hover, .activityNavbar-light .activity-nav-link-secondary:active, .activityNavbar-light .activity-nav-link-secondary.active, .activityNavbar-light .activity-nav-link-secondary:visited, .activityNavbar-light .activity-nav-link-secondary.visited {
+      color: #5D5C61; }
+  .activityNavbar-light .activity-nav-icon.white {
+    display: none; }
+  .activityNavbar-light .activity-nav-icon.black {
+    display: block; }
 
-  .activity-nav-link {
-    color: #241E20;
-    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
-      color: #241E20;
-    }
-  }
-  .activity-nav-link-secondary {
-    color: #5D5C61;
-    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
-      color: #5D5C61;
-    }
-  }
-}
-*/
-.activityNavbar {
+.activityNavbar-dark {
   background-color: rgba(0, 0, 0, 0.25);
-  background-color: #3A3536; }
-  .activityNavbar .activity-nav-link {
+  background-color: #3A3536;
+  background-color: #241E20; }
+  .activityNavbar-dark .activity-nav-link {
     color: #fff; }
-    .activityNavbar .activity-nav-link:hover, .activityNavbar .activity-nav-link.hover, .activityNavbar .activity-nav-link:active, .activityNavbar .activity-nav-link.active, .activityNavbar .activity-nav-link:visited, .activityNavbar .activity-nav-link.visited {
+    .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link:active, .activityNavbar-dark .activity-nav-link.active, .activityNavbar-dark .activity-nav-link:visited, .activityNavbar-dark .activity-nav-link.visited {
       color: #fff; }
-  .activityNavbar .activity-nav-link-secondary {
+  .activityNavbar-dark .activity-nav-link-secondary {
     color: #EAE9ED; }
-    .activityNavbar .activity-nav-link-secondary:hover, .activityNavbar .activity-nav-link-secondary.hover, .activityNavbar .activity-nav-link-secondary:active, .activityNavbar .activity-nav-link-secondary.active, .activityNavbar .activity-nav-link-secondary:visited, .activityNavbar .activity-nav-link-secondary.visited {
+    .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover, .activityNavbar-dark .activity-nav-link-secondary:active, .activityNavbar-dark .activity-nav-link-secondary.active, .activityNavbar-dark .activity-nav-link-secondary:visited, .activityNavbar-dark .activity-nav-link-secondary.visited {
       color: #EAE9ED; }
-  .activityNavbar .activity-nav-link, .activityNavbar .activity-nav-link-secondary {
+  .activityNavbar-dark .activity-nav-link, .activityNavbar-dark .activity-nav-link-secondary {
     text-shadow: 0px 4px 15px black;
     opacity: 0.8; }
-    .activityNavbar .activity-nav-link:hover, .activityNavbar .activity-nav-link.hover, .activityNavbar .activity-nav-link-secondary:hover, .activityNavbar .activity-nav-link-secondary.hover {
+    .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover {
       opacity: 1; }
+  .activityNavbar-dark .activity-nav-icon.white {
+    display: block; }
+  .activityNavbar-dark .activity-nav-icon.black {
+    display: none; }
 
 .content .activityNavbar {
   background-color: rgba(241, 241, 241, 0.97); }
@@ -980,8 +982,7 @@ fieldset {
     padding: 0 1.875rem; }
 
   .activityNavbar {
-    background-color: rgba(0, 0, 0, 0.25);
-    background-color: #3A3536; }
+    background-color: rgba(0, 0, 0, 0.25); }
     .activityNavbar .activity-nav-link {
       color: #fff; }
       .activityNavbar .activity-nav-link:hover, .activityNavbar .activity-nav-link.hover, .activityNavbar .activity-nav-link:active, .activityNavbar .activity-nav-link.active, .activityNavbar .activity-nav-link:visited, .activityNavbar .activity-nav-link.visited {
