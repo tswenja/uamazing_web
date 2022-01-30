@@ -15,29 +15,52 @@
 }
 
 .activityNavbar {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  padding: .62rem 1rem;
-  background-color: rgba(255, 255, 255, .99);
-  box-shadow: 0 0 1.25rem rgba(0,0,0,.05);
+  background-color: #fff;
+  .activity-nav-link {
+    color: #241E20;
+    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+      color: #241E20;
+    }
+  }
+  .activity-nav-link-secondary {
+    color: #5D5C61;
+    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+      color: #5D5C61;
+    }
+  }
 }
 .content .activityNavbar {
   background-color: rgba(241,241,241,.97);
 }
-.activityBrand > img {
-  width: 3.75rem;
-  height: 3.75rem;
+$logoWidth: 3.75rem;
+.activityNavbar, .activityBrand {
+  padding: .62rem 1rem;
 }
-.activityBrand,
-.activityNavbarMenuItem > a {
-  color: #4c4c4c;
-  font-weight: 900;
-  letter-spacing: 0.1em;
+.activityNavbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 }
 .activityBrand {
-  font-size: 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.activityBrand > img {
+  width: $logoWidth;
+  height: $logoWidth;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+}
+.activity-nav-link, .activity-nav-link-secondary {
+  letter-spacing: 0.02em;
+}
+.activity-nav-link {
+  font-weight: 500;
+}
+.activity-nav-icon {
+  height: 1.25rem;
+  opacity: 0.67;
 }
 
 .carousel-article {
