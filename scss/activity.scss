@@ -40,6 +40,7 @@
   background-color: rgba(0, 0, 0, .25);
   background-color: #3A3536;
   background-color: #241E20;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 
   .activity-nav-link {
     color: #fff;
@@ -54,11 +55,11 @@
     }
   }
   .activity-nav-link, .activity-nav-link-secondary {
-    text-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
-
     opacity: 0.8;
+
     &:hover, &.hover {
       opacity: 1;
+      text-shadow: 0px 0px 2em rgba(255, 255, 255, .25);
     }
   }
   .activity-nav-icon.white {
@@ -100,6 +101,9 @@ $logoWidth: 3.75rem;
 .activity-nav-icon {
   height: 1.25rem;
   opacity: 0.67;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .carousel-article {

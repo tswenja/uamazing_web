@@ -820,7 +820,8 @@ fieldset {
 .activityNavbar-dark {
   background-color: rgba(0, 0, 0, 0.25);
   background-color: #3A3536;
-  background-color: #241E20; }
+  background-color: #241E20;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
   .activityNavbar-dark .activity-nav-link {
     color: #fff; }
     .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link:active, .activityNavbar-dark .activity-nav-link.active, .activityNavbar-dark .activity-nav-link:visited, .activityNavbar-dark .activity-nav-link.visited {
@@ -830,10 +831,10 @@ fieldset {
     .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover, .activityNavbar-dark .activity-nav-link-secondary:active, .activityNavbar-dark .activity-nav-link-secondary.active, .activityNavbar-dark .activity-nav-link-secondary:visited, .activityNavbar-dark .activity-nav-link-secondary.visited {
       color: #EAE9ED; }
   .activityNavbar-dark .activity-nav-link, .activityNavbar-dark .activity-nav-link-secondary {
-    text-shadow: 0px 4px 15px black;
     opacity: 0.8; }
     .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover {
-      opacity: 1; }
+      opacity: 1;
+      text-shadow: 0px 0px 2em rgba(255, 255, 255, 0.25); }
   .activityNavbar-dark .activity-nav-icon.white {
     display: block; }
   .activityNavbar-dark .activity-nav-icon.black {
@@ -870,6 +871,8 @@ fieldset {
 .activity-nav-icon {
   height: 1.25rem;
   opacity: 0.67; }
+  .activity-nav-icon:hover {
+    opacity: 1; }
 
 .carousel-article {
   width: 100%; }
