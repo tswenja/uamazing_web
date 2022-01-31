@@ -68,6 +68,9 @@ fieldset {
 .text-shadow-white {
   text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
 }
+.image-shadow {
+  box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.1);
+}
 .shadow-darker {
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.25);
 }
@@ -155,11 +158,17 @@ fieldset {
 .figure-hr-53 {
   padding-bottom: 53.3333333%;
 }
+.figure-hr-63 {
+  padding-bottom: 63.4146341%;
+}
 .figure-hr-67 {
   padding-bottom: 67.1428571%;
 }
 .figure-hr-100 {
   padding-bottom: 100%;
+}
+.figure-hr-135 {
+  padding-bottom: 135%;
 }
 .figure-wide-md {
   padding-bottom: 53.5714286%;

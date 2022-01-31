@@ -110,6 +110,11 @@ $logoWidth: 5rem;
   }
 }
 
+.activity-grid-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 .activitySection-imageArticle {
   .activity-h2 {
     position: absolute;
@@ -120,6 +125,27 @@ $logoWidth: 5rem;
     position: absolute;
     right: 0;
     bottom: 3.25rem;
+  }
+}
+.activitySection-imageArticle.activitySection-imageArticle-portrait {
+  .activity-h2 {
+    top: 1.875rem;
+  }
+  .pagination-round {
+    bottom: 0;
+  }
+}
+.activitySection-imageArticle-portrait {
+  position: relative;
+
+  .activitySection-imageArticle-portraitBg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: calc(25% + 3rem);
+    bottom: calc(25% - 1.25rem);
+    background: linear-gradient(227.44deg, #EAE9ED 26.07%, rgba(234, 233, 237, 0.5) 78.32%);
   }
 }
 }
