@@ -51,4 +51,15 @@
       $(targetBox).addClass('show-nth-' + targetNumber)
     });
   });
+
+  // headbar class switch
+  function toggleNavbarStyle() {
+    if (document.documentElement.scrollTop > 100) {
+      document.querySelector('.activityNavbar-dark').classList.remove('activityNavbar-md-dark');
+    } else {
+      document.querySelector('.activityNavbar-dark').classList.add('activityNavbar-md-dark');
+    }
+  }
+  window.addEventListener('scroll', toggleNavbarStyle);
+  window.addEventListener('load', toggleNavbarStyle);
 })();

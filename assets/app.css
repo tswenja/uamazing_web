@@ -998,19 +998,22 @@ fieldset {
     padding: 0 1.875rem; }
 
   .activityNavbar {
-    background-color: rgba(0, 0, 0, 0.25); }
-    .activityNavbar .activity-nav-link {
+    transition: background-color .3s; }
+
+  .activityNavbar.activityNavbar-md-dark {
+    background-color: rgba(0, 0, 0, 0.2); }
+    .activityNavbar.activityNavbar-md-dark .activity-nav-link {
       color: #fff; }
-      .activityNavbar .activity-nav-link:hover, .activityNavbar .activity-nav-link.hover, .activityNavbar .activity-nav-link:active, .activityNavbar .activity-nav-link.active, .activityNavbar .activity-nav-link:visited, .activityNavbar .activity-nav-link.visited {
+      .activityNavbar.activityNavbar-md-dark .activity-nav-link:hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link.hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link:active, .activityNavbar.activityNavbar-md-dark .activity-nav-link.active, .activityNavbar.activityNavbar-md-dark .activity-nav-link:visited, .activityNavbar.activityNavbar-md-dark .activity-nav-link.visited {
         color: #fff; }
-    .activityNavbar .activity-nav-link-secondary {
+    .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary {
       color: #EAE9ED; }
-      .activityNavbar .activity-nav-link-secondary:hover, .activityNavbar .activity-nav-link-secondary.hover, .activityNavbar .activity-nav-link-secondary:active, .activityNavbar .activity-nav-link-secondary.active, .activityNavbar .activity-nav-link-secondary:visited, .activityNavbar .activity-nav-link-secondary.visited {
+      .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary:hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary.hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary:active, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary.active, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary:visited, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary.visited {
         color: #EAE9ED; }
-    .activityNavbar .activity-nav-link, .activityNavbar .activity-nav-link-secondary {
-      text-shadow: 0px 4px 15px black;
+    .activityNavbar.activityNavbar-md-dark .activity-nav-link, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary {
+      text-shadow: 0px 4px 2em black;
       opacity: 0.8; }
-      .activityNavbar .activity-nav-link:hover, .activityNavbar .activity-nav-link.hover, .activityNavbar .activity-nav-link-secondary:hover, .activityNavbar .activity-nav-link-secondary.hover {
+      .activityNavbar.activityNavbar-md-dark .activity-nav-link:hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link.hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary:hover, .activityNavbar.activityNavbar-md-dark .activity-nav-link-secondary.hover {
         opacity: 1; }
 
   .activityNavbar, .activityBrand {
