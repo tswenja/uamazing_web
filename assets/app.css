@@ -160,7 +160,7 @@ body {
 body.index {
   background-color: #241E20; }
 
-body.activity {
+body.activity, body.school {
   background-color: #ffffff;
   color: #4C4C4C; }
 
@@ -820,8 +820,7 @@ fieldset {
 .activityNavbar-dark {
   background-color: rgba(0, 0, 0, 0.25);
   background-color: #3A3536;
-  background-color: #241E20;
-  border-top: 1px solid white; }
+  background-color: #241E20; }
   .activityNavbar-dark .activity-nav-link {
     color: #fff; }
     .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link:active, .activityNavbar-dark .activity-nav-link.active, .activityNavbar-dark .activity-nav-link:visited, .activityNavbar-dark .activity-nav-link.visited {
