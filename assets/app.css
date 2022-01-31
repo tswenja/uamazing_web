@@ -819,30 +819,34 @@ fieldset {
 
 .activityNavbar-dark {
   background-color: rgba(0, 0, 0, 0.25);
-  background-color: #3A3536;
-  background-color: #241E20; }
-  .activityNavbar-dark .activity-nav-link {
+  background-color: #3A3536; }
+
+.activityNavbar-red {
+  background: linear-gradient(89.91deg, #9C3734 0.08%, #9C3734 41.19%, #B3292C 100%); }
+
+.activityNavbar-dark .activity-nav-link, .activityNavbar-red .activity-nav-link {
+  color: #fff;
+  opacity: 0.8; }
+  .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link:active, .activityNavbar-dark .activity-nav-link.active, .activityNavbar-dark .activity-nav-link:visited, .activityNavbar-dark .activity-nav-link.visited, .activityNavbar-red .activity-nav-link:hover, .activityNavbar-red .activity-nav-link.hover, .activityNavbar-red .activity-nav-link:active, .activityNavbar-red .activity-nav-link.active, .activityNavbar-red .activity-nav-link:visited, .activityNavbar-red .activity-nav-link.visited {
     color: #fff; }
-    .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link:active, .activityNavbar-dark .activity-nav-link.active, .activityNavbar-dark .activity-nav-link:visited, .activityNavbar-dark .activity-nav-link.visited {
-      color: #fff; }
-  .activityNavbar-dark .activity-nav-link-secondary {
-    color: #EAE9ED; }
-    .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover, .activityNavbar-dark .activity-nav-link-secondary:active, .activityNavbar-dark .activity-nav-link-secondary.active, .activityNavbar-dark .activity-nav-link-secondary:visited, .activityNavbar-dark .activity-nav-link-secondary.visited {
-      color: #EAE9ED; }
-  .activityNavbar-dark .activity-nav-link, .activityNavbar-dark .activity-nav-link-secondary {
-    opacity: 0.8; }
-    .activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover {
-      opacity: 1;
-      text-shadow: 0px 0px 2em rgba(255, 255, 255, 0.25); }
-  .activityNavbar-dark .activity-nav-icon.white {
-    display: block; }
-  .activityNavbar-dark .activity-nav-icon.black {
-    display: none; }
+.activityNavbar-dark .activity-nav-link-secondary, .activityNavbar-red .activity-nav-link-secondary {
+  color: #fff;
+  opacity: 0.75; }
+  .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover, .activityNavbar-dark .activity-nav-link-secondary:active, .activityNavbar-dark .activity-nav-link-secondary.active, .activityNavbar-dark .activity-nav-link-secondary:visited, .activityNavbar-dark .activity-nav-link-secondary.visited, .activityNavbar-red .activity-nav-link-secondary:hover, .activityNavbar-red .activity-nav-link-secondary.hover, .activityNavbar-red .activity-nav-link-secondary:active, .activityNavbar-red .activity-nav-link-secondary.active, .activityNavbar-red .activity-nav-link-secondary:visited, .activityNavbar-red .activity-nav-link-secondary.visited {
+    color: #fff; }
+.activityNavbar-dark .activity-nav-link:hover, .activityNavbar-dark .activity-nav-link.hover, .activityNavbar-dark .activity-nav-link-secondary:hover, .activityNavbar-dark .activity-nav-link-secondary.hover, .activityNavbar-red .activity-nav-link:hover, .activityNavbar-red .activity-nav-link.hover, .activityNavbar-red .activity-nav-link-secondary:hover, .activityNavbar-red .activity-nav-link-secondary.hover {
+  opacity: 1;
+  text-shadow: 0px 0px 2em rgba(255, 255, 255, 0.25); }
+.activityNavbar-dark .activity-nav-icon.white, .activityNavbar-red .activity-nav-icon.white {
+  display: block; }
+.activityNavbar-dark .activity-nav-icon.black, .activityNavbar-red .activity-nav-icon.black {
+  display: none; }
 
 .content .activityNavbar {
   background-color: rgba(241, 241, 241, 0.97); }
 
-.activityNavbar, .activityBrand {
+.activityNavbar,
+.activityBrand {
   padding: .5rem 1rem; }
 
 .activityNavbar {
@@ -865,13 +869,23 @@ fieldset {
   letter-spacing: 0.02em; }
 
 .activity-nav-link {
-  font-weight: 500; }
+  font-weight: 500;
+  letter-spacing: .02em; }
 
 .activity-nav-icon {
   height: 1.25rem;
-  opacity: 0.67; }
+  opacity: 0.8; }
   .activity-nav-icon:hover {
     opacity: 1; }
+
+.activityNavbar-red .activityBrand {
+  height: 100%;
+  padding: 0;
+  padding-left: 1rem; }
+.activityNavbar-red .activityBrand > img {
+  width: auto;
+  height: 100%;
+  filter: none; }
 
 .carousel-article {
   width: 100%; }
