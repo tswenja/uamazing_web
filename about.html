@@ -11,152 +11,201 @@
     <script src="assets/jquery.slim.min.js"></script>
     <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/aos.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>必紅國際 U.AMAZING | 必紅國際事業</title>
   </head>
-  <body class="content">
-    <nav class="activityNavbar navbar navbar-light">
+  <body class="about">
+    <nav class="activityNavbar activityNavbar-dark activityNavbar-md-dark navbar navbar-expand-lg navbar-dark">
       <a class="activityBrand" href="index.html"><img src="assets/logo@2x.png" /></a>
-      <h1 class="activityBrand ml-auto ml-md-3 mr-md-auto" data-toggle="collapse" data-target="#navbar">必紅國際事業</h1>
-      <button class="navbar-toggler border-0 mr-n3 mr-md-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<h1 class="activityBrand ml-auto ml-md-3 mr-md-auto" data-toggle="collapse" data-target="#navbar">必紅學院</h1>-->
+      <div class="d-flex ml-auto d-md-none">
+        <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+          <img src="assets/icon-line.svg" class="activity-nav-icon white" />
+          <img src="assets/icon-line-black.svg" class="activity-nav-icon black" />
+        </a>
+        <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+          <img src="assets/icon-ig.svg" class="activity-nav-icon white" />
+          <img src="assets/icon-ig-black.svg" class="activity-nav-icon black" />
+        </a>
+        <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+          <img src="assets/icon-fb.svg" class="activity-nav-icon white" />
+          <img src="assets/icon-fb-black.svg" class="activity-nav-icon black" />
+        </a>
+      </div>
+      <button class="navbar-toggler border-0 ml-0 mr-n3 mr-md-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar">
-        <ul class="activityNavbarMenu d-flex flex-column justify-content-md-end flex-md-row mb-2">
-          <li class="activityNavbarMenuItem text-right">
-            <a class="nav-link" href="about.html">必紅國際事業</a>
+        <ul class="activityNavbarMenu d-flex flex-column flex-md-row my-3 my-md-1 ml-md-4 w-100">
+          <li class="text-right ml-3 mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link" href="about.html">必紅國際事業</a>
           </li>
-          <li class="activityNavbarMenuItem text-right">
-            <a class="nav-link" href="activity.html">熱檔活動</a>
+          <li class="text-right ml-3 mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link" href="activity.html">熱檔活動</a>
           </li>
-          <li class="activityNavbarMenuItem text-right">
-            <a class="nav-link" href="school.html">必紅學院</a>
+          <li class="text-right ml-3 mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link" href="school.html">必紅學院</a>
           </li>
-          <li class="activityNavbarMenuItem text-right">
-            <a class="nav-link" href="#">周邊商品</a>
+          <li class="text-right ml-3 mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link" href="#">周邊商品</a>
+          </li>
+          <li class="ml-auto mt-4 mt-md-0">
+            <a class="nav-link activity-nav-link-secondary pl-2 pr-3" href="#" data-toggle="modal" data-target="#googleFormJoin">加入培訓計畫</a>
+          </li>
+          <li class="d-none d-md-block">
+            <span class="nav-link activity-nav-link-secondary pl-2 pr-3">|</span>
+          </li>
+          <li class="text-right mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link-secondary pl-2 pr-3" href="#">聯絡我們</a>
+          </li>
+          <li class="d-none d-md-flex justify-content-end mt-1 mt-md-0">
+            <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+              <img src="assets/icon-line.svg" class="activity-nav-icon white" />
+              <img src="assets/icon-line-black.svg" class="activity-nav-icon black" />
+            </a>
+            <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+              <img src="assets/icon-ig.svg" class="activity-nav-icon white" />
+              <img src="assets/icon-ig-black.svg" class="activity-nav-icon black" />
+            </a>
+            <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" href="#">
+              <img src="assets/icon-fb.svg" class="activity-nav-icon white" />
+              <img src="assets/icon-fb-black.svg" class="activity-nav-icon black" />
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main class="py-5">
-      <section class="activity-framing-x mt-5">
+    <div class="about-aside-deco">
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+      <div class="about-aside-deco-point"></div>
+    </div>
+
+    <main class="">
+      <section class="">
         <figure class="about-kv figure-hr-43" style="background-image:url(assets/slogan_bg1.jpg)">
+          <!--
           <figcaption class="d-flex flex-column align-items-center justify-content-center px-4">
             <p class="about-kv-logo mt-n5 mt-md-0"><img src="assets/logo@2x.png" class="img-fluid" ></p>
             <p class="mx-3 mt-1">必紅國際在藝文領域耕耘，為新人打造沃土，激發更好的發展環境。</p>
           </figcaption>
+          -->
         </figure>
       </section>
 
-      <article class="bg-white activity-framing-x activity-framing-t mt-5 pb-4">
-        <section class="activity-framing-x">
-          <h2 class="activity-h2" data-aos="fade-up" data-aos-duration="2000">
-            <span class="activity-h2-deco about"></span>
-            必紅國際
-          </h2>
-          <div class="row no-gutters flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 px-4 pr-md-5 pl-md-0" data-aos="fade-up" data-aos-duration="2000">
-              <p class="text-loose mt-4 mt-md-5 pl-md-3 pr-md-1">
-                必紅國際秉持「人文精神」的理念，一切從人出發、一切以人為歸 宿的精神，先進的價值觀及重視人的文化。必紅國際的初衷在於投 注更多心力在扶持才華之人、提昇專業素質、強化人文作為回饋， 這是我們必紅責無旁貸的使命，亦即為「必紅的未來使命」。
-                <br><br>
-                有鑑於此，必紅國際將朝全方位各項表演藝術、音樂舞蹈、人文藝術等各項活動競賽， 進行相關類別選秀、指導與交流，期盼為台灣尋找新能力，齊力推舉潛力無窮的才華學 子，為台灣企業溢注希望的實力，開啟無垠的視野。
-              </p>
+      <section class="bg-linear-light py-4 py-md-5">
+        <div class="activity-framing-x activity-indent-x my-4 my-md-5 py-md-5">
+          <div class="row no-gutters align-items-center px-md-4">
+            <div class="col-12 col-md-7 pr-md-2">
+              <iframe class="" style="width:100%; height:55vw; max-height:400px;" src="https://www.youtube.com/embed/TRPoEnkMZr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-12 col-md-6 mt-md-4" data-aos="fade-up" data-aos-duration="2000">
-              <figure class="figure-hr-67" style="background-image:url(public/images/good_voice_final.jpg)"></figure>
+            <div class="col-12 col-md-5 mt-3 mt-md-0 pl-md-5">
+              <div class="section-h3">創辦人的話</div>
+              <div class="activity-grid-p mt-3 mt-md-4">必紅國際秉持「人文精神」的理念，一切從人出發、一切以人為歸 宿的精神，先進的價值觀及重視人的文化。必紅國際的初衷在於投 注更多心力在扶持才華之人、提昇專業素質、強化人文作為回饋， 這是我們必紅責無旁貸的使命，亦即為「必紅的未來使命」。</div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="pt-md-4">
-          <div class="row no-gutters mt-4 my-md-5 pt-md-5" data-aos="fade-up" data-aos-duration="2000">
-            <div class="col-12 col-md-5 pr-md-3">
-              <figure class="figure-hr-67" style="background-image:url(public/images/activity1.jpg)"></figure>
-            </div>
-            <div class="col-12 col-md-6 mt-5 px-4 pl-md-5 pr-md-0" data-aos="fade-up" data-aos-duration="2000">
-              <div class="text-h3 text-blue text-shadow-blue">必紅國際事業聯盟</div>
-              <p class="text-loose mt-4 mt-md-5">
-                打造優質內容<br>
-                《必紅國際》秉持多年承辦各項活動專案之經驗豐富，並整合各地資源，除本業相關業 務外，更結合週邊相關之旅遊，文創，文宣，媒體、行銷、電商、製作等資源，透過異 業結盟、加密區塊鏈資源整合等方式，將其產業的包裝造星體系，為藝人“量身定造” 虛擬跨界藝人和加密藝術才華創作者。
-              </p>
-            </div>
+      <section class="activity-framing-x activity-framing-t activity-indent-x" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="activity-h2">
+          <span class="h2-deco mr-md-2" data-text="About">About</span>
+          <span class="d-block d-md-inline-block">必紅國際</span>
+        </h2>
+        <div class="row no-gutters flex-column-reverse flex-md-row mt-5 pt-md-4 px-md-5">
+          <div class="col-12 col-md-5 mt-3 px-md-4 pr-md-5 pl-md-0 mt-md-4">
+            <div class="section-h3">台灣演藝產業方舟</div>
+            <p class="activity-grid-p mt-3 mt-md-4">
+              必紅國際朝全方位各項表演藝術、音樂舞蹈、人文藝術等各項活動競賽， 進行相關類別選秀、指導與交流，期盼為台灣尋找新能力，齊力推舉潛力無窮的才華學 子，為台灣企業溢注希望的實力，開啟無垠的視野。
+              <br><br>
+              將以成為台灣演藝產業方舟為目標，推動數位文化創意產業 ，必紅國際以「數位化」為整合核心，將自媒體轉化 為數位作品，為籌備推動數位文化創意產業做為人才培育平台。
+            </p>
           </div>
-        </section>
+          <div class="col-12 col-md-7">
+            <figure class="figure-hr-63" style="background-image:url(public/images/good_voice_final.jpg)"></figure>
+          </div>
+        </div>
+      </section>
 
-        <section class="">
-          <div class="row no-gutters mt-4 my-md-5 pt-md-5 pl-md-5 flex-column-reverse flex-md-row" data-aos="fade-up" data-aos-duration="2000">
-            <div class="col-12 col-md-6 mt-5 px-4 pl-md-5 pr-md-0" data-aos="fade-up" data-aos-duration="2000">
-              <div class="text-h3 text-blue text-shadow-blue">必紅社群文創聚落</div>
-              <p class="text-loose mt-4 mt-md-5">
-                推動數位文化創意產業
-                以成為台灣演藝產業方舟為目標，必紅國際以「數位化」為整合核心，將自媒體轉化 為數位作品，為籌備推動數位文化創意產業做為人才培育平台，未來希望發展四種 主要推動項目，人才孵化、共創工作坊、造星計畫、加密藝術形成社群文創聚落，目前已有台灣一些知名育成推動機構(如：產學合作等) 必紅國際亦從傳統人才孵化，轉往拓展為演藝藝術數位化之籌備。
-              </p>
-            </div>
-            <div class="col-12 col-md-6 pl-md-5">
-              <figure class="figure-hr-67" style="background-image:url(assets/slogan_bg2.jpg)"></figure>
-            </div>
+      <section class="activity-framing-x activity-indent-x my-4 my-md-5 py-md-5">
+        <div class="row no-gutters align-items-center my-md-3" data-aos="fade-up" data-aos-duration="2000">
+          <div class="col-12 col-md-7 pr-md-5">
+            <figure class="figure-hr-63" style="background-image:url(public/images/activity1.jpg)"></figure>
           </div>
-        </section>
+          <div class="col-12 col-md-4 mt-3 mt-md-4 px-md-4 pl-md-3">
+            <div class="text-h3 text-blue text-shadow-blue">打造優質內容</div>
+            <p class="text-loose mt-3 mt-md-4">
+              未來希望發展四種 主要推動項目，人才孵化、共創工作坊、造星計畫、加密藝術形成社群文創聚落，目前已有台灣一些知名育成推動機構(如：產學合作等) 必紅國際亦從傳統人才孵化，轉往拓展為演藝藝術數位化之籌備。
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="">
-          <div class="row no-gutters mt-4 my-md-5 pt-md-5" data-aos="fade-up" data-aos-duration="2000">
-            <div class="col-12 col-md-5 pr-md-3">
-              <figure class="figure-hr-67" style="background-image:url(public/images/good_voice_flags.jpg)"></figure>
-            </div>
-            <div class="col-12 col-md-6 mt-5 px-4 pl-md-5 pr-md-0" data-aos="fade-up" data-aos-duration="2000">
-              <div class="text-h3 text-blue text-shadow-blue">旅遊鄉鎮音樂節</div>
-              <p class="text-loose mt-4 mt-md-5">
-                在地文化特色帶進全新的自媒體內容的創作，結合鄉鎮發展與新媒體的創意，打造全新的台灣在地青年文化，藉由必紅學院養成造星，並搭配企業合作達到網紅就業聯盟的初衷，並不定時舉行各鄉縣市的音樂旅遊市集活動，引領台灣的新旅遊。
-                <br>
-                當企業遇上網紅與旅遊 X  蹦出新滋味
-                創意旅遊產業與自媒體的結合
-              </p>
-            </div>
-          </div>
-        </section>
+      <figure><img src="public/activity/banner1.png" class="w-100 img-fluid"></figure>
 
-        <!--
-        <section class="pt-md-2 pl-md-5">
-          <div class="row mt-md-5 no-gutters">
-            <div class="col-12 col-md-4 mt-5 px-4 pl-md-5" data-aos="fade-up" data-aos-duration="2000">
-              <div class="text-h3 text-blue text-shadow-blue">舉辦各類型選拔</div>
-              <dl class="datalist datalist-deco-dot mt-5 pt-2">
-                <dt>網紅藝人孵化</dt>
-                <dd class="mt-3">根據每個藝人的不同特徵<br>進行才藝培訓</dd>
-                <dt>幕後陣容打造</dt>
-                <dd class="mt-3">幕後專長技能者<br>進行資源輔助培育後勤陣容團隊</dd>
-                <dt>原創IP/自媒體平台/作品數位化</dt>
-                <dd class="mt-3">打造自媒體自有內容、必紅電視節目規劃<br>文化單位合作、藝術文化作品數位化</dd>
-              </dl>
-            </div>
-            <div class="col-12 col-md-8" data-aos="fade-up" data-aos-duration="2000">
-              <img src="public/images/good_voice.jpg" class="img-fluid">
+      <section class="">
+        <div class="activity-framing-x my-5 py-md-5">
+          <div class="activity-indent-x" data-aos="fade-up">
+            <div class="row no-gutters px-md-4">
+              <div class="col-12 col-md-6 mb-4 pr-md-4">
+                <figure class="figure-wide-md" style="background-image:url(public/activity/photo1.jpg)"></figure>
+                <div class="w-md-75">
+                  <div class="text-h3 text-blue mt-3 pt-1">必紅國際事業聯盟</div>
+                  <p class="activity-grid-p mt-3 pt-md-1">
+                    《必紅國際》秉持多年承辦各項活動專案之經驗豐富，並整合各地資源，除本業相關業 務外，更結合週邊相關之旅遊，文創，文宣，媒體、行銷、電商、製作等資源，透過異 業結盟、加密區塊鏈資源整合等方式，將其產業的包裝造星體系，為藝人“量身定造” 虛擬跨界藝人和加密藝術才華創作者。
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-4 pl-md-4">
+                <figure class="figure-wide-md" style="background-image:url(public/activity/photo2.jpg)"></figure>
+                <div class="w-md-75">
+                  <div class="text-h3 text-blue mt-3 pt-1">旅遊鄉鎮音樂節</div>
+                  <p class="activity-grid-p mt-3 pt-md-1">
+                    在地文化特色帶進全新的自媒體內容的創作，結合鄉鎮發展與新媒體的創意，打造全新的台灣在地青年文化，藉由必紅學院養成造星，並搭配企業合作達到網紅就業聯盟的初衷，並不定時舉行各鄉縣市的音樂旅遊市集活動，引領台灣的新旅遊。
+                    <br>
+                    當企業遇上網紅與旅遊 X 蹦出新滋味 創意旅遊產業與自媒體的結合
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        -->
-      </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-body">
-        <div class="footer-title">全球必紅國際有限公司</div>
-        <div class="d-flex flex-wrap align-items-end mt-5 pt-md-3">
-          <dl class="footer-dl mw-100 mr-5">
-            <dt class="text-blue">國際合作企業發展 GS1 Taiwan</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp" target="_blank">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">線上教育平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">共學教育平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
+      <div class="footer-body pl-md-4">
+        <div class="footer-title">必紅國際股份有限公司</div>
+        <div class="d-flex flex-wrap align-items-start mt-5 pt-md-3">
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue"><a href="#" class="text-blue">大型活動</a></dt>
+            <dd class="text-break"><a href="#">音樂節</a></dd>
+            <dd class="text-break"><a href="#">鄉鎮市集活動</a></dd>
           </dl>
-          <dl class="footer-dl mw-100">
-            <dt class="text-blue">我享平台</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
-            <dt class="text-blue">必紅TV</dt>
-            <dd class="text-break">網址：<a href="https://www.gs1tw.org/twct/web/about.jsp">https://www.gs1tw.org/twct/web/about.jsp</a></dd>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue"><a href="#" class="text-blue">校園活動</a></dt>
+            <dd class="text-break"><a href="#">校園海選</a></dd>
+            <dd class="text-break"><a href="#">校園特派記者</a></dd>
+          </dl>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue">培訓資源</a></dt>
+            <dd class="text-break"><a href="#">線上教育平台</a></dd>
+            <dd class="text-break"><a href="#">共學教育平台</a></dd>
+          </dl>
+          <dl class="footer-dl mw-100 mr-5 pr-md-5">
+            <dt class="text-blue">聯盟組織</a></dt>
+            <dd class="text-break"><a href="https://www.gs1tw.org/twct/web/about.jsp">國際合作企業發展 GS1 Taiwan</a></dd>
+            <dd class="text-break"><a href="#">我享平台</a></dd>
+            <dd class="text-break"><a href="#">必紅TV</a></dd>
           </dl>
         </div>
         <div class="mt-3 mt-md-5">
@@ -177,6 +226,24 @@
         </div>
       </div>
     </footer>
+
+    <div id="googleFormJoin" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color:#f6f6f6">
+          <div class="modal-body px-0">
+            <button type="button" class="close pr-3" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="d-md-none">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCKDCN-jKl8Xnu9U8FiN40EQhDNvNPBNsrhprp60kmCsiqzg/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+            </div>
+            <div class="d-none d-md-block">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCKDCN-jKl8Xnu9U8FiN40EQhDNvNPBNsrhprp60kmCsiqzg/viewform?embedded=true" width="498" height="1600" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/app.js"></script>
   </body>

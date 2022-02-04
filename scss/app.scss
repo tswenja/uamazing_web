@@ -31,16 +31,12 @@ body {
 body.index {
   background-color: #241E20;
 }
-body.activity, body.school {
+body.activity, body.school, body.about {
   background-color: #ffffff;
   color: #4C4C4C;
 }
-body.activity, body.school {
+body.activity, body.school, body.about {
   padding-top: 3.37rem;
-}
-body.content {
-  background-color: #F1F1F3;
-  color: #4C4C4C;
 }
 
 .pt-navbar {
@@ -139,18 +135,19 @@ body.content {
   color: #EAE9ED;
   font-size: 1.5rem;
   font-weight: 900;
-  letter-spacing: .2em;
+  letter-spacing: .02em;
 }
 .footer-dl {
   & > dt {
-    margin-bottom: .25rem;
-    font-weight: 900;
+    margin-bottom: .5rem;
   }
   & > dd + dt {
     margin-top: 2rem;
   }
   & > dd {
+    margin-bottom: .5rem;
     color: #929295;
+    font-size: 0.875rem;
   }
 }
 .footer-copyright {

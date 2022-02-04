@@ -11,7 +11,8 @@
   padding-bottom: 3.625rem;
 }
 .activity-indent-x {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .activityNavbar-light {
@@ -72,9 +73,6 @@
   .activity-nav-icon.black {
     display: none;
   }
-}
-.content .activityNavbar {
-  background-color: rgba(241,241,241,.97);
 }
 
 $logoWidth: 3.75rem;

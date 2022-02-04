@@ -160,16 +160,12 @@ body {
 body.index {
   background-color: #241E20; }
 
-body.activity, body.school {
+body.activity, body.school, body.about {
   background-color: #ffffff;
   color: #4C4C4C; }
 
-body.activity, body.school {
+body.activity, body.school, body.about {
   padding-top: 3.37rem; }
-
-body.content {
-  background-color: #F1F1F3;
-  color: #4C4C4C; }
 
 .pt-navbar {
   padding-top: 48px; }
@@ -253,15 +249,16 @@ body.content {
   color: #EAE9ED;
   font-size: 1.5rem;
   font-weight: 900;
-  letter-spacing: .2em; }
+  letter-spacing: .02em; }
 
 .footer-dl > dt {
-  margin-bottom: .25rem;
-  font-weight: 900; }
+  margin-bottom: .5rem; }
 .footer-dl > dd + dt {
   margin-top: 2rem; }
 .footer-dl > dd {
-  color: #929295; }
+  margin-bottom: .5rem;
+  color: #929295;
+  font-size: 0.875rem; }
 
 .footer-copyright {
   font-size: 0.75rem;
@@ -320,7 +317,14 @@ fieldset {
 .w-85 {
   width: 85%; }
 
+.section-h3 {
+  color: #303136;
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.062em; }
+
 .text-h3 {
+  color: #303136;
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.062em; }
@@ -366,6 +370,9 @@ fieldset {
 
 .bg-gray {
   background-color: #F7F7F8; }
+
+.bg-linear-light {
+  background: linear-gradient(164.8deg, rgba(234, 233, 237, 0) 9.07%, rgba(234, 233, 237, 0.7) 89.32%); }
 
 .bg-balls {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto; }
@@ -426,7 +433,10 @@ fieldset {
 
 .figure-fixed-ratio,
 .figure-hr-43,
+.figure-hr-53,
+.figure-hr-63,
 .figure-hr-67,
+.figure-hr-100,
 .figure-wide-md {
   background-size: cover;
   background-position: center; }
@@ -538,6 +548,9 @@ fieldset {
     .h2-deco::after {
       left: 0.75em; }
 
+  .section-h3 {
+    font-size: 2rem; }
+
   .form-control {
     border-width: 2px; }
 
@@ -547,7 +560,7 @@ fieldset {
   html {
     font-size: 16px; }
 
-  body.activity, body.school {
+  body.activity, body.school, body.about {
     padding-top: 0; }
 
   .pt-navbar {
@@ -809,7 +822,8 @@ fieldset {
   padding-bottom: 3.625rem; }
 
 .activity-indent-x {
-  padding: 0 1rem; }
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .activityNavbar-light {
   background-color: #fff; }
@@ -850,9 +864,6 @@ fieldset {
   display: block; }
 .activityNavbar-dark .activity-nav-icon.black, .activityNavbar-red .activity-nav-icon.black {
   display: none; }
-
-.content .activityNavbar {
-  background-color: rgba(241, 241, 241, 0.97); }
 
 .activityNavbar,
 .activityBrand {
@@ -1004,7 +1015,8 @@ fieldset {
     padding-bottom: 9.375rem; }
 
   .activity-indent-x, .activity-md-indent-x {
-    padding: 0 1.875rem; }
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
 
   .activityNavbar {
     transition: background-color .3s; }
@@ -1126,15 +1138,53 @@ fieldset {
   .about-kv > figcaption {
     position: absolute;
     top: 0;
+    right: 0;
     margin: 0;
     margin-top: 3.8%;
-    right: -6.2%;
+    margin-right: -6.2%;
     width: 21.5254237%;
     height: 80%;
     background-color: #fff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05); }
 
   .about-kv-logo {
-    width: 100px; } }
+    width: 100px; }
+
+  body.about {
+    position: relative; }
+
+  .about-aside-deco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 45px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+  .about-aside-deco-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    margin-left: -4.5px;
+    border-radius: 50%;
+    background-color: #B3292C; }
+    .about-aside-deco-point:nth-child(1) {
+      margin-top: 48vw; }
+    .about-aside-deco-point:nth-child(2) {
+      margin-top: 53vw; }
+    .about-aside-deco-point:nth-child(3) {
+      margin-top: 80vw; }
+    .about-aside-deco-point:nth-child(4) {
+      margin-top: 95vw; }
+    .about-aside-deco-point:nth-child(5) {
+      margin-top: 105vw; }
+    .about-aside-deco-point:nth-child(6) {
+      margin-top: 148vw; }
+    .about-aside-deco-point:nth-child(7) {
+      margin-top: 210vw; }
+    .about-aside-deco-point:nth-child(8) {
+      margin-top: 230vw; } }
 
 /*# sourceMappingURL=app.css.map */

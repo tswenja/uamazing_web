@@ -2,9 +2,10 @@
 .about-kv  > figcaption {
   position: absolute;
   top: 0;
+  right: 0;
   margin: 0;
   margin-top: 3.8%;
-  right: -6.2%;
+  margin-right: -6.2%;
   width: 21.5254237%;
   height: 80%;
   background-color: #fff;
@@ -12,5 +13,52 @@
 }
 .about-kv-logo {
   width: 100px;
+}
+
+body.about {
+  position: relative;
+}
+.about-aside-deco {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 45px;
+  width: 1px;
+  background-color: rgba(0,0,0,0.5);
+}
+.about-aside-deco-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  margin-left: -4.5px;
+  border-radius: 50%;
+  background-color: #B3292C;
+
+  &:nth-child(1) {
+    margin-top: 48vw;
+  }
+  &:nth-child(2) {
+    margin-top: 53vw;
+  }
+  &:nth-child(3) {
+    margin-top: 80vw;
+  }
+  &:nth-child(4) {
+    margin-top: 95vw;
+  }
+  &:nth-child(5) {
+    margin-top: 105vw;
+  }
+  &:nth-child(6) {
+    margin-top: 148vw;
+  }
+  &:nth-child(7) {
+    margin-top: 210vw;
+  }
+  &:nth-child(8) {
+    margin-top: 230vw;
+  }
 }
 }

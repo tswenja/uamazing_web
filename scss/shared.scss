@@ -30,7 +30,15 @@ fieldset {
   width: 85%;
 }
 
+.section-h3 {
+  color: #303136;
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.062em;
+}
+
 .text-h3 {
+  color: #303136;
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.062em;
@@ -76,6 +84,9 @@ fieldset {
 }
 .bg-gray {
   background-color: #F7F7F8;
+}
+.bg-linear-light {
+  background: linear-gradient(164.8deg, rgba(234, 233, 237, 0) 9.07%, rgba(234, 233, 237, 0.7) 89.32%);;
 }
 .bg-balls {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto;
@@ -147,7 +158,10 @@ fieldset {
 
 .figure-fixed-ratio,
 .figure-hr-43,
+.figure-hr-53,
+.figure-hr-63,
 .figure-hr-67,
+.figure-hr-100,
 .figure-wide-md {
   background-size: cover;
   background-position: center;
