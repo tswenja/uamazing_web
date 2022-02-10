@@ -634,11 +634,6 @@ fieldset {
       top: -1rem;
       bottom: -1rem; }
 
-  /*
-  .margin-md-left-sidebar {
-    margin-left: 5.5rem;
-  }
-  */
   .index-margin-left {
     margin-left: 9.5rem; }
 
@@ -759,6 +754,180 @@ fieldset {
 .index-bg-press {
   background: url(bg-star.svg) no-repeat 350% -10%/92.3611111% auto; }
 
+.bg-sky {
+  background: linear-gradient(180deg, #241E20 0%, #3A3536 100%); }
+
+.sky, .skyImage {
+  width: 100%;
+  max-width: 84.5rem; }
+
+.sky {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+
+.sky-star {
+  display: inline-block;
+  background: no-repeat left top/contain; }
+
+.star-sm {
+  background-image: url(star-sm.svg); }
+
+.star-lg {
+  background-image: url(star-lg.svg); }
+
+.stargroup-sm {
+  background-image: url(stargroup-sm.svg); }
+
+.stargroup-lg {
+  background-image: url(stargroup-lg.svg); }
+
+.sky-left, .sky-right {
+  margin-left: 6%;
+  width: 88%; }
+  .sky-left .star-sm, .sky-right .star-sm {
+    padding: 47.5750577% 48.4988453% 0 0; }
+  .sky-left .star-lg, .sky-right .star-lg {
+    padding: 48.0369515% 49.4226328% 0 0; }
+  .sky-left .stargroup-sm, .sky-right .stargroup-sm {
+    padding: 52.1939954% 52.1939954% 0 0; }
+  .sky-left .stargroup-lg, .sky-right .stargroup-lg {
+    padding: 55.4272517% 55.4272517% 0 0; }
+
+.sky-line {
+  position: relative; }
+  .sky-line .sky-star {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.sky-h5, .sky-p, .sky-link {
+  color: white;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2); }
+
+.sky-h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; }
+
+.sky-h5 {
+  font-size: 1.5rem;
+  letter-spacing: .2em;
+  font-weight: bold; }
+
+.sky-p, .sky-link {
+  line-height: 1.5em;
+  letter-spacing: .2em;
+  font-weight: 500;
+  color: #EAE9ED; }
+
+.sky-h5, .sky-p {
+  text-align: center; }
+
+.sky-left {
+  margin-top: 1rem; }
+  .sky-left .sky-left-1 {
+    margin-left: 6%;
+    padding-top: 14.7806005%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(1) {
+      margin-left: -23.0946882%;
+      margin-top: -15.0115473%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(2) {
+      margin-left: -14.7806005%;
+      margin-top: -21.0161663%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(3) {
+      margin-left: 2.5404157%;
+      margin-top: -23.0946882%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(4) {
+      margin-left: 40.4157044%;
+      margin-top: -16.3972286%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(5) {
+      margin-left: 49.6535797%;
+      margin-top: -17.551963%; }
+    .sky-left .sky-left-1 .sky-star:nth-child(6) {
+      margin-left: 75.0577367%;
+      margin-top: -18.7066975%; }
+  .sky-left .sky-left-2 {
+    display: none;
+    padding-top: 7.1593533%; }
+    .sky-left .sky-left-2 .sky-star:nth-child(1) {
+      margin-left: -5.7736721%;
+      margin-top: -23.0946882%; }
+    .sky-left .sky-left-2 .sky-star:nth-child(2) {
+      margin-left: 32.5635104%;
+      margin-top: -18.2448037%; }
+    .sky-left .sky-left-2 .sky-star:nth-child(3) {
+      margin-left: 39.4919169%;
+      margin-top: -20.5542725%; }
+  .sky-left .sky-left-3 {
+    padding-top: 6.4665127%; }
+    .sky-left .sky-left-3 .sky-star:nth-child(1) {
+      margin-left: -15.704388%;
+      margin-top: -23.0946882%; }
+    .sky-left .sky-left-3 .sky-star:nth-child(2) {
+      margin-left: 62.5866051%;
+      margin-top: -18.9376443%; }
+
+.sky-right {
+  margin-top: 4.8076923%; }
+  .sky-right .sky-p {
+    margin-bottom: 2rem; }
+  .sky-right .sky-right-1 {
+    padding-top: 21.7090069%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(1) {
+      margin-left: -9.6997691%;
+      margin-top: -16.1662818%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(2) {
+      margin-left: -6.4665127;
+      margin-top: -10.6235566%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(3) {
+      margin-left: 15.704388%;
+      margin-top: -9.2378753%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(4) {
+      margin-left: 41.108545%;
+      margin-top: -23.0946882%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(5) {
+      margin-left: 48.0369515%;
+      margin-top: -17.551963%; }
+    .sky-right .sky-right-1 .sky-star:nth-child(6) {
+      margin-left: 66.5127021%;
+      margin-top: -23.0946882%; }
+  .sky-right .sky-right-2 {
+    display: none; }
+  .sky-right .sky-right-2, .sky-right .sky-right-4 {
+    padding-top: 12.9330254%; }
+    .sky-right .sky-right-2 .sky-star:nth-child(1), .sky-right .sky-right-4 .sky-star:nth-child(1) {
+      margin-left: -2.7713626%;
+      margin-top: -20.7852194%; }
+    .sky-right .sky-right-2 .sky-star:nth-child(2), .sky-right .sky-right-4 .sky-star:nth-child(2) {
+      margin-left: 48.0369515%;
+      margin-top: -23.0946882%; }
+    .sky-right .sky-right-2 .sky-star:nth-child(3), .sky-right .sky-right-4 .sky-star:nth-child(3) {
+      margin-left: 52.6558891%;
+      margin-top: -16.1662818%; }
+
+.skyImage {
+  margin-top: 8.6111111%;
+  margin-bottom: -2rem;
+  text-align: center; }
+  .skyImage > img {
+    width: 80%; }
+
+.sky-link {
+  display: block;
+  opacity: 0.9;
+  padding-bottom: .75rem;
+  padding-right: .75rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid white;
+  background: url(star-sm.svg) no-repeat left top/auto;
+  background-image: url(star-sm.svg); }
+  .sky-link:active, .sky-link:focus, .sky-link:visited {
+    color: #EAE9ED; }
+  .sky-link:hover {
+    color: white;
+    opacity: 1; }
+
 @media (min-width: 768px) {
   .bg-purple {
     background-size: cover; }
@@ -768,6 +937,9 @@ fieldset {
 
   .index-h2-deco {
     height: auto; }
+
+  .margin-md-left-sidebar {
+    margin-left: 5.5rem; }
 
   .index-title-school {
     position: absolute; }
@@ -808,7 +980,52 @@ fieldset {
       margin-top: -4.1666667vw; }
 
   .index-bg-press {
-    background-position: 350% 67%; } }
+    background-position: 350% 67%; }
+
+  .sky {
+    padding-bottom: 9%; }
+
+  .sky-h5, .sky-p {
+    text-align: left; }
+
+  .sky-left, .sky-right {
+    width: 32%; }
+
+  .sky-left {
+    margin-top: 4.0680473%;
+    margin-left: 5.6213018%; }
+    .sky-left .sky-h5 {
+      margin-left: 14.5496536%;
+      margin-top: 6.0046189%;
+      margin-bottom: 11.3163972%; }
+    .sky-left .sky-p {
+      margin-left: 26.0969977%;
+      margin-top: 13.8568129%;
+      margin-bottom: 5.5427252%; }
+    .sky-left .sky-left-2 {
+      display: block; }
+
+  .sky-right {
+    margin-top: 4.8076923%;
+    margin-left: 27.4408284%; }
+    .sky-right .sky-h5 {
+      margin-left: 31.408776%;
+      margin-top: 10.6235566%;
+      margin-bottom: 6.9284065%; }
+    .sky-right .sky-p {
+      margin-top: 10.1616628%; }
+    .sky-right .sky-right-2 {
+      display: block; }
+    .sky-right .sky-right-4 {
+      display: none; }
+
+  .sky {
+    position: relative; }
+
+  .skyImage {
+    position: absolute; }
+    .skyImage > img {
+      width: 36.9822485%; } }
 .activity-framing-x {
   margin: 0 auto;
   width: 100%; }

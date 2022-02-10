@@ -113,3 +113,226 @@ $index-content-width: 85%;
 .index-bg-press {
   background: url(bg-star.svg) no-repeat 350% -10%/92.3611111% auto;
 }
+
+.bg-sky {
+  background: linear-gradient(180deg, #241E20 0%, #3A3536 100%);
+}
+.sky, .skyImage {
+  width: 100%;
+  max-width: 84.5rem;
+}
+.sky {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.sky-star {
+  display: inline-block;
+  background: no-repeat left top/contain;
+}
+.star-sm {
+  background-image: url(star-sm.svg);
+}
+.star-lg {
+  background-image: url(star-lg.svg);
+}
+.stargroup-sm {
+  background-image: url(stargroup-sm.svg);
+}
+.stargroup-lg {
+  background-image: url(stargroup-lg.svg);
+}
+.sky-left, .sky-right {
+  margin-left: 6%;
+  width: 88%;
+
+  .star-sm {
+    padding: 47.5750577% 48.4988453% 0 0;
+  }
+  .star-lg {
+    padding: 48.0369515% 49.4226328% 0 0;
+  }
+  .stargroup-sm {
+    $star-range: 52.1939954%;
+    padding: $star-range $star-range 0 0;
+  }
+  .stargroup-lg {
+    $star-range: 55.4272517%;
+    padding: $star-range $star-range 0 0;
+  }
+}
+.sky-line {
+  position: relative;
+  .sky-star {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+.sky-h5, .sky-p, .sky-link {
+  color: white;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+.sky-h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sky-h5 {
+  font-size: 1.5rem;
+  letter-spacing: .2em;
+  font-weight: bold;
+}
+.sky-p, .sky-link {
+  line-height: 1.5em;
+  letter-spacing: .2em;
+  font-weight: 500;
+  color: #EAE9ED;
+}
+.sky-h5, .sky-p {
+  text-align: center;
+}
+.sky-left {
+  margin-top: 1rem;
+
+  .sky-left-1 {
+    margin-left: 6%;
+    padding-top: 14.7806005%;
+
+    .sky-star:nth-child(1) {
+      margin-left: -23.0946882%;
+      margin-top: -15.0115473%;
+    }
+    .sky-star:nth-child(2) {
+      margin-left: -14.7806005%;
+      margin-top: -21.0161663%;
+    }
+    .sky-star:nth-child(3) {
+      margin-left: 2.5404157%;
+      margin-top: -23.0946882%;
+    }
+    .sky-star:nth-child(4) {
+      margin-left: 40.4157044%;
+      margin-top: -16.3972286%;
+    }
+    .sky-star:nth-child(5) {
+      margin-left: 49.6535797%;
+      margin-top: -17.551963%;
+    }
+    .sky-star:nth-child(6) {
+      margin-left: 75.0577367%;
+      margin-top: -18.7066975%;
+    }
+  }
+  .sky-left-2 {
+    display: none;
+    padding-top: 7.1593533%;
+
+    .sky-star:nth-child(1) {
+      margin-left: -5.7736721%;
+      margin-top: -23.0946882%;
+    }
+    .sky-star:nth-child(2) {
+      margin-left: 32.5635104%;
+      margin-top: -18.2448037%;
+    }
+    .sky-star:nth-child(3) {
+      margin-left: 39.4919169%;
+      margin-top: -20.5542725%;
+    }
+  }
+  .sky-left-3 {
+    padding-top: 6.4665127%;
+    .sky-star:nth-child(1) {
+      margin-left: -15.704388%;
+      margin-top: -23.0946882%;
+    }
+    .sky-star:nth-child(2) {
+      margin-left: 62.5866051%;
+      margin-top: -18.9376443%;
+    }
+  }
+}
+.sky-right {
+  margin-top: 4.8076923%;
+
+  .sky-p {
+    margin-bottom: 2rem;
+  }
+
+  .sky-right-1 {
+    padding-top: 21.7090069%;
+
+    .sky-star:nth-child(1) {
+      margin-left: -9.6997691%;
+      margin-top: -16.1662818%;
+    }
+    .sky-star:nth-child(2) {
+      margin-left: -6.4665127;
+      margin-top: -10.6235566%;
+    }
+    .sky-star:nth-child(3) {
+      margin-left: 15.704388%;
+      margin-top: -9.2378753%;
+    }
+    .sky-star:nth-child(4) {
+      margin-left: 41.108545%;
+      margin-top: -23.0946882%;
+    }
+    .sky-star:nth-child(5) {
+      margin-left: 48.0369515%;
+      margin-top: -17.551963%;
+    }
+    .sky-star:nth-child(6) {
+      margin-left: 66.5127021%;
+      margin-top: -23.0946882%;
+    }
+  }
+  .sky-right-2 {
+    display: none;
+  }
+  .sky-right-2, .sky-right-4 {
+    padding-top: 12.9330254%;
+
+    .sky-star:nth-child(1) {
+      margin-left: -2.7713626%;
+      margin-top: -20.7852194%;
+    }
+    .sky-star:nth-child(2) {
+      margin-left: 48.0369515%;
+      margin-top: -23.0946882%;
+    }
+    .sky-star:nth-child(3) {
+      margin-left: 52.6558891%;
+      margin-top: -16.1662818%;
+    }
+  }
+}
+.skyImage {
+  margin-top: 8.6111111%;
+  margin-bottom: -2rem;
+
+  text-align: center;
+
+  & > img {
+    width: 80%;
+  }
+}
+.sky-link {
+  display: block;
+  opacity: 0.9;
+  padding-bottom: .75rem;
+  padding-right: .75rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid white;
+  background: url(star-sm.svg) no-repeat left top/auto;
+  background-image: url(star-sm.svg);
+
+  &:active, &:focus, &:visited {
+    color: #EAE9ED;
+  }
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+}

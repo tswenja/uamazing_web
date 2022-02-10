@@ -10,6 +10,9 @@
   height: auto;
 }
 
+.margin-md-left-sidebar {
+  margin-left: 5.5rem;
+}
 
 .index-title-school {
   position: absolute;
@@ -62,6 +65,63 @@
 
 .index-bg-press {
   background-position: 350% 67%;
+}
+
+.sky {
+  padding-bottom: 9%;
+}
+.sky-h5, .sky-p {
+  text-align: left;
+}
+.sky-left, .sky-right {
+  width: 32%;
+}
+.sky-left {
+  margin-top: 4.0680473%;
+  margin-left: 5.6213018%;
+
+  .sky-h5 {
+    margin-left: 14.5496536%;
+    margin-top: 6.0046189%;
+    margin-bottom: 11.3163972%;
+  }
+  .sky-p {
+    margin-left: 26.0969977%;
+    margin-top: 13.8568129%;
+    margin-bottom: 5.5427252%;
+  }
+  .sky-left-2 {
+    display: block;
+  }
+}
+.sky-right {
+  margin-top: 4.8076923%;
+  margin-left: 27.4408284%;
+
+  .sky-h5 {
+    margin-left: 31.408776%;
+    margin-top: 10.6235566%;
+    margin-bottom: 6.9284065%;
+  }
+  .sky-p {
+    margin-top: 10.1616628%;
+  }
+  .sky-right-2 {
+    display: block;
+  }
+  .sky-right-4 {
+    display: none;
+  }
+}
+.sky {
+  position: relative;
+}
+.skyImage {
+  position: absolute;
+
+  & > img {
+    width: 36.9822485%;
+  }
 }
 
 }
