@@ -225,7 +225,7 @@ body.activity, body.school, body.about {
   background-size: 41.8055556%, 100% auto; }
 
 .bg-slogan2 {
-  background-image: url(../assets/slogan_text2.svg), url(../assets/slogan_bg2.jpg);
+  background-image: url(../assets/slogan_text2.svg), url(../public/index/bg-activity.png);
   background-position: top 23.125vw left 12.9166667vw, top center;
   background-size: 28.8888889%, 100% auto; }
 
@@ -781,7 +781,11 @@ fieldset {
 
 .sky-star {
   display: inline-block;
-  background: no-repeat left top/contain; }
+  background: no-repeat left top/contain;
+  opacity: 0.2;
+  transition: opacity .6s ease-in-out; }
+  .sky-star.lighting {
+    opacity: 1; }
 
 .star-sm {
   background-image: url(star-sm.svg); }
@@ -932,7 +936,7 @@ fieldset {
   padding-right: .75rem;
   padding-left: 1.5rem;
   border-bottom: 1px solid white;
-  background: url(star-sm.svg) no-repeat left top/auto;
+  background: url(star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
   background-image: url(star-sm.svg); }
   .sky-link:active, .sky-link:focus, .sky-link:visited {
     color: #EAE9ED; }
@@ -999,6 +1003,10 @@ fieldset {
 
   .sky-h5, .sky-p {
     text-align: left; }
+
+  .sky-link:active {
+    color: white;
+    opacity: 1; }
 
   .sky-left, .sky-right {
     width: 32%; }

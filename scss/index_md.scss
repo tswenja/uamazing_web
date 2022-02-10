@@ -73,6 +73,12 @@
 .sky-h5, .sky-p {
   text-align: left;
 }
+.sky-link {
+  &:active {
+    color: white;
+    opacity: 1;
+  }
+}
 .sky-left, .sky-right {
   width: 32%;
 }

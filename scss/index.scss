@@ -131,6 +131,12 @@ $index-content-width: 85%;
 .sky-star {
   display: inline-block;
   background: no-repeat left top/contain;
+
+  opacity: 0.2;
+  transition: opacity .6s ease-in-out;
+  &.lighting {
+    opacity: 1;
+  }
 }
 .star-sm {
   background-image: url(star-sm.svg);
@@ -326,7 +332,7 @@ $index-content-width: 85%;
   padding-right: .75rem;
   padding-left: 1.5rem;
   border-bottom: 1px solid white;
-  background: url(star-sm.svg) no-repeat left top/auto;
+  background: url(star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
   background-image: url(star-sm.svg);
 
   &:active, &:focus, &:visited {

@@ -54,6 +54,7 @@
 
   // headbar class switch
   function toggleNavbarStyle() {
+    if (!document.querySelector('.activityNavbar-dark')) return;
     if (document.documentElement.scrollTop > 100) {
       document.querySelector('.activityNavbar-dark').classList.remove('activityNavbar-md-dark');
     } else {
@@ -62,4 +63,16 @@
   }
   window.addEventListener('scroll', toggleNavbarStyle);
   window.addEventListener('load', toggleNavbarStyle);
+
+  // sparkles
+  document.querySelectorAll('.sky-star').forEach(function(el) {
+    sparklize(el);
+  });
+  function sparklize(el) {
+    el.classList.add('lighting');
+    setTimeout(function() { el.classList.remove('lighting') }, 600);
+
+    var wait = Math.floor(Math.random() * 3000);
+    setTimeout(function() { sparklize(el) }, 3000 + wait);
+  }
 })();
