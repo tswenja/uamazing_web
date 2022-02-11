@@ -446,6 +446,7 @@ fieldset {
 .figure-hr-67,
 .figure-hr-100,
 .figure-wide-md {
+  position: relative;
   background-size: cover;
   background-position: center; }
 
@@ -686,10 +687,12 @@ fieldset {
   line-height: 2em; }
   .index-h2 .h2-deco {
     font-size: 3rem; }
+    .index-h2 .h2-deco::after {
+      opacity: 0.37; }
 
 .index-h2-blue {
   color: #61B7E0;
-  text-shadow: 0px 2px 40px rgba(255, 255, 255, 0.5); }
+  text-shadow: 0px 2px 100px rgba(255, 255, 255, 0.5); }
 
 .index-h2-deco {
   height: 3.75rem; }
