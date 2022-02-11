@@ -549,6 +549,9 @@ fieldset {
   .w-md-75 {
     width: 75% !important; }
 
+  .w-md-85 {
+    width: 85% !important; }
+
   .h2-deco {
     font-size: 4.5rem;
     padding-left: 0.75em;
