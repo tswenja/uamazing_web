@@ -684,6 +684,8 @@ fieldset {
   font-weight: 600;
   letter-spacing: 0.08em;
   line-height: 2em; }
+  .index-h2 .h2-deco {
+    font-size: 3rem; }
 
 .index-h2-blue {
   color: #61B7E0;
@@ -950,6 +952,8 @@ fieldset {
 
   .index-h2 {
     font-size: 2.5rem; }
+    .index-h2 .h2-deco {
+      font-size: 5rem; }
 
   .index-h2-deco {
     height: auto; }
