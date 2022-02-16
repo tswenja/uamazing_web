@@ -139,13 +139,16 @@ $logoWidth: 5rem;
 .activitySection-imageArticle-portrait {
   position: relative;
 
-  .activitySection-imageArticle-portraitBg {
+  .activitySection-imageArticle-portraitBg,
+  .activitySection-imageArticle-article {
     position: absolute;
     z-index: -1;
     left: 0;
     right: 0;
     top: calc(25% + 3rem);
     bottom: calc(25% - 1.25rem);
+  }
+  .activitySection-imageArticle-portraitBg {
     background: linear-gradient(227.44deg, #EAE9ED 26.07%, rgba(234, 233, 237, 0.5) 78.32%);
   }
 }
