@@ -104,6 +104,12 @@ body.activity, body.school, body.about {
 .bg-slogan2 {
   background-size: auto, cover;
 }
+.bg-kv2 {
+  background-size: cover;
+}
+.index-kv {
+  height: 100vh;
+}
 
 .footer-body {
   padding: 6.2rem 0 2rem;
@@ -124,6 +130,14 @@ body.activity, body.school, body.about {
 
     &.start {
       background-size: auto, auto 100%;
+    }
+  }
+  &.bg-kv2 {
+    background-position: top center;
+    background-size: auto 110%;
+
+    &.start {
+      background-size: auto cover;
     }
   }
 }

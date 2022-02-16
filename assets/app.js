@@ -24,15 +24,32 @@
   var count = 0;
   function bgAnimationStart() {
     //count++;
-    $('.bgAnimation').addClass('start')
+    $('.bgAnimation').addClass('start');
     //if (count >= 3) return;
     setTimeout(function() {
-      $('.bgAnimation').removeClass('start')
-      $('.bgAnimation').toggleClass('bg-slogan2');
+      $('.bgAnimation').removeClass('start');
+      $('.bgAnimation').toggleClass('bg-kv2');
       setTimeout(bgAnimationStart, 1);
     }, 8100);
   }
-  setTimeout(bgAnimationStart, 1);
+  //setTimeout(bgAnimationStart, 1);
+
+  // kvAnimation
+  var count = 0;
+  function kvAnimationStart() {
+    //count++;
+    $('.kvAnimation > .current').addClass('action');
+    //if (count >= 3) return;
+    setTimeout(function() {
+      var next = $('.kvAnimation > .current').next();
+      if (next.length == 0) next = $('.kvAnimation').children().first();
+
+      $('.kvAnimation > .current').removeClass('action current');
+      next.addClass('current');
+      setTimeout(kvAnimationStart, 40);
+    }, 6000);
+  }
+  setTimeout(kvAnimationStart, 1);
 
   // carouselBox
   document.querySelectorAll('[data-carousel-box]').forEach(function(el) {

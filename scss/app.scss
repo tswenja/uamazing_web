@@ -110,6 +110,23 @@ body.activity, body.school, body.about {
   background-position: top 23.125vw left 12.9166667vw, top center;
   background-size: 28.8888889%, 100% auto;
 }
+.bg-kv2 {
+  background-image: url(../public/index/kv2.png);
+  background-position: top center;
+  background-size: 100% auto;
+}
+.index-kv {
+  position: relative;
+  width: 100vw;
+  height: 59vw;
+  overflow: hidden;
+}
+.kv-slogan1 {
+  position: absolute;
+  top: 10.625vw;
+  left: 12.8472222vw;
+  width: 40vw;
+}
 
 .footer {
   min-height: 50vh;
@@ -183,6 +200,71 @@ body.activity, body.school, body.about {
 
     &.start {
       background-size: 28.8888889%, auto 60vw;
+    }
+  }
+  &.bg-kv2 {
+    background-position: top center;
+    background-size: auto 66vw;
+
+    &.start {
+      background-size: auto 60vw;
+    }
+  }
+}
+
+.kvAnimation {
+  & > :not(.current) {
+    display: none;
+  }
+  .action {
+    .kvAnimation-object {
+      transition: transform 6s;
+      transition-timing-function: linear;
+    }
+  }
+  .zoom-in-right-bottom {
+    .kvAnimation-object {
+      transform-origin: top left;
+      transform: scale(1);
+    }
+    &.action .kvAnimation-object {
+      transform: scale(1.08);
+    }
+  }
+  .zoom-out-top-left {
+    .kvAnimation-object {
+      transform-origin: top left;
+      transform: scale(1.08);
+    }
+    &.action .kvAnimation-object {
+      transform: scale(1);
+    }
+  }
+  .zoom-out-top-right {
+    .kvAnimation-object {
+      transform-origin: top right;
+      transform: scale(1.08);
+    }
+    &.action .kvAnimation-object {
+      transform: scale(1);
+    }
+  }
+  .zoom-in-center {
+    .kvAnimation-object {
+      transform-origin: center;
+      transform: scale(1);
+    }
+    &.action .kvAnimation-object {
+      transform: scale(1.08);
+    }
+  }
+  .zoom-out-center {
+    .kvAnimation-object {
+      transform-origin: center;
+      transform: scale(1.08);
+    }
+    &.action .kvAnimation-object {
+      transform: scale(1);
     }
   }
 }

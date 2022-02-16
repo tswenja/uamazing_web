@@ -229,6 +229,23 @@ body.activity, body.school, body.about {
   background-position: top 23.125vw left 12.9166667vw, top center;
   background-size: 28.8888889%, 100% auto; }
 
+.bg-kv2 {
+  background-image: url(../public/index/kv2.png);
+  background-position: top center;
+  background-size: 100% auto; }
+
+.index-kv {
+  position: relative;
+  width: 100vw;
+  height: 59vw;
+  overflow: hidden; }
+
+.kv-slogan1 {
+  position: absolute;
+  top: 10.625vw;
+  left: 12.8472222vw;
+  width: 40vw; }
+
 .footer {
   min-height: 50vh;
   background-color: #241E20; }
@@ -285,6 +302,42 @@ body.activity, body.school, body.about {
     background-size: 28.8888889%, auto 66vw; }
     .bgAnimation.bg-slogan2.start, .bgAnimation.bg-slogan1.bg-slogan2.start {
       background-size: 28.8888889%, auto 60vw; }
+  .bgAnimation.bg-kv2, .bgAnimation.bg-slogan1.bg-kv2 {
+    background-position: top center;
+    background-size: auto 66vw; }
+    .bgAnimation.bg-kv2.start, .bgAnimation.bg-slogan1.bg-kv2.start {
+      background-size: auto 60vw; }
+
+.kvAnimation > :not(.current) {
+  display: none; }
+.kvAnimation .action .kvAnimation-object {
+  transition: transform 6s;
+  transition-timing-function: linear; }
+.kvAnimation .zoom-in-right-bottom .kvAnimation-object {
+  transform-origin: top left;
+  transform: scale(1); }
+.kvAnimation .zoom-in-right-bottom.action .kvAnimation-object {
+  transform: scale(1.08); }
+.kvAnimation .zoom-out-top-left .kvAnimation-object {
+  transform-origin: top left;
+  transform: scale(1.08); }
+.kvAnimation .zoom-out-top-left.action .kvAnimation-object {
+  transform: scale(1); }
+.kvAnimation .zoom-out-top-right .kvAnimation-object {
+  transform-origin: top right;
+  transform: scale(1.08); }
+.kvAnimation .zoom-out-top-right.action .kvAnimation-object {
+  transform: scale(1); }
+.kvAnimation .zoom-in-center .kvAnimation-object {
+  transform-origin: center;
+  transform: scale(1); }
+.kvAnimation .zoom-in-center.action .kvAnimation-object {
+  transform: scale(1.08); }
+.kvAnimation .zoom-out-center .kvAnimation-object {
+  transform-origin: center;
+  transform: scale(1.08); }
+.kvAnimation .zoom-out-center.action .kvAnimation-object {
+  transform: scale(1); }
 
 a, a:hover, a:active, a:visited {
   color: #241E20;
@@ -665,6 +718,12 @@ fieldset {
   .bg-slogan2 {
     background-size: auto, cover; }
 
+  .bg-kv2 {
+    background-size: cover; }
+
+  .index-kv {
+    height: 100vh; }
+
   .footer-body {
     padding: 6.2rem 0 2rem; }
 
@@ -679,7 +738,12 @@ fieldset {
       background-position: top 23.125vw left 12.9166667vw, top right;
       background-size: auto, auto 110%; }
       .bgAnimation.bg-slogan2.start, .bgAnimation.bg-slogan1.bg-slogan2.start {
-        background-size: auto, auto 100%; } }
+        background-size: auto, auto 100%; }
+    .bgAnimation.bg-kv2, .bgAnimation.bg-slogan1.bg-kv2 {
+      background-position: top center;
+      background-size: auto 110%; }
+      .bgAnimation.bg-kv2.start, .bgAnimation.bg-slogan1.bg-kv2.start {
+        background-size: auto cover; } }
 .bg-purple {
   background: url(../assets/bg-purple.jpg) bottom center/auto 100vh; }
 
