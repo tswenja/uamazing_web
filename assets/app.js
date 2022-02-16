@@ -5,6 +5,11 @@
     offset: 60
   });
 
+  // Bootstrap tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
   // fixed-bg
   document.addEventListener('scroll', function(e) {
     document.querySelectorAll('.fixed-bg').forEach(function(el) {
