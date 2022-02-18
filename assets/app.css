@@ -153,7 +153,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: 'Noto Sans TC', "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-family: 'Open Sans', 'Noto Sans TC', "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1499,5 +1499,14 @@ fieldset {
       margin-top: 210vw; }
     .about-aside-deco-point:nth-child(8) {
       margin-top: 230vw; } }
+.sl-overlay {
+  opacity: 0.9 !important; }
+
+.sl-wrapper.simple-lightbox-dark + .sl-overlay {
+  background-color: #000; }
+.sl-wrapper.simple-lightbox-dark .sl-close,
+.sl-wrapper.simple-lightbox-dark .sl-counter,
+.sl-wrapper.simple-lightbox-dark .sl-navigation button {
+  color: #fff; }
 
 /*# sourceMappingURL=app.css.map */

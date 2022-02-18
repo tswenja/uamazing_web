@@ -1,0 +1,14 @@
+.sl-overlay {
+  opacity: 0.9 !important;
+}
+
+.sl-wrapper.simple-lightbox-dark {
+  & + .sl-overlay {
+    background-color: #000;
+  }
+  .sl-close,
+  .sl-counter,
+  .sl-navigation button {
+    color: #fff;
+  }
+}

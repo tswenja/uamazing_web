@@ -1,4 +1,5 @@
 (function() {
+  // ========================== Plugin Initiation ==========================
   // AOS
   AOS.init({
     duration: 600,
@@ -7,9 +8,21 @@
 
   // Bootstrap tooltip
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
   })
 
+  // simplelightbox
+  $(function () {
+    $('.gallery').each(function(index, el) {
+      $(el).find('a').simpleLightbox({
+        className: 'simple-lightbox-dark',
+        opacityTarget: 1
+      });
+    });
+  })
+
+
+  // ========================== App Script ==========================
   // fixed-bg
   document.addEventListener('scroll', function(e) {
     document.querySelectorAll('.fixed-bg').forEach(function(el) {

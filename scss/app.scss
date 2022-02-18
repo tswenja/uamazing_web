@@ -24,7 +24,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: 'Noto Sans TC', "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-family: 'Open Sans', 'Noto Sans TC', "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -278,3 +278,5 @@ body.activity, body.school, body.about {
 @import 'activity_md.scss';
 @import 'about.scss';
 @import 'about_md.scss';
+
+@import 'simplelightbox_override.scss';
