@@ -110,4 +110,32 @@
     var wait = Math.floor(Math.random() * 3000);
     setTimeout(function() { sparklize(el) }, 3000 + wait);
   }
+
+  // justified-gallery
+  var JustifiedGalleryMinHeight = 160,
+      JustifiedGalleryGutter = 8;
+  $('.justified-gallery').each(function(galleryIndex, galleryEl) {
+    let galleryWidth = $(galleryEl).width();
+    let itemEls = $(galleryEl).find('a');
+    let row = 0, rowWidth = 0, rowStartIndex = [0], sizeRatio = [];
+
+    for (let i=0; i<itemEls.length; i++) {
+      if (galleryWidth < rowWidth + itemEls[i].offsetWidth) {
+        row += 1;
+        rowWidth = 0;
+        rowStartIndex[row] = i;
+      }
+      rowWidth += itemEls[i].offsetWidth;
+      let rowSpace = galleryWidth - JustifiedGalleryGutter * (i - rowStartIndex[row]);
+      sizeRatio[row] = rowSpace / rowWidth;
+    }
+
+    for (let r=0; r<=row; r++) {
+      for (let i=rowStartIndex[r]; i < (rowStartIndex[r+1] || itemEls.length); i++) {
+        itemEls[i].style.height = sizeRatio[r] * itemEls[i].offsetHeight + 'px';
+        itemEls[i].style.marginBottom = JustifiedGalleryGutter + 'px';
+        if (i != rowStartIndex[r]) itemEls[i].style.marginLeft = JustifiedGalleryGutter + 'px';
+      }
+    }
+  });
 })();
