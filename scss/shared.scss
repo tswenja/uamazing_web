@@ -170,6 +170,8 @@ fieldset {
   font-size: 0.875rem;
 }
 
+/* figure */
+
 .figure-fixed-ratio,
 .figure-hr-43,
 .figure-hr-53,
@@ -204,6 +206,20 @@ fieldset {
 }
 .figure-wide-md {
   padding-bottom: 53.5714286%;
+}
+
+.figure-layered {
+  position: relative;
+
+  .figure-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 
 .h2-deco {
@@ -310,6 +326,16 @@ fieldset {
 
   &.active, &:hover, &:focus {
     opacity: 1;
+  }
+}
+
+/* hover */
+.hover-transparent {
+  transition: opacity 0.1s;
+
+  &:hover {
+    opacity: 0;
+    transition: opacity 0.3s;
   }
 }
 

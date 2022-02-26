@@ -1,0 +1,29 @@
+.icon {
+  &::before {
+    content: '';
+    display: inline-block;
+    background: transparent no-repeat center/100% 100%;
+  }
+
+  &.icon-ebc {
+    &::before {
+      width: 6.6875rem;
+      height: 2.25rem;
+      background-image: url(../assets/icons/logo-ebc@2x.png);
+    }
+  }
+  &.icon-hubnews {
+    &::before {
+      width: 7.5rem;
+      height: 3.75rem;
+      background-image: url(../assets/icons/logo-hubnews@2x.png);
+    }
+  }
+  &.icon-linetoday {
+    &::before {
+      width: 3.75rem;
+      height: 3.75rem;
+      background-image: url(../assets/icons/logo-linetoday@2x.png);
+    }
+  }
+}
