@@ -37,4 +37,10 @@ fieldset {
     left: 66.8292683%;
   }
 }
+
+.justified-gallery {
+  & > a {
+    height: 180px;
+  }
+}
 }
