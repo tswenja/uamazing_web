@@ -127,26 +127,19 @@ $logoWidth: 3.75rem;
   width: 100%;
 }
 
-.article-lg {
-  .article-title {
-    font-size: 2rem;
-  }
-}
-.article-bg-deco {
-  background: url(../assets/bg-deco.svg) no-repeat top .5rem left .5rem/20% auto;
+.article-sketchDeco {
+  background: url(../assets/bg-deco.svg) no-repeat top left/3rem auto;
 
-  & > .article-lg {
-    padding-top: 6.25%;
-    padding-left: calc(.5rem + 20%);
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+  & > .article-inner {
+    padding-left: 3rem;
   }
-}
-.article-white {
-  color: #EAE9ED;
-
   .article-title {
-    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .062em;
+  }
+  .article-content {
+    padding-top: .5rem;
   }
 }
 
@@ -252,4 +245,19 @@ $logoWidth: 3.75rem;
 .activity-h1-sub {
   color: #7E7C83;
   letter-spacing: .02em;
+}
+
+.agenda-button {
+  margin-bottom: -3rem;
+  text-align: right;
+
+  .btn-bgButton {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: .02em;
+
+    &::before {
+      transform: rotate(-0.008333333turn);
+    }
+  }
 }

@@ -29,18 +29,19 @@ fieldset {
 .section-h3 {
   font-size: 2rem;
 }
+
+.btn-bgButton {
+  width: 14.9375rem;
+  height: 5.75rem;
+  padding: 1.8125rem 4.5rem;
+}
+
 .form-control {
   border-width: 2px;
 }
 .coloredBox {
   &.deco-step::before {
     left: 66.8292683%;
-  }
-}
-
-.justified-gallery {
-  & > a {
-    height: 180px;
   }
 }
 }

@@ -1,0 +1,30 @@
+.justified-gallery {
+  & > a {
+    opacity: 0.75;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.justified-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > a {
+    height: 100px;
+
+    & > img {
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .justified-gallery {
+    & > a {
+      height: 180px;
+    }
+  }
+}

@@ -59,25 +59,38 @@ $logoWidth: 5rem;
 
 .carousel-article {
   position: absolute;
-  bottom: 0rem;
-  width: 44.6735395%;
+  bottom: 0;
+  margin-bottom: -5.7638889%;
+  width: 36.1111111%;
 }
-.article-lg {
-  min-height: 34.6875rem;
-}
-.article-bg-deco {
-  color: #EAE9ED;
+.article-sketchDeco {
+  position: relative;
+  padding-bottom: 91.5384615%;
   background: url(../assets/bg-deco.svg) no-repeat top center/contain;
+  color: #EAE9ED;
+
+  & > .article-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 26%;
+    padding-left: 20%;
+    padding-right: 30%;
+    padding-bottom: 20%;
+  }
 
   .article-title {
     color: #fff;
+    font-size: 2rem;
+    line-height: 1.42;
+    height: 60%;
+    overflow: hidden;
   }
 
-  & > .article-lg {
-    padding-top: 30%;
-    padding-left: 19.2307692%;
-    padding-right: 19.2307692%;
-    padding-bottom: 2rem;
+  .article-content {
+    padding-left: 18.5%;
+    height: 40%;
+    overflow: hidden;
   }
 }
 .activity-h2 {
@@ -150,6 +163,25 @@ $logoWidth: 5rem;
   }
   .activitySection-imageArticle-portraitBg {
     background: linear-gradient(227.44deg, #EAE9ED 26.07%, rgba(234, 233, 237, 0.5) 78.32%);
+  }
+}
+
+
+.agenda-button {
+  position: absolute;
+  right: 2.5rem;
+  margin-top: -9.5rem;
+  margin-bottom: 0;
+
+  .btn-bgButton {
+    font-size: 18px;
+
+    &::before {
+      transform: rotate(0);
+    }
+    &:hover::before {
+      transform: rotate(0.008333333turn);
+    }
   }
 }
 }
