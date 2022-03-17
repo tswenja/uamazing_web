@@ -1,0 +1,62 @@
+.dialog-blue, .dialog-yellow, .dialog-red {
+  filter: drop-shadow(0px 4px 20px rgba(94, 37, 106, 0.15));
+
+  .dialog-content {
+    border: 6px solid;
+    border-radius: .5rem;
+    background-color: white;
+  }
+
+  position: relative;
+  padding-bottom: calc(38px - 6px);
+
+  .dialog-pointer {
+    position: absolute;
+    width: 48px;
+    height: 38px;
+    top: calc(100% - 38px);
+    left: 62%;
+    background: no-repeat center/100%;
+  }
+
+  .dialog-title {
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+}
+.dialog-blue {
+  $color: #5FAACE;
+  .dialog-content {
+    border-color: $color;
+  }
+  .dialog-title {
+    color: $color;
+  }
+  .dialog-pointer {
+    background-image: url(images/pointer-blue.svg);
+  }
+}
+.dialog-yellow {
+  $color: #F2BE30;
+  .dialog-content {
+    border-color: $color;
+  }
+  .dialog-title {
+    color: $color;
+  }
+  .dialog-pointer {
+    background-image: url(images/pointer-yellow.svg);
+  }
+}
+.dialog-red {
+  $color: #C50723;
+  .dialog-content {
+    border-color: $color;
+  }
+  .dialog-title {
+    color: $color;
+  }
+  .dialog-pointer {
+    background-image: url(images/pointer-red.svg);
+  }
+}
