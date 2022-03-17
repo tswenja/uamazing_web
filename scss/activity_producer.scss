@@ -160,7 +160,7 @@
 }
 .projectFigure {
   padding: 8% 5.3691275%;
-  @media (min-width: 576px) {
+  @media (min-width: $breakpoint-sm) {
     padding: 16.7785235% 5.3691275%;
   }
   border-top-left-radius: inherit;
@@ -172,15 +172,20 @@
 }
 .projectFigure-img {
   width: 37.2483221%;
+  width: 25%;
   max-width: 111px;
 }
 .projectFigure-caption, .projectFigure-caption-sub {
   width: 1em;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.5em;
   text-align: center;
   color: #000;
+
+  @media (min-width: 480px) {
+    font-size: 40px;
+  }
 }
 .projectFigure-caption-sub {
   font-size: 24px;
