@@ -85,6 +85,7 @@ $logoWidth: 3.75rem;
   top: 0;
   z-index: 10;
   width: 100%;
+  min-height: calc(3.375rem + 1px);
 }
 .activityBrand {
   position: absolute;
