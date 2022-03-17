@@ -152,8 +152,10 @@
   background: url(../public/activity-producer-2022/activity-producer-2022-bg-1.png) no-repeat top center/cover;
 }
 
-.projectCard {
+ .projectCard-wrapper {
   padding: 4.5731707%;
+ }
+.projectCard {
   border-width: 0;
   border-radius: 1rem;
   filter: drop-shadow(0px 4px 20px rgba(94, 37, 106, 0.25));
