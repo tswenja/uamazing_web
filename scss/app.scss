@@ -17,6 +17,10 @@
   src: local("Microsoft JhengHei"), url("../assets/msjhbd.ttf") format("ttf");
 }
 
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
 $color-primary: #B3292C;
 $color-blue: #5FAACE;
 
@@ -270,6 +274,7 @@ body.activity, body.school, body.about {
 }
 
 @import 'icons.scss';
+@import 'components.scss';
 @import 'justified_gallery.scss';
 @import 'shared.scss';
 @import 'shared_md.scss';
@@ -280,5 +285,7 @@ body.activity, body.school, body.about {
 @import 'activity_md.scss';
 @import 'about.scss';
 @import 'about_md.scss';
+
+@import 'activity_producer.scss';
 
 @import 'simplelightbox_override.scss';

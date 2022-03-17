@@ -2,7 +2,7 @@
   &::before {
     content: '';
     display: inline-block;
-    background: transparent no-repeat center/100% 100%;
+    background: transparent no-repeat center/contain;
   }
 
   &.icon-ebc {
@@ -24,6 +24,13 @@
       width: 3.75rem;
       height: 3.75rem;
       background-image: url(../assets/icons/logo-linetoday@2x.png);
+    }
+  }
+  &.icon-cross-white {
+    &::before {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-image: url(../assets/images/cross-white.svg);
     }
   }
 }

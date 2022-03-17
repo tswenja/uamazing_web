@@ -29,6 +29,9 @@ fieldset {
 .w-85 {
   width: 85%;
 }
+.font-weight-medium {
+  font-weight: 500 !important;
+}
 
 .section-h3 {
   color: #303136;
@@ -58,6 +61,12 @@ fieldset {
   font-size: 1.25rem;
   font-weight: 700;
 }
+.text-p-sm {
+  color: #303136;
+  font-size: 14px;
+  line-height: 1.62;
+  letter-spacing: 0.038em;
+}
 .text-14px {
   font-size: 14px;
 }
@@ -75,8 +84,14 @@ fieldset {
   color: $color-blue !important;
   color: #54AED9 !important;
 }
+.text-blue-500 {
+  color: #409DC9 !important;
+}
 .text-gray-4 {
   color: #4c4c4c;
+}
+.text-gray-5 {
+  color: #5D5C61;
 }
 .text-gray-8 {
   color: #8c8c8c;
@@ -128,6 +143,12 @@ fieldset {
 }
 .bg-balls {
   background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto;
+}
+.bg-bubble {
+  background: url(../assets/images/bubble-blue.svg) no-repeat center/contain;
+}
+.bg-mountain {
+  background: url(../assets/images/mountain.svg) no-repeat top left/cover;
 }
 
 .fonts-article-title {
