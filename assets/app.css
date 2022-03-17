@@ -1896,23 +1896,21 @@ ul.activity-producer-tablelist {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   /* this draws the table border  */
   background: rgba(94, 37, 106, 0.03); }
-  ul.activity-producer-tablelist > li:not(:last-child), ul.activity-producer-tablelist > li > .col-12 {
-    border-bottom-style: solid; }
-  @media (min-width: 576px) {
-    ul.activity-producer-tablelist > li > .col-sm-4 {
-      border-bottom-style: none;
-      border-right-style: solid; } }
-  ul.activity-producer-tablelist > li:not(:last-child), ul.activity-producer-tablelist > li > .col-12 {
+  ul.activity-producer-tablelist > li:not(:last-child), ul.activity-producer-tablelist > li > .col-sm-4 {
     border-color: #AB8DB1 !important; }
   ul.activity-producer-tablelist > li:not(:last-child) {
+    border-bottom-style: solid;
     border-width: 3px; }
     @media (min-width: 576px) {
       ul.activity-producer-tablelist > li:not(:last-child) {
         border-width: 2px; } }
-  ul.activity-producer-tablelist > li > .col-12 {
+  ul.activity-producer-tablelist > li > .col-sm-4 {
+    border-style: dotted;
     border-width: 1px; }
     @media (min-width: 576px) {
-      ul.activity-producer-tablelist > li > .col-12 {
+      ul.activity-producer-tablelist > li > .col-sm-4 {
+        border-style: none;
+        border-right-style: solid;
         border-width: 2px; } }
 
 .text-th {

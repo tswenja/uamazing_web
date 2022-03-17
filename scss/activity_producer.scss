@@ -199,27 +199,22 @@ ul.activity-producer-tablelist {
   background: rgba(94, 37, 106, 0.03);
 
   & > li {
-    &:not(:last-child), & > .col-12 {
-      border-bottom-style: solid;
-    }
-    @media (min-width: $breakpoint-sm) {
-      & > .col-sm-4 {
-        border-bottom-style: none;
-        border-right-style: solid;
-      }
-    }
-    &:not(:last-child), & > .col-12 {
+    &:not(:last-child), & > .col-sm-4 {
       border-color: #AB8DB1 !important;
     }
     &:not(:last-child) {
+      border-bottom-style: solid;
       border-width: 3px;
       @media (min-width: $breakpoint-sm) {
         border-width: 2px;
       }
     }
-    & > .col-12 {
+    & > .col-sm-4 {
+      border-style: dotted;
       border-width: 1px;
       @media (min-width: $breakpoint-sm) {
+        border-style: none;
+        border-right-style: solid;
         border-width: 2px;
       }
     }
