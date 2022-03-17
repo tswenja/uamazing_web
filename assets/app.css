@@ -2120,6 +2120,16 @@ ul.activity-producer-tablelist {
     position: absolute;
     top: calc(100% + 28px + 20px);
     left: 0; } }
+.activity-producer .activity-h2 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+  @media (min-width: 768px) {
+    .activity-producer .activity-h2 {
+      font-size: 2.25rem; } }
+  .activity-producer .activity-h2 .h2-deco {
+    font-size: calc(1em * 1.666666667);
+    vertical-align: middle; }
+
 .sl-overlay {
   opacity: 0.9 !important; }
 
