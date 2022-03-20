@@ -83,7 +83,15 @@ $index-content-width: 85%;
 }
 
 .index-bg-activity {
-  background: url(../public/index/bg-activity.png) no-repeat top center/cover;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../public/index/bg-activity.png) no-repeat top center/cover;
+  }
 }
 
 .index-activity-poster {

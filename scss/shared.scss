@@ -130,11 +130,22 @@ fieldset {
   }
 }
 
+.box-border-glow {
+  border: 5px solid white;
+  box-shadow: 0 0 80px rgba(192, 219, 255, .5), 0 0 32px rgba(65, 120, 255, .16);
+}
 .image-shadow {
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.1);
 }
 .shadow-darker {
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.25);
+}
+.bg-blur {
+  overflow: hidden;
+
+  &::before {
+    filter: blur(30px) brightness(57%) saturate(150%);
+  }
 }
 .bg-dark {
   background-color: #241E20!important;
@@ -252,7 +263,9 @@ fieldset {
 .figure-hr-53,
 .figure-hr-63,
 .figure-hr-67,
+.figure-hr-80,
 .figure-hr-100,
+.figure-hr-135,
 .figure-wide-md {
   position: relative;
   background-size: cover;

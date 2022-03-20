@@ -541,11 +541,20 @@ fieldset {
     display: -webkit-box;
     -webkit-box-orient: vertical; }
 
+.box-border-glow {
+  border: 5px solid white;
+  box-shadow: 0 0 80px rgba(192, 219, 255, 0.5), 0 0 32px rgba(65, 120, 255, 0.16); }
+
 .image-shadow {
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.1); }
 
 .shadow-darker {
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.25); }
+
+.bg-blur {
+  overflow: hidden; }
+  .bg-blur::before {
+    filter: blur(30px) brightness(57%) saturate(150%); }
 
 .bg-dark {
   background-color: #241E20 !important; }
@@ -647,7 +656,9 @@ fieldset {
 .figure-hr-53,
 .figure-hr-63,
 .figure-hr-67,
+.figure-hr-80,
 .figure-hr-100,
+.figure-hr-135,
 .figure-wide-md {
   position: relative;
   background-size: cover;
@@ -900,9 +911,6 @@ fieldset {
       top: -1rem;
       bottom: -1rem; }
 
-  .index-margin-left {
-    margin-left: 9.5rem; }
-
   .index-fixed-bg {
     padding-top: 100vh;
     height: 100vh;
@@ -1004,7 +1012,13 @@ fieldset {
   .borderedBox-topImage + .borderedBox-light {
     padding-top: 7%; }
 
-.index-bg-activity {
+.index-bg-activity::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: url(../public/index/bg-activity.png) no-repeat top center/cover; }
 
 .index-activity-poster {
@@ -1217,6 +1231,12 @@ fieldset {
 @media (min-width: 768px) {
   .bg-purple {
     background-size: cover; }
+
+  .index-margin-left {
+    margin-left: 9.5rem; }
+
+  .index-margin-sidebar {
+    margin-left: 5.5rem; }
 
   .index-h2 {
     font-size: 2.5rem; }
