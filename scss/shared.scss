@@ -40,6 +40,10 @@ fieldset {
   letter-spacing: 0.062em;
 }
 
+.color-inherit {
+  color: inherit!important;
+}
+
 .text-h3 {
   font-size: 1.875rem;
   font-weight: 500;
@@ -84,6 +88,9 @@ fieldset {
 .text-loose-2 {
   letter-spacing: .2em;
 }
+.text-bold {
+  font-weight: 700!important;
+}
 .text-blue {
   color: $color-blue !important;
   color: #54AED9 !important;
@@ -110,6 +117,12 @@ fieldset {
   font-size: 1.125rem;
   line-height: 2;
   letter-spacing: 0.2em;
+}
+.text-quote-on-image {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: .2em;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 .text-caption {
   $line-height: 1.62em;
@@ -187,13 +200,14 @@ fieldset {
   letter-spacing: .02em;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  border-radius: 6px;
 }
-.btn-outline-primary {
+.btn-white-outline-primary {
   border: 2px solid;
   border-radius: 2px;
   background-color: transparent;
 }
-.btn-primary-red {
+.btn-primary-red, a.btn-primary-red {
   color: white;
   background-color: $color-primary;
   border-color: $color-primary;
@@ -219,6 +233,13 @@ fieldset {
 }
 .btn-xl {
   padding: 0.75rem 5rem;
+}
+.btn-shadow {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow-white {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 60px rgba(255, 255, 255, 0.2);
 }
 .btn-bgDeco {
   position: relative;
@@ -438,6 +459,28 @@ fieldset {
     & > * {
       transform: scale(1.1, 1.1);
     }
+  }
+}
+
+/* dl */
+.dl {
+  & > dt {
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: .085em;
+    color: #363636;
+
+    margin-bottom: 1rem;
+  }
+  & > dd + dt {
+    margin-top: 2.5rem;
+  }
+  & > dd {
+    font-size: 0.875rem;
+    letter-spacing: .085em;
+    color: #4c4c4c;
+
+    margin-bottom: 0.625rem;
   }
 }
 

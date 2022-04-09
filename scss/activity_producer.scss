@@ -199,7 +199,7 @@ ul.activity-producer-tablelist {
   background: rgba(94, 37, 106, 0.03);
 
   & > li {
-    &:not(:last-child), & > .col-sm-4 {
+    &:not(:last-child), & > .col-sm-4, & > .col-4 {
       border-color: #AB8DB1 !important;
     }
     &:not(:last-child) {
@@ -209,7 +209,7 @@ ul.activity-producer-tablelist {
         border-width: 2px;
       }
     }
-    & > .col-sm-4 {
+    & > .col-sm-4, & > .col-4 {
       border-style: dotted;
       border-width: 1px;
       @media (min-width: $breakpoint-sm) {
