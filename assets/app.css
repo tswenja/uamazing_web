@@ -553,6 +553,9 @@ fieldset {
     display: -webkit-box;
     -webkit-box-orient: vertical; }
 
+.text-underline {
+  text-decoration: underline; }
+
 .box-border-glow {
   border: 5px solid white;
   box-shadow: 0 0 80px rgba(192, 219, 255, 0.25), 0 0 32px rgba(65, 120, 255, 0.08); }
@@ -1386,8 +1389,8 @@ fieldset {
   padding-bottom: 3.625rem; }
 
 .activity-indent-x {
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 .activityNavbar-light {
   background-color: #fff; }
