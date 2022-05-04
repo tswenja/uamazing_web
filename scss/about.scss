@@ -18,7 +18,7 @@
 
 .__about__bg-targets {
   min-height: calc(39.3125rem + 11.9375rem);
-  background: url(../public/about/targets.svg) no-repeat left -12rem top 14rem/60rem auto;
+  background: url(../public/about/targets.svg) no-repeat left calc(40vw - 320px) top 14rem/60rem auto;
 }
 
 .__about__image-logo-n-building-wrapper {
