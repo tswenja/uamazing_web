@@ -1805,7 +1805,7 @@ fieldset {
 
 .__about__bg-targets {
   min-height: calc(39.3125rem + 11.9375rem);
-  background: url(images/__about__bg-targets.svg) no-repeat left -12rem top 14rem/60rem auto; }
+  background: url(../public/about/targets.svg) no-repeat left -12rem top 14rem/60rem auto; }
 
 .__about__image-logo-n-building-wrapper {
   position: relative;
