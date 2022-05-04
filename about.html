@@ -101,14 +101,19 @@
 
     <main class="overflow-hidden">
       <section class="">
-        <figure class="about-kv figure-hr-43" style="background-image:url(public/about/kv1.png)">
+        <picture class="mw-100">
+          <source media="(max-width: 767px)" srcset="public/about/kv1-m.jpg">
+          <source media="(min-width: 768px)" srcset="public/about/kv1.png">
+          <img src="public/about/kv1.png" class="img-fluid">
+        </picture>
           <!--
+        <figure class="about-kv figure-hr-43" style="background-image:url(public/about/kv1.png)">
           <figcaption class="d-flex flex-column align-items-center justify-content-center px-4">
             <p class="about-kv-logo mt-n5 mt-md-0"><img src="assets/logo@2x.png" class="img-fluid" ></p>
             <p class="mx-3 mt-1">必紅國際在藝文領域耕耘，為新人打造沃土，激發更好的發展環境。</p>
           </figcaption>
-          -->
         </figure>
+          -->
       </section>
 
       <section class="bg-blue-800 text-yellow-300 py-4 py-md-5">
@@ -185,9 +190,6 @@
           </h2>
 
           <figure class="text-center px-3 my-5 my-md-0">
-            <!--
-            <img src="public/about/image-business-loop.svg" />
-            -->
             <picture class="mw-100">
               <source media="(max-width: 767px)" srcset="public/about/image-business-loop-p.svg">
               <source media="(min-width: 768px)" srcset="public/about/image-business-loop.svg">
