@@ -79,3 +79,166 @@ $__about__culture-mosaic-cols: 4;
   font-weight: 400;
   text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
+
+
+/* STARZONE */
+.__about__bg-meteor {
+  background-image: url(images/bg-meteor-brick.svg);
+  background-position: top -2.3611111vw center;
+  background-size: 100% auto;
+}
+
+.__about__main-video {
+  width:100%;
+  height:55vw;
+  max-height:450px;
+}
+
+$collage-width: 320px;
+$cocoon-ratio: 1.654135338;
+.__about__portrait-cocoon, .__about__portrait-cocoon-sm, .__about__portrait-cocoon-lg {
+  position: relative;
+  width: .3125 * $collage-width;
+  height: .3125 * $collage-width * $cocoon-ratio;
+  max-width: 133px;
+  max-height: 220px;
+  -webkit-mask-image: url(images/shape-cocoon.svg);
+  mask-image: url(images/shape-cocoon.svg);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/stroke-cocoon.svg) no-repeat top left/100%;
+  }
+}
+
+.__about__portrait-cocoon-lg {
+  width: .340625 * $collage-width;
+  height: .340625 * $collage-width * $cocoon-ratio;
+  max-width: 145px;
+  max-height: 240px;
+}
+
+.__about__portrait-cocoon-sm {
+  width: .256109022 * $collage-width;
+  height: .256109022 * $collage-width * $cocoon-ratio;
+  max-width: 109px;
+  max-height: 180px;
+}
+
+.__about__collages-wrapper {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 6.6666667%;
+  max-width: 480px;
+}
+.__about__collages-left, .__about__collages-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.__about__collages-right {
+}
+.__about__collage {
+  position: relative;
+  vertical-align: top;
+
+  & > .__about__collage-core {
+    z-index: 1;
+    position: relative;
+  }
+  & .__about__collage-object {
+    position: absolute;
+  }
+
+  &.__about__collage-1 {
+    margin-left: auto;
+    margin-top: .5 * $collage-width;
+    margin-right: .02 * $collage-width;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 110%;
+      left: 25%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      bottom: 80%;
+      right: 5%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      z-index: 10;
+      top: 75%;
+      right: 0%;
+    }
+  }
+
+  &.__about__collage-2 {
+    margin-top: .5 * $collage-width;
+    margin-left: .116666667 * $collage-width;
+    margin-right: -0.11 * $collage-width;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 60%;
+      right: 70%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: 95%;
+      left: 25%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 89.6226415%;
+      right: 5%;
+    }
+  }
+
+  &.__about__collage-3 {
+    margin-top: .85 * $collage-width;
+    margin-right: .05625 * $collage-width;
+    margin-left: -0.05 * $collage-width;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 80%;
+      left: 7%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      bottom: 115%;
+      left: 59.7938144%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 74.5283019%;
+      left: 67.5257732%;
+    }
+  }
+
+  &.__about__collage-4 {
+    margin-top: 60%;
+    margin-left: 3%;
+    margin-right: -3%;
+
+    margin-top: .6 * $collage-width;
+    margin-left: .03 * $collage-width;
+    margin-right: -0.03 * $collage-width;
+    margin-left: auto;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 80%;
+      left: 1%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      z-index: 1;
+      bottom: 60%;
+      right: 3%;
+    }
+  }
+}
+
+.__about__bg-deco-yellow-gray {
+  background: url(../assets/images/bg-deco-yellow-gray.svg) no-repeat left bottom -10%/21.5277778% auto;
+}

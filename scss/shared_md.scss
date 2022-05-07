@@ -1,9 +1,12 @@
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
 fieldset {
   margin-bottom: 1.5rem;
 }
 .w-md-75 {
   width: 75% !important;
+}
+.w-md-80 {
+  width: 80% !important;
 }
 .w-md-85 {
   width: 85% !important;
@@ -50,6 +53,11 @@ fieldset {
   font-size: 2rem;
 }
 
+.text-h2 {
+  font-size: 2.5rem;
+  letter-spacing: .2em;
+}
+
 .btn-bgButton {
   width: 14.9375rem;
   height: 5.75rem;
@@ -63,5 +71,17 @@ fieldset {
   &.deco-step::before {
     left: 66.8292683%;
   }
+}
+}
+
+@media (min-width: $breakpoint-sm) {
+.w-sm-80 {
+  width: 80%;
+}
+}
+
+@media (min-width: $breakpoint-lg) {
+.d-lg-block {
+  display: block;
 }
 }

@@ -26,6 +26,9 @@ fieldset {
   height: 100%;
   object-fit: cover;
 }
+.w-80 {
+  width: 80%;
+}
 .w-85 {
   width: 85%;
 }
@@ -39,6 +42,26 @@ fieldset {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.rotate-3 {
+  transform: rotate(3deg);
+}
+.rotate-6 {
+  transform: rotate(6deg);
+}
+.rotate-9 {
+  transform: rotate(9deg);
+}
+.rotate-n-3 {
+  transform: rotate(-3deg);
+}
+.rotate-n-6 {
+  transform: rotate(-6deg);
+}
+.rotate-n-9 {
+  transform: rotate(-9deg);
+}
+
 
 .h2-deco {
   font-size: 3rem;
@@ -89,6 +112,7 @@ fieldset {
   .h2-deco {
     font-size: 3.5rem;
     letter-spacing: .1em;
+    background-size: 0.277777778em;
 
     &::after {
       letter-spacing: .055em;
@@ -111,6 +135,12 @@ fieldset {
   color: inherit!important;
 }
 
+.text-h2 {
+  color: #303136;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
 .text-h3 {
   font-size: 1.875rem;
   font-weight: 500;
@@ -131,6 +161,11 @@ fieldset {
   color: #3A3536;
   font-size: 1.25rem;
   font-weight: 700;
+}
+.text-p-lg {
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+  line-height: 1.666666667;
 }
 .text-p {
   line-height: 1.62;
@@ -154,6 +189,9 @@ fieldset {
 }
 .text-loose-2 {
   letter-spacing: .2em;
+}
+.text-medium {
+  font-weight: 500!important;
 }
 .text-bold {
   font-weight: 700!important;
@@ -235,6 +273,9 @@ fieldset {
 .shadow-darker {
   box-shadow: 0 .25rem 1.25rem rgba(0,0,0,.25);
 }
+.drop-shadow-short {
+  filter: drop-shadow(0 .25rem .2rem rgba(0, 0, 0, 0.25));
+}
 .drop-shadow {
   filter: drop-shadow(0 .25rem 1.25rem rgba(0, 0, 0, 0.25));
 }
@@ -249,6 +290,9 @@ fieldset {
     filter: blur(30px) brightness(57%) saturate(150%);
   }
 }
+.bg-black {
+  background-color: #000000;
+}
 .bg-dark {
   background-color: #241E20!important;
 }
@@ -257,6 +301,9 @@ fieldset {
 }
 .bg-blue-800 {
   background-color: #11144C;
+}
+.bg-pink-800 {
+  background-color: #CE1F6A;
 }
 .bg-linear-light {
   background: linear-gradient(164.8deg, rgba(234, 233, 237, 0) 9.07%, rgba(234, 233, 237, 0.7) 89.32%);;
@@ -278,6 +325,12 @@ fieldset {
 }
 .bg-neural-networks-2 {
   background: url(../assets/images/bg-neural-networks-2@2x.jpg) no-repeat top center/cover;
+}
+.bg-collage-wall {
+  background: url(../assets/images/bg-collage-wall@2x.jpg) no-repeat top center/cover;
+}
+.bg-shape-strip {
+  background: url(../assets/images/shape-strip.png) no-repeat center/100% 100%;
 }
 
 .fonts-article-title {

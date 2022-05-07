@@ -1,0 +1,41 @@
+<svg width="316" height="771" viewBox="0 0 316 771" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M316 561C316 676.98 221.98 771 106 771C-9.9798 771 -104 676.98 -104 561C-104 445.02 -9.9798 351 106 351C221.98 351 316 445.02 316 561Z" fill="#DFE0DF"/>
+<mask id="mask0_479_671" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-54" y="0" width="230" height="621">
+<path d="M176 235L-54 0V621L140 512L176 235Z" fill="#FFDC34"/>
+</mask>
+<g mask="url(#mask0_479_671)">
+<path d="M176 235L-54 0V621L140 512L176 235Z" fill="#FFDC34"/>
+<g opacity="0.15">
+<circle cx="-2" cy="210" r="16" fill="white"/>
+<circle cx="50" cy="210" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="18" cy="262" r="16" fill="white"/>
+<circle cx="70" cy="262" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="-2" cy="314" r="16" fill="white"/>
+<circle cx="50" cy="314" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="18" cy="366" r="16" fill="white"/>
+<circle cx="70" cy="366" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="-2" cy="418" r="16" fill="white"/>
+<circle cx="50" cy="418" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="18" cy="470" r="16" fill="white"/>
+<circle cx="70" cy="470" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="-2" cy="522" r="16" fill="white"/>
+<circle cx="50" cy="522" r="16" fill="white"/>
+</g>
+<g opacity="0.15">
+<circle cx="18" cy="574" r="16" fill="white"/>
+<circle cx="70" cy="574" r="16" fill="white"/>
+</g>
+</g>
+</svg>

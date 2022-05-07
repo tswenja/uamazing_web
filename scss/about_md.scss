@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
 .about-kv  > figcaption {
   position: absolute;
   top: 0;
@@ -91,5 +91,213 @@ $__about__culture-brick-size: 165px;
   line-height: 1.625em;
 
   font-size: 1.5rem;
+}
+
+.__about__collages-wrapper {
+  max-width: 80%;
+}
+.__about__collage {
+  &.__about__collage-1 {
+    margin-top: .6 * $collage-width;
+    margin-right: .02 * $collage-width;
+    margin-left: auto;
+  }
+
+  &.__about__collage-2 {
+    margin-top: .2 * $collage-width;
+    margin-left: 0 * $collage-width;
+    margin-right: -0.11 * $collage-width;
+
+    & .__about__collage-object:nth-child(3) {
+      top: 115%;
+      left: 10%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 89.6226415%;
+      right: 25%;
+    }
+  }
+
+  &.__about__collage-3 {
+    margin-top: .70 * $collage-width;
+    margin-right: -.15 * $collage-width;
+    margin-left: -0.05 * $collage-width;
+    margin-left: auto;
+  }
+
+  &.__about__collage-4 {
+    margin-top: .35 * $collage-width;
+    margin-left: .15 * $collage-width;
+    margin-right: -0.03 * $collage-width;
+    margin-right: auto;
+  }
+}
+}
+
+
+
+@media (min-width: $breakpoint-lg) {
+
+.__about__collages-wrapper {
+  max-width: 100%;
+}
+.__about__collage {
+  &.__about__collage-1 {
+    margin-top: 10%;
+    margin-left: 32.8472222%;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 95%;
+      right: 143.556701%;
+      left: auto;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: -75.4716981%;
+      right: 95%;
+      bottom: auto;
+    }
+    & .__about__collage-object:nth-child(4) {
+      bottom: -10%;
+      left: 95%;
+      top: auto;
+    }
+  }
+
+  &.__about__collage-2 {
+    margin-top: 8.75%;
+    margin-left: 11.6666667%;
+
+    & .__about__collage-object:nth-child(2) {
+      top: -132.0754717%;
+      right: 89.9484536%;
+      bottom: auto;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: 130%;
+      left: 4.3814433%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 89.6226415%;
+      right: 21.3917526%;
+    }
+  }
+
+  &.__about__collage-3 {
+    margin-top: calc(6% - (100vw - 768px)/10);
+    margin-right: 5.625%;
+    margin-left: auto;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 90%;
+      left: 1%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      bottom: 140%;
+      left: 59.7938144%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 74.5283019%;
+      left: 67.5257732%;
+    }
+  }
+
+  &.__about__collage-4 {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: auto;
+
+    & .__about__collage-object:nth-child(2) {
+      top: -66.0377358%;
+      right: 92.7835052%;
+      bottom: auto;
+      left: auto;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: -21.6981132%;
+      left: 94.0721649%;
+      bottom: auto;
+      right: auto;
+    }
+  }
+}
+}
+
+
+
+@media (min-width: $breakpoint-xl) {
+$collage-width: 100vw;
+.__about__portrait-cocoon {
+  width: .3125 * $collage-width;
+  height: .3125 * $collage-width * $cocoon-ratio;
+}
+.__about__portrait-cocoon-lg {
+  width: .340625 * $collage-width;
+  height: .340625 * $collage-width * $cocoon-ratio;
+}
+.__about__portrait-cocoon-sm {
+  width: .256109022 * $collage-width;
+  height: .256109022 * $collage-width * $cocoon-ratio;
+}
+.__about__collages-left {
+  position: absolute;
+}
+.__about__collages-right {
+  margin-top: calc(1440px - 100vw);
+}
+.__about__collage {
+
+  &.__about__collage-1 {
+    margin-top: 6.4583333%;
+    margin-left: 32.8472222%;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 95%;
+      right: 143.556701%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: -75.4716981%;
+      right: 95%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      z-index: 10;
+      top: 95%;
+      left: 67.0103093%;
+    }
+  }
+
+  &.__about__collage-3 {
+    margin-top: 15.2777778%;
+    margin-right: calc(5.625% - (1440px - 100vw)/10);
+    margin-left: auto;
+
+    & .__about__collage-object:nth-child(2) {
+      bottom: 90%;
+      left: 1%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: -222.6415094%;
+      left: 59.7938144%;
+    }
+    & .__about__collage-object:nth-child(4) {
+      top: 74.5283019%;
+      left: 67.5257732%;
+    }
+  }
+
+  &.__about__collage-4 {
+    margin-top: 7.7083333%;
+    margin-top: 8%;
+    margin-right: 23.3333333%;
+    margin-left: auto;
+
+    & .__about__collage-object:nth-child(2) {
+      top: -66.0377358%;
+      right: 92.7835052%;
+    }
+    & .__about__collage-object:nth-child(3) {
+      top: -21.6981132%;
+      left: 94.0721649%;
+    }
+  }
 }
 }
