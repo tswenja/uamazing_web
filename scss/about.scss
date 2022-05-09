@@ -16,6 +16,24 @@
   width: 60px;
 }
 
+.__about__nav {
+  margin: 1.25rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.__about__nav-item {
+  margin: 0 2.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: .085em;
+  opacity: .37;
+
+  &.active, &:hover {
+    opacity: 1;
+  }
+}
+
 .__about__bg-targets {
   min-height: calc(39.3125rem + 11.9375rem);
   background: url(../public/about/targets.svg) no-repeat left calc(40vw - 320px) top 14rem/60rem auto;
