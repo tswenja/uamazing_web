@@ -598,4 +598,40 @@ fieldset {
   }
 }
 
+.cross-rounded {
+  display: inline-block;
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 50%;
+    height: 1px;
+    background-color: black;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+.modal-content {
+  border-radius: 1rem;
+}
+.modal-backdrop.show {
+  opacity: .8;
+}
+
 @import 'shared_md.scss';

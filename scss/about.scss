@@ -260,3 +260,34 @@ $cocoon-ratio: 1.654135338;
 .__about__bg-deco-yellow-gray {
   background: url(../assets/images/bg-deco-yellow-gray.svg) no-repeat left bottom -10%/21.5277778% auto;
 }
+
+
+.__about__news-h2 {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 100;
+  font-family: Josefin Sans;
+  font-style: italic;
+  letter-spacing: .1em;
+}
+.__about__news-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  color: #5D5C61;
+
+  &._current {
+    color: #B3292C;
+  }
+  &._future {
+    color: #F2BE30;
+  }
+}
+.__about__news-date {
+  font-weight: 500;
+  color: #32068B;
+}
+.__about__news-image {
+  width: 180px;
+  height: 120px;
+}

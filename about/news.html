@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
+    <base href="../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
@@ -19,14 +20,17 @@
     <link href="vendors/simplelightbox/simple-lightbox.min.css" rel="stylesheet" />
     <script src="vendors/simplelightbox/simple-lightbox.jquery.min.js"></script>
 
-    <title>必紅國際 U.AMAZING | 必紅國際事業</title>
+    <title>最新消息 | 必紅國際 U.AMAZING</title>
     <meta name="description" content="夢想必紅 We make you amazing!">
 
-    <meta property="og:title" content="必紅國際 U.AMAZING" />
+    <meta property="og:title" content="必紅國際 U.AMAZING - 最新消息" />
     <meta property="og:description" content="夢想必紅 We make you amazing!" />
     <meta property="og:image" content="https://uamazing.net/public/og.png" />
   </head>
   <body class="about">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="apps/news_app.js"></script>
+
     <nav class="activityNavbar activityNavbar-dark activityNavbar-md-dark navbar navbar-expand-md navbar-dark">
       <a class="activityBrand" href="index.html"><img src="assets/logo@2x.png" /></a>
       <!--<h1 class="activityBrand ml-auto ml-md-3 mr-md-auto" data-toggle="collapse" data-target="#navbar">必紅學院</h1>-->
@@ -64,17 +68,15 @@
           <li class="text-right ml-3 mt-2 mt-md-0 mr-md-auto">
             <a class="nav-link activity-nav-link" href="school.html">必紅學院</a>
           </li>
-          <li class="text-right mt-4 mt-md-0">
-            <a class="nav-link activity-nav-link-secondary pl-2 pr-3" href="#" data-toggle="modal" data-target="#googleFormJoin">加入培訓計畫</a>
-          </li>
+          <!--
           <li class="d-none d-md-block">
             <span class="nav-link activity-nav-link-secondary pl-2 pr-3">|</span>
           </li>
-          <!--
           <li class="text-right mt-2 mt-md-0">
             <a class="nav-link activity-nav-link-secondary pl-2 pr-3" href="#">聯絡我們</a>
           </li>
           -->
+
           <li class="d-none d-md-flex justify-content-end mt-2 mt-md-0">
             <a class="nav-link activity-nav-link-secondary pl-1 pr-3 pl-md-2 ml-md-2" target="_blank" href="https://lin.ee/GWTEy4u">
               <img src="assets/icon-line.svg" class="activity-nav-icon white" />
@@ -107,7 +109,7 @@
       </div>
     </div>
 
-    <main class="overflow-hidden">
+    <main id="newsApp" class="overflow-hidden">
       <section class="">
         <picture class="mw-100">
           <source media="(max-width: 767px)" srcset="public/about/kv1-m.jpg">
@@ -124,167 +126,69 @@
           -->
       </section>
 
-      <div class="d-none d-md-block">
+      <div class="border-bottom d-none d-md-block">
         <nav class="__about__nav">
-          <a href="about.html" class="__about__nav-item active">必紅國際</a>
+          <a href="about.html" class="__about__nav-item">必紅國際</a>
           <a href="about/starzone.html" class="__about__nav-item">必紅明星學院</a>
-          <a href="about/news.html" class="__about__nav-item">最新消息</a>
+          <a href="about/news.html" class="__about__nav-item active">最新消息</a>
         </nav>
       </div>
 
-      <section class="bg-blue-800 text-yellow-300 py-4 py-md-5">
-        <div class="mw-1440px mx-auto">
+      <div class="mt-3 pt-md-3"></div>
+      <h2 class="text-h2 text-center my-5">
+        <span class="h2-deco mr-sm-2" data-text="News">News</span>
+        <span class="d-block d-sm-inline-block mt-3">最新消息</span>
+      </h2>
 
-          <div class="px-4 px-sm-5 py-md-3 my-3">
-            <div class="row no-gutters align-items-center">
-              <div class="col-12 col-md-8 px-xl-5">
-                <iframe class="" style="width:100%; height:55vw; max-height:450px;" src="https://www.youtube.com/embed/TRPoEnkMZr0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+      <div v-for="year in getReverseSortedKeys(newses)" v-cloak>
+        <div class="text-center __about__news-h2">- {{ year }} -</div>
 
-              <div class="col-12 col-md-4 mt-3 mt-md-0 pl-md-5">
-                <div class="">
-                  <div class="section-h3 text-center text-md-left py-2 py-md-0">創辦人的話</div>
-                  <div class="activity-grid-p text-yellow-300 w-md-75 pt-4 pt-md-3 mt-3">
-                    必紅國際的初衷在於投注更多心力<br>
-                    在扶持才華之人、提昇專業素質、強化人文作為回饋。<br>
-                    <br>
-                    這是我們必紅責無旁貸的使命，亦即為「必紅的未來使命」。<br>
+        <section class="w-85 mx-auto mt-4 mb-5" v-for="month in getReverseSortedKeys(newses[year])">
+          <div class="__about__news-h3" :class="newses[year][month][0]['class']">{{ month }}月</div>
+          <hr class="mt-2" />
+          <ul>
+            <li class="d-flex pt-3 my-3 py-md-4" v-for="news in newses[year][month]">
+              <div class="mr-4 __about__news-date">{{ news['month'] }}/{{ news['date'] }}</div>
+              <div class="d-flex flex-wrap flex-md-nowrap">
+                <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
+                  <figure class="__about__news-image mr-4 border"><img :src="news['圖片']" class="img-cover" /></figure>
+                </a>
+                <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
+                  <div class="mt-4 mt-md-0 ml-md-3">
+                    <h5 class="text-h5 text-bold mb-3 mb-md-4">{{ news['標題'] }}</h5>
+                    <p class="text-p">
+                      {{ news['paragraphs'][0] }}
+                    </p>
                   </div>
-                </div>
+                </a>
               </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="mw-1440px mx-auto __about__bg-targets">
-        <div class="px-4 px-xl-5 mx-xl-5">
-          <div class="px-md-4 pl-xl-5">
-
-            <article class="row no-gutters __about__image-logo-n-building-wrapper">
-              <div class="col-12 col-md-7 mt-4 mt-md-0 pl-md-2">
-                <h2 class="h2-lg">
-                  <span class="h2-deco mr-md-2" data-text="Spirits">Spirits</span>
-                  <span class="d-block d-md-inline-block">秉持的理念</span>
-                </h2>
-                <p class="text-h5 text-bold mt-4 ml-xl-5 pt-md-2 pl-xl-3">
-                  必紅國際秉持「人文精神」的理念。<br>
-                  從心出發，以人為歸宿的精神重視人的文化
-                </p>
-              </div>
-
-              <div class="__about__image-logo-n-building col-6 col-md-5 text-right pr-md-3 mt-n4 mr-n5 mt-md-n5 mr-md-0">
-                <img srcset="public/about/image-logo-n-building@1x.png 1x, public/about/image-logo-n-building@2x.png 2x" class="img-fluid drop-shadow-lg" />
-              </div>
-
-              <div class="col-12 col-lg-8 ml-auto mt-md-5 pt-md-5 pl-md-5 pr-md-5">
-                <div class="pt-5 mt-5 pt-lg-0 mt-lg-0"></div>
-                <div class="pt-5 mt-5 pt-lg-0 mt-lg-0"></div>
-                <div class="pt-5 mt-5 pt-md-0 mt-md-0"></div>
-                <div class="pt-4 pt-md-0"></div>
-
-                <div class="section-h3 text-blue text-right pr-md-5">台灣演藝產業方舟</div>
-                <p class="activity-grid-p mt-4 mb-5 my-lg-4">
-                  必紅國際朝全方位各項表演藝術、音樂舞蹈、人文藝術等各項活動競賽， 進行相關類別選秀、指導與交流，期盼為台灣尋找新能力，齊力推舉潛力無窮的才華學 子，為台灣企業溢注希望的實力，開啟無垠的視野。
-                  <br><br>
-                  將以成為台灣演藝產業方舟為目標，推動數位文化創意產業 ，必紅國際以「數位化」為整合核心，將自媒體轉化 為數位作品，為籌備推動數位文化創意產業做為人才培育平台。
-                </p>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-aurora py-5">
-        <div class="activity-framing-x activity-indent-x my-md-5">
-
-          <h2 class="h2-lg text-white">
-            <span class="h2-deco mr-md-2" data-text="Business">Business</span>
-            <span class="d-block d-md-inline-block">運作核心</span>
-          </h2>
-
-          <figure class="text-center px-3 my-5 my-md-0">
-            <picture class="mw-100">
-              <source media="(max-width: 767px)" srcset="public/about/image-business-loop-p.svg">
-              <source media="(min-width: 768px)" srcset="public/about/image-business-loop.svg">
-              <img src="public/about/image-business-loop.svg" class="img-fluid">
-            </picture>
-          </figure>
-
-        </div>
-      </section>
-
-      <section class="">
-        <div class="activity-framing-x activity-framing-t activity-indent-x">
-          <h2 class="h2-lg">
-            <span class="h2-deco mr-md-2" data-text="Culture">Culture</span>
-            <span class="d-block d-md-inline-block">在地文化發展</span>
-          </h2>
-        </div>
-
-        <div class="activity-framing-t"></div>
-        <div class="bg-neural-networks-1">
-          <div class="d-flex flex-wrap justify-content-end mw-1440px mx-auto p-3 p-md-0">
-            <div class="__about__culture-main">
-              <img src="public/about/culture-main@2x.jpg" class="img-cover h-100" />
-            </div>
-
-            <ul class="__about__culture-mosaic position-relative mb-0">
-              <li class="__about__culture-brick"><img src="public/about/brick-1-1.jpg" class="img-cover" /></li>
-              <li class="__about__culture-brick __about__culture-brick-text">人潮<br>市集</li>
-              <li class="__about__culture-brick"><img src="public/about/brick-1-3.jpg" class="img-cover" /></li>
-              <li class="__about__culture-brick __about__culture-brick-text">旅遊<br>振興</li>
-
-              <li class="__about__culture-brick __about__culture-brick-text">動態<br>展現</li>
-              <li class="__about__culture-brick"><img src="public/about/brick-2-2.jpg" class="img-cover" /></li>
-              <li class="__about__culture-brick __about__culture-brick-text">靜態<br>文藝</li>
-              <li class="__about__culture-brick"><img src="public/about/brick-2-4.jpg" class="img-cover" /></li>
-
-              <li class="__about__culture-brick"><img src="public/about/brick-3-1.jpg" class="img-cover" /></li>
-              <li class="__about__culture-brick __about__culture-brick-text">當地<br>人文</li>
-              <li class="__about__culture-brick __about__culture-brick-text">藝術<br>創作</li>
-              <li class="__about__culture-brick __about__culture-brick-text">文創<br>展現</li>
-            </ul>
-          </div>
-
-          <div class="mt-md-5 pt-md-5"></div>
-        </div>
-      </section>
-
-      <section class="bg-neural-networks-2">
-        <div class="activity-framing-x activity-framing-y">
-          <div class="activity-indent-x">
-            <h2 class="h2-lg">
-              <span class="h2-deco mr-md-2" data-text="Projects">Projects</span>
-              <span class="d-block d-md-inline-block">近期專案計畫</span>
-            </h2>
-          </div>
-
-          <div class="mt-4 pt-md-5"></div>
-          <ul class="row no-gutters px-2 px-md-5 text-center">
-            <li class="col-6 col-sm-3 px-2 px-md-4 mt-4">
-              <img src="public/about/project1.jpg" class="w-100 img-fluid" />
-              <figcaption class="text-caption text-dark-warm-400 mt-3">花蓮演藝之都</figcaption>
-            </li>
-            <li class="col-6 col-sm-3 px-2 px-md-4 mt-4">
-              <img src="public/about/project2.jpg" class="w-100 img-fluid" />
-              <figcaption class="text-caption text-dark-warm-400 mt-3">外澳夏嗨音樂節</figcaption>
-            </li>
-            <li class="col-6 col-sm-3 px-2 px-md-4 mt-4">
-              <img src="public/about/project3.jpg" class="w-100 img-fluid" />
-              <figcaption class="text-caption text-dark-warm-400 mt-3">14+花蓮校際歌藝聯賽</figcaption>
-            </li>
-            <li class="col-6 col-sm-3 px-2 px-md-4 mt-4">
-              <img src="public/about/project4.jpg" class="w-100 img-fluid" />
-              <figcaption class="text-caption text-dark-warm-400 mt-3">宜蘭 藝術之都</figcaption>
             </li>
           </ul>
+        </section>
+      </div>
 
-          <div class="mt-md-5 pt-md-5"></div>
+
+      <div id="newsArtical" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-head">
+              <button type="button" class="close mt-2 mr-2 mt-md-3 mr-md-3" data-dismiss="modal" aria-label="Close">
+                <span class="cross-rounded"></span>
+              </button>
+            </div>
+            <div class="modal-body px-5 pb-4">
+              <h5 class="text-h5 text-bold mr-2 mt-n4">{{ currentNews['標題'] }}</h5>
+              <div class="__about__news-date text-right ml-auto mb-2">{{ currentNews['year'] }}/{{ currentNews['month'] }}/{{ currentNews['date'] }}</div>
+
+              <figure class="mb-4"><img :src="currentNews['圖片']" class="img-cover" /></figure>
+
+              <p class="text-p" v-for="paragraph in currentNews['paragraphs']">
+                {{ paragraph }}
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">

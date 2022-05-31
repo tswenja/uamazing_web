@@ -22,8 +22,14 @@ body.about {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 45px;
+  right: 40.5px;
+  width: 10px;
+  overflow: hidden;
+}
+.about-aside-deco-line {
   width: 1px;
+  height: 100%;
+  margin-left: 4.5px;
   background-color: rgba(0,0,0,0.5);
 }
 .about-aside-deco-point {
@@ -32,7 +38,6 @@ body.about {
   height: 10px;
   top: 0;
   left: 0;
-  margin-left: -4.5px;
   border-radius: 50%;
   background-color: #B3292C;
 
@@ -301,4 +306,10 @@ $collage-width: 100vw;
     }
   }
 }
+
+.__about__news-h2 {
+  font-size: 60px;
+  line-height: 1.5;
+}
+  font-size: 60px;
 }
