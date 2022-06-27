@@ -72,6 +72,16 @@ fieldset {
     left: 66.8292683%;
   }
 }
+
+.cross-rounded {
+  &.color-md-white {
+    border: 1px solid rgba(255,255,255,.8);
+
+    &::before, &::after {
+      background-color: white;
+    }
+  }
+}
 }
 
 @media (min-width: $breakpoint-sm) {

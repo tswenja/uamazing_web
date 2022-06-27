@@ -601,9 +601,9 @@ fieldset {
 .cross-rounded {
   display: inline-block;
   position: relative;
-  width: 2.25rem;
-  height: 2.25rem;
-  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(0,0,0,.67);
   border-radius: 1.5rem;
 
   &::before, &::after {

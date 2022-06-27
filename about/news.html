@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="assets/aos.css">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/app.css?1">
     <script src="assets/jquery.slim.min.js"></script>
     <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/aos.js"></script>
@@ -29,6 +29,12 @@
   </head>
   <body class="about">
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      marked.setOptions({
+        breaks: true
+      });
+    </script>
     <script src="apps/news_app.js"></script>
 
     <nav class="activityNavbar activityNavbar-dark activityNavbar-md-dark navbar navbar-expand-md navbar-dark">
@@ -129,7 +135,7 @@
       <div class="border-bottom d-none d-md-block">
         <nav class="__about__nav">
           <a href="about.html" class="__about__nav-item">必紅國際</a>
-          <a href="about/starzone.html" class="__about__nav-item">必紅明星學院</a>
+          <!--<a href="about/starzone.html" class="__about__nav-item">必紅明星學院</a>-->
           <a href="about/news.html" class="__about__nav-item active">最新消息</a>
         </nav>
       </div>
@@ -151,14 +157,12 @@
               <div class="mr-4 __about__news-date">{{ news['month'] }}/{{ news['date'] }}</div>
               <div class="d-flex flex-wrap flex-md-nowrap">
                 <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
-                  <figure class="__about__news-image mr-4 border"><img :src="news['圖片']" class="img-cover" /></figure>
+                  <figure class="__about__news-image mr-4 border"><img :src="news['首圖']" class="img-cover" /></figure>
                 </a>
                 <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
                   <div class="mt-4 mt-md-0 ml-md-3">
                     <h5 class="text-h5 text-bold mb-3 mb-md-4">{{ news['標題'] }}</h5>
-                    <p class="text-p">
-                      {{ news['paragraphs'][0] }}
-                    </p>
+                    <div class="text-p" v-html="news['first_paragraph']"></div>
                   </div>
                 </a>
               </div>
@@ -172,19 +176,17 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-head">
-              <button type="button" class="close mt-2 mr-2 mt-md-3 mr-md-3" data-dismiss="modal" aria-label="Close">
-                <span class="cross-rounded"></span>
+              <button type="button" class="close mt-2 mr-2 mt-md-3 mr-md-n5" data-dismiss="modal" aria-label="Close">
+                <span class="cross-rounded color-md-white"></span>
               </button>
             </div>
-            <div class="modal-body px-5 pb-4">
+            <div class="modal-body px-4 px-md-5 pb-4">
               <h5 class="text-h5 text-bold mr-2 mt-n4">{{ currentNews['標題'] }}</h5>
               <div class="__about__news-date text-right ml-auto mb-2">{{ currentNews['year'] }}/{{ currentNews['month'] }}/{{ currentNews['date'] }}</div>
 
-              <figure class="mb-4"><img :src="currentNews['圖片']" class="img-cover" /></figure>
+              <figure class="mb-4"><img :src="currentNews['首圖']" class="img-cover" /></figure>
 
-              <p class="text-p" v-for="paragraph in currentNews['paragraphs']">
-                {{ paragraph }}
-              </p>
+              <div class="markdown" v-html="currentNews['html']"></div>
             </div>
           </div>
         </div>

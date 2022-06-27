@@ -60,3 +60,26 @@
     background-image: url(images/pointer-red.svg);
   }
 }
+
+
+.markdown {
+  & > p {
+    line-height: 1.62;
+    letter-spacing: 0.038em;
+    margin-bottom: 1.5rem;
+
+    & > img {
+      width: 80%;
+      margin-bottom: .5rem;
+    }
+
+    & > a {
+      text-decoration: underline;
+      opacity: 0.67;
+
+      &:hover, &:active, &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}

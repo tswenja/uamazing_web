@@ -13,7 +13,7 @@ function init() {
         .then(rep => {
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            console.log(rep)
+            //console.log(rep)
 
             const colz = [];
             //Extract column labels
@@ -49,8 +49,8 @@ function processRows(json) {
           row['date'] = theDate.getDate();
         }
         if (row['內文']) {
-          const paragraphs = row['內文'].split('\n')
-          row['paragraphs'] = paragraphs
+          row['html'] = marked.parse(row['內文']);
+          row['first_paragraph'] = row['內文'].split('\n')[0];
         }
 
         const today = (new Date());

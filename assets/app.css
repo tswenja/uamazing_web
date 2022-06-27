@@ -400,6 +400,19 @@ body.activity, body.school, body.about {
 .dialog-red .dialog-pointer {
   background-image: url(images/pointer-red.svg); }
 
+.markdown > p {
+  line-height: 1.62;
+  letter-spacing: 0.038em;
+  margin-bottom: 1.5rem; }
+  .markdown > p > img {
+    width: 80%;
+    margin-bottom: .5rem; }
+  .markdown > p > a {
+    text-decoration: underline;
+    opacity: 0.67; }
+    .markdown > p > a:hover, .markdown > p > a:active, .markdown > p > a:focus {
+      opacity: 1; }
+
 .justified-gallery > a {
   opacity: 0.75; }
   .justified-gallery > a:hover {
@@ -939,9 +952,9 @@ fieldset {
 .cross-rounded {
   display: inline-block;
   position: relative;
-  width: 2.25rem;
-  height: 2.25rem;
-  border: 1px solid black;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.67);
   border-radius: 1.5rem; }
   .cross-rounded::before, .cross-rounded::after {
     content: '';
@@ -1020,7 +1033,12 @@ fieldset {
     border-width: 2px; }
 
   .coloredBox.deco-step::before {
-    left: 66.8292683%; } }
+    left: 66.8292683%; }
+
+  .cross-rounded.color-md-white {
+    border: 1px solid rgba(255, 255, 255, 0.8); }
+    .cross-rounded.color-md-white::before, .cross-rounded.color-md-white::after {
+      background-color: white; } }
 @media (min-width: 576px) {
   .w-sm-80 {
     width: 80%; } }
