@@ -100,42 +100,37 @@ body.activity, body.school, body.about {
   }
 }
 
-.index-fixed-bg {
-  padding-top: 59.0277778%;
-  background: no-repeat top center/100% auto;
-  overflow: auto;
-}
-.bg-slogan1 {
-  background-image: url(../assets/slogan_text1.svg), url(../public/index/slogan_bg1.jpg);
-  background-position: top 10.625vw left 12.8472222vw, top center;
-  background-size: 41.8055556%, 100% auto;
-}
-.bg-slogan2 {
-  background-image: url(../assets/slogan_text3.svg), url(../public/index/bg-activity.png);
-  background-position: top 23.125vw left 12.9166667vw, top center;
-  background-size: 28.8888889%, 100% auto;
-}
-.bg-kv2 {
-  background-image: url(../public/index/kv2.png);
-  background-position: top center;
-  background-size: 100% auto;
-}
-.index-kv {
-  position: relative;
-  width: 100vw;
-  height: 59vw;
-  overflow: hidden;
-}
-.kv-slogan1 {
-  position: absolute;
-  top: 10.625vw;
-  left: 12.8472222vw;
-  width: 40vw;
-}
-
 .footer {
+  position: relative;
+  overflow: hidden;
   min-height: 50vh;
-  background-color: #241E20;
+  z-index: 999999;
+}
+.footer-background-blur, .footer-background-blur::before, .footer-background-blur::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-background-blur {
+  z-index: -1;
+  background: linear-gradient(135deg, #000000 50%, #241E20 150%);
+
+  &::before {
+    content: '';
+    top: 10px;
+    left: 10px;
+    background: url(../assets/images/footer-deco.svg) no-repeat left top/auto;
+    filter: blur(60px);
+  }
+  &::after {
+    content: '';
+    background: no-repeat;
+    background-image: url(../assets/images/footer-deco-logo.jpg), url(../assets/images/footer-deco.svg);
+    background-position: 44px 20px, left top;
+    background-size: 102px, auto;
+  }
 }
 .footer-body {
   margin: 0 auto;
@@ -171,6 +166,12 @@ body.activity, body.school, body.about {
     color: #929295;
     font-size: 0.875rem;
   }
+}
+.footer-text-company {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
 }
 .footer-copyright {
   font-size: 0.75rem;
@@ -278,11 +279,12 @@ body.activity, body.school, body.about {
 @import 'components.scss';
 @import 'justified_gallery.scss';
 @import 'shared.scss';
-@import 'app_md.scss';
 @import 'index.scss';
-@import 'index_md.scss';
 @import 'activity.scss';
 @import 'about.scss';
+
+@import 'app_md.scss';
+@import 'index_md.scss';
 @import 'about_md.scss';
 
 @import 'activity_producer.scss';

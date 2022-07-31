@@ -135,7 +135,7 @@
       <div class="border-bottom d-none d-md-block">
         <nav class="__about__nav">
           <a href="about.html" class="__about__nav-item">必紅國際</a>
-          <!--<a href="about/starzone.html" class="__about__nav-item">必紅明星學院</a>-->
+          <a href="about/starzone.html" class="__about__nav-item">必紅明星學院</a>
           <a href="about/news.html" class="__about__nav-item active">最新消息</a>
         </nav>
       </div>
@@ -143,25 +143,25 @@
       <div class="mt-3 pt-md-3"></div>
       <h2 class="text-h2 text-center my-5">
         <span class="h2-deco mr-sm-2" data-text="News">News</span>
-        <span class="d-block d-sm-inline-block mt-3">最新消息</span>
+        <span class="d-block d-sm-inline-block mt-3 ml-md-4">最新消息</span>
       </h2>
 
-      <div v-for="year in getReverseSortedKeys(newses)" v-cloak>
+      <div v-for="year in getReverseSortedKeys(groupedNewses)" v-cloak>
         <div class="text-center __about__news-h2">- {{ year }} -</div>
 
-        <section class="w-85 mx-auto mt-4 mb-5" v-for="month in getReverseSortedKeys(newses[year])">
-          <div class="__about__news-h3" :class="newses[year][month][0]['class']">{{ month }}月</div>
+        <section class="w-85 mx-auto mt-4 mb-5" v-for="month in getReverseSortedKeys(groupedNewses[year])">
+          <div class="__about__news-h3" :class="groupedNewses[year][month][0]['class']">{{ month }}月</div>
           <hr class="mt-2" />
           <ul>
-            <li class="d-flex pt-3 my-3 py-md-4" v-for="news in newses[year][month]">
+            <li class="d-flex pt-3 my-3 py-md-4" v-for="news in groupedNewses[year][month]">
               <div class="mr-4 __about__news-date">{{ news['month'] }}/{{ news['date'] }}</div>
               <div class="d-flex flex-wrap flex-md-nowrap">
                 <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
-                  <figure class="__about__news-image mr-4 border"><img :src="news['首圖']" class="img-cover" /></figure>
+                  <figure class="__about__news-image mr-4 border"><img :src="news['cover']" class="img-cover" /></figure>
                 </a>
                 <a href="#newsArtical" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
                   <div class="mt-4 mt-md-0 ml-md-3">
-                    <h5 class="text-h5 text-bold mb-3 mb-md-4">{{ news['標題'] }}</h5>
+                    <h5 class="text-h5 text-bold mb-3 mb-md-4">{{ news['title'] }}</h5>
                     <div class="text-p" v-html="news['first_paragraph']"></div>
                   </div>
                 </a>
@@ -181,10 +181,10 @@
               </button>
             </div>
             <div class="modal-body px-4 px-md-5 pb-4">
-              <h5 class="text-h5 text-bold mr-2 mt-n4">{{ currentNews['標題'] }}</h5>
+              <h5 class="text-h5 text-bold mr-2 mt-n4">{{ currentNews['title'] }}</h5>
               <div class="__about__news-date text-right ml-auto mb-2">{{ currentNews['year'] }}/{{ currentNews['month'] }}/{{ currentNews['date'] }}</div>
 
-              <figure class="mb-4"><img :src="currentNews['首圖']" class="img-cover" /></figure>
+              <figure class="mb-4"><img :src="currentNews['cover']" class="img-cover" /></figure>
 
               <div class="markdown" v-html="currentNews['html']"></div>
             </div>

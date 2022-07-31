@@ -1,13 +1,52 @@
-const sheetId = '1g22PqPGaLXL-3DJeSkGlN-YS-_6Bju8igvoq-kDrp8o';
-const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-const sheetName = '最新消息';
-const query = encodeURIComponent('Select *')
-const url = `${base}&sheet=${sheetName}&tq=${query}`
+const { createApp } = Vue
 
-const data = []
-document.addEventListener('DOMContentLoaded', init)
+var newsApp = createApp({
+  data() {
+    return {
+      newses: [],
+      currentNews: {}
+    }
+  },
+  computed: {
+    groupedNewses: function() {
+      const groupedNewses = {};
 
-function init() {
+      this.newses.forEach((row) => {
+        groupedNewses[row['year']] ||= {}
+        groupedNewses[row['year']][row['month']] ||= []
+        groupedNewses[row['year']][row['month']].push(row)
+      });
+
+      return groupedNewses;
+    }
+  },
+  methods: {
+    getReverseSortedKeys: function(obj) {
+      return Object.keys(obj).sort(function(a, b) {
+        return b - a;
+      });
+    }
+  },
+  created: function() {
+    const $this = this;
+    loadData(function(data) {
+      $this.newses = processRows(data);
+    });
+  }
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+  newsApp.mount('#newsApp')
+});
+
+function loadData(callback) {
+    const sheetId = '1g22PqPGaLXL-3DJeSkGlN-YS-_6Bju8igvoq-kDrp8o';
+    const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
+    const sheetName = '最新消息';
+    const query = encodeURIComponent('Select *')
+    const url = `${base}&sheet=${sheetName}&tq=${query}`
+
+    const data = [];
     fetch(url)
         .then(res => res.text())
         .then(rep => {
@@ -32,52 +71,41 @@ function init() {
                 })
                 data.push(row);
             })
-            processRows(data);
+            callback(data);
         })
 }
 
 function processRows(json) {
-    const { createApp } = Vue
-    const groupedNewses = {}
-    const months = []
+    const newses = [];
+    const months = [];
+    const keysMap = { '日期': 'publish_at', '標題': 'title', '首圖': 'cover', '內文': 'content' };
 
     json.forEach((row) => {
-        if (row['日期']) {
-          const theDate = new Date(row['日期'])
-          row['year'] = theDate.getFullYear();
-          row['month'] = theDate.getMonth() + 1;
-          row['date'] = theDate.getDate();
-        }
-        if (row['內文']) {
-          row['html'] = marked.parse(row['內文']);
-          row['first_paragraph'] = row['內文'].split('\n')[0];
-        }
+      var processedRow = {};
+      Object.keys(row).map((key) => {
+        processedRow[keysMap[key] || key] = row[key];
+      });
 
-        const today = (new Date());
-        const currentMonth = today.getMonth() + 1;
-        if (today.getFullYear() == row['year']) {
-          if (row['month'] <= currentMonth && row['month'] > (currentMonth - 3)) row['class'] = '_current';
-          if (row['month'] > currentMonth) row['class'] = '_future';
-        }
+      if (processedRow['publish_at']) {
+        const theDate = new Date(processedRow['publish_at'])
+        processedRow['year'] = theDate.getFullYear();
+        processedRow['month'] = theDate.getMonth() + 1;
+        processedRow['date'] = theDate.getDate();
+      }
+      if (processedRow['content']) {
+        processedRow['html'] = marked.parse(processedRow['content']);
+        processedRow['first_paragraph'] = processedRow['content'].split('\n')[0];
+      }
 
-        groupedNewses[row['year']] ||= {}
-        groupedNewses[row['year']][row['month']] ||= []
-        groupedNewses[row['year']][row['month']].push(row)
+      const today = (new Date());
+      const currentMonth = today.getMonth() + 1;
+      if (today.getFullYear() == processedRow['year']) {
+        if (processedRow['month'] <= currentMonth && processedRow['month'] > (currentMonth - 3)) processedRow['class'] = '_current';
+        if (processedRow['month'] > currentMonth) processedRow['class'] = '_future';
+      }
+
+      newses.push(processedRow);
     })
 
-    createApp({
-      data() {
-        return {
-          newses: groupedNewses,
-          currentNews: {}
-        }
-      },
-      methods: {
-        getReverseSortedKeys: function(obj) {
-          return Object.keys(obj).sort(function(a, b) {
-            return b - a;
-          });
-        }
-      }
-    }).mount('#newsApp')
+  return newses;
 }

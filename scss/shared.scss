@@ -99,7 +99,7 @@ fieldset {
     left: $padding-left;
     font-weight: bold;
     letter-spacing: 0;
-    opacity: 0.2;
+    opacity: 0.37;
   }
 }
 
@@ -137,7 +137,7 @@ fieldset {
 
 .text-h2 {
   color: #303136;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: .1em;
 }
@@ -162,6 +162,12 @@ fieldset {
   font-size: 1.25rem;
   font-weight: 700;
 }
+.text-h7 {
+  color: #3A3536;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
 .text-p-lg {
   font-size: 1.125rem;
   letter-spacing: 0.1em;
@@ -175,7 +181,7 @@ fieldset {
   color: #303136;
   font-size: 14px;
   line-height: 1.62;
-  letter-spacing: 0.038em;
+  letter-spacing: 0.06em;
 }
 .text-14px {
   font-size: 14px;
@@ -262,6 +268,11 @@ fieldset {
 .text-underline {
   text-decoration: underline;
 }
+.text-time {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #4F4B5A;
+}
 
 .box-border-glow {
   border: 5px solid white;
@@ -289,6 +300,10 @@ fieldset {
   &::before {
     filter: blur(30px) brightness(57%) saturate(150%);
   }
+}
+.bg-white-box-50 {
+  background-color: rgba(255, 255, 255, 0.67);
+  box-shadow: 0px 4px 100px rgba(255, 255, 255, 0.2), inset 0px 4px 100px rgba(255, 255, 255, 0.25), inset 0px 0px 4px rgba(255, 255, 255, 0.5);
 }
 .bg-black {
   background-color: #000000;
@@ -331,6 +346,12 @@ fieldset {
 }
 .bg-shape-strip {
   background: url(../assets/images/shape-strip.png) no-repeat center/100% 100%;
+}
+.bg-sky-with-star {
+  background: url(../assets/images/bg-sky-with-star@2x.jpg) no-repeat center/100% 100%;
+}
+.bg-guitar-girl {
+  background: url(../assets/images/bg-guitar-girl@2x.jpg) no-repeat center/100% 100%;
 }
 
 .fonts-article-title {
@@ -437,6 +458,7 @@ fieldset {
 .figure-hr-53,
 .figure-hr-63,
 .figure-hr-67,
+.figure-hr-75,
 .figure-hr-80,
 .figure-hr-100,
 .figure-hr-135,
@@ -456,6 +478,9 @@ fieldset {
 }
 .figure-hr-67 {
   padding-bottom: 67.1428571%;
+}
+.figure-hr-75 {
+  padding-bottom: 75%;
 }
 .figure-hr-80 {
   padding-bottom: 80%;

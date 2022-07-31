@@ -4,6 +4,45 @@ $index-content-width: 85%;
   background: url(../assets/bg-purple.jpg) bottom center/auto 100vh;
 }
 
+.index-fixed-bg {
+  padding-top: 59.0277778%;
+  background: no-repeat top center/100% auto;
+  overflow: auto;
+}
+.bg-slogan1 {
+  background-image: url(../assets/slogan_text1.svg), url(../public/index/slogan_bg1.jpg);
+  background-position: top 10.625vw left 12.8472222vw, top center;
+  background-size: 41.8055556%, 100% auto;
+}
+.kv-slogan1 {
+  position: absolute;
+  top: 10.625vw;
+  left: 12.8472222vw;
+  width: 40vw;
+}
+.index-kv {
+  position: relative;
+  width: 100vw;
+  height: 59vw;
+  overflow: hidden;
+}
+.index-kv-h1, .index-kv-h2 {
+  color: white;
+}
+.index-kv-h1 {
+  font-weight: 100;
+  font-size: 150px;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.67), 10px 4px 88px rgba(255, 255, 255, 0.37);
+}
+.index-kv-h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.37), 0px 4px 88px rgba(255, 255, 255, 0.37);
+}
+
 .index-h2 {
   font-size: 1.875rem;
   font-weight: 600;
@@ -358,4 +397,24 @@ $index-content-width: 85%;
     color: white;
     opacity: 1;
   }
+}
+
+.index-bg-onair {
+  background: url(../assets/images/bg-guitar-girl@2x.jpg) no-repeat center/cover;
+}
+
+.index-story-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+.index-story-subtitle {
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+.index-story-p {
+  letter-spacing: 0.2em;
+  line-height: 2em;
+  color: #000000;
 }
