@@ -3,6 +3,17 @@
   background-size: cover;
 }
 
+
+.index-kv-h1 {
+  font-size: 150px;
+  letter-spacing: 0.1em;
+}
+.index-kv-h2 {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+}
+
 .index-margin-left {
   margin-left: 9.5rem;
 }
@@ -140,6 +151,11 @@
   & > img {
     width: 36.9822485%;
   }
+}
+
+.index-story-p {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
 }
 
 }

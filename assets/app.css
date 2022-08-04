@@ -1106,7 +1106,8 @@ fieldset {
 .index-kv {
   position: relative;
   width: 100vw;
-  height: 59vw;
+  height: 100vh;
+  min-height: 59vw;
   overflow: hidden; }
 
 .index-kv-h1, .index-kv-h2 {
@@ -1114,15 +1115,14 @@ fieldset {
 
 .index-kv-h1 {
   font-weight: 100;
-  font-size: 150px;
-  letter-spacing: 0.1em;
+  font-size: 64px;
   text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.67), 10px 4px 88px rgba(255, 255, 255, 0.37); }
 
 .index-kv-h2 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.37), 0px 4px 88px rgba(255, 255, 255, 0.37); }
 
 .index-h2 {
@@ -1414,7 +1414,8 @@ fieldset {
   color: #000000; }
 
 .index-story-p {
-  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
   line-height: 2em;
   color: #000000; }
 
@@ -2131,6 +2132,15 @@ fieldset {
   .bg-purple {
     background-size: cover; }
 
+  .index-kv-h1 {
+    font-size: 150px;
+    letter-spacing: 0.1em; }
+
+  .index-kv-h2 {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.1em; }
+
   .index-margin-left {
     margin-left: 9.5rem; }
 
@@ -2236,7 +2246,11 @@ fieldset {
   .skyImage {
     position: absolute; }
     .skyImage > img {
-      width: 36.9822485%; } }
+      width: 36.9822485%; }
+
+  .index-story-p {
+    font-size: 1rem;
+    letter-spacing: 0.2em; } }
 @media (min-width: 768px) {
   .about-kv > figcaption {
     position: absolute;

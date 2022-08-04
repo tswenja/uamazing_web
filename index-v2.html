@@ -27,7 +27,7 @@
     <meta property="og:description" content="夢想必紅 We make you amazing!" />
     <meta property="og:image" content="https://uamazing.net/public/og.png" />
   </head>
-  <body class="index pt-navbar">
+  <body class="index">
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
@@ -59,13 +59,13 @@
     </nav>
     <main>
       <section class="index-kv overflow-hidden">
-        <div class="index-kv" style="background-color: rgba(0,0,0,0.67)">
+        <div class="index-kv pt-navbar" style="background-color: rgba(0,0,0,0.67)">
           <video class="background-video" autoplay loop muted poster="public/index/kv-cover.png">
             <source src="public/index/index-kv2.mov" type="video/mp4">
           </video>
-          <div class="h-100 d-flex flex-wrap justify-content-center align-content-center">
-            <h1 class="index-kv-h1 w-75">演藝培訓</h1>
-            <h2 class="index-kv-h2 w-75 mt-3 pl-5">
+          <div class="h-100 d-flex no-gutters flex-wrap justify-content-center align-content-center">
+            <h1 class="index-kv-h1 col-12 col-md-9 text-center text-md-left px-3 px-md-0">演藝培訓</h1>
+            <h2 class="index-kv-h2 col-12 col-md-9 mt-3 pl-5">
               給自己一個機會
               <br>去追尋懷抱夢想的自己
               <br>你也可以是舞台上發光發熱的
@@ -75,32 +75,37 @@
         </div>
       </section>
 
-      <section class="bg-sky-with-star py-5 pl-5">
-        <div class="bg-white-box-50 rounded w-85 mx-auto mt-3 py-4">
-          <article class="w-75 mx-auto">
-            <div class="index-story-subtitle text-center">花蓮夏戀之星選拔</div>
-            <h2 class="index-story-title text-center mt-3 mb-5">閃亮之星 - HIGH FIVE</h4>
-            <div class="my-5 pt-3 px-4">
-              <figure class="figure-hr-63" style="background-image: url(public/index/story.jpg)"></figure>
-            </div>
-            <div class="row">
-              <p class="col index-story-p text-center">
-                必紅國際旗下藝人「HIGH FIVE」
-                <br>來自Star Zone必紅明星演藝學院
-                <br>由花蓮分部長黃詩博的帶領的練習生學員
-                <br>並沒有因為高壓訓練讓團員停下腳步
-                <br>更是加深了團員間相互扶持為夢想而披荊斬棘
-              </p>
-              <p class="col index-story-p text-center">
-                「HIGH FIVE」成員平均年齡18歲
-                <br>年僅21歲的隊長懷恩已是舞蹈界的新生代編舞師
-                <br>擅長HIP HOP風格並融合REGGAE、K-POP
-                <br>做出最極致的爆發力
-                <br>讓每場演出猶如華麗的刀群舞
-                <br>讓人震撼熱血沸騰
-              </p>
-            </div>
-          </article>
+      <section class="bg-sky-with-star py-4 py-md-5">
+        <div class=" margin-md-left-sidebar">
+          <div class="bg-white-box-50 rounded w-85 mx-auto mt-3 px-3 py-4">
+            <article class="w-md-75 mx-auto">
+              <div class="index-story-subtitle text-center">花蓮夏戀之星選拔</div>
+              <h2 class="index-story-title text-center pb-3 my-3">
+                閃亮之星 -
+                <span class="d-inline-block">HIGH FIVE</span>
+              </h4>
+              <div class="my-4 my-md-5 px-md-2">
+                <figure class="figure-hr-63" style="background-image: url(public/index/story.jpg)"></figure>
+              </div>
+              <div class="row">
+                <p class="col-12 col-md-6 index-story-p text-md-center mx-auto">
+                  必紅國際旗下藝人「HIGH FIVE」
+                  <br>來自Star Zone必紅明星演藝學院
+                  <br>由花蓮分部長黃詩博的帶領的練習生學員
+                  <br>並沒有因為高壓訓練讓團員停下腳步
+                  <br>更是加深了團員間相互扶持為夢想而披荊斬棘
+                </p>
+                <p class="col-12 col-md-6 index-story-p text-md-center mx-auto">
+                  「HIGH FIVE」成員平均年齡18歲
+                  <br>年僅21歲的隊長懷恩已是舞蹈界的新生代編舞師
+                  <br>擅長HIP HOP風格並融合REGGAE、K-POP
+                  <br>做出最極致的爆發力
+                  <br>讓每場演出猶如華麗的刀群舞
+                  <br>讓人震撼熱血沸騰
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -174,8 +179,8 @@
       <section class="py-4" data-parallax="scroll" data-image-src="assets/images/bg-guitar-girl@2x.jpg" data-bleed="60" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 37%, rgba(255, 255, 255, 0) 100%);">
         <div class="margin-md-left-sidebar mr-md-4">
 
-          <div class="mx-4 mx-md-5">
-            <h2 class="text-h2 d-flex flex-column align-items-center flex-md-row mx-3 mt-md-5">
+          <div class="mx-2 mx-md-5">
+            <h2 class="text-h2 d-flex flex-column align-items-md-center flex-md-row mx-3 mt-md-5">
               <span class="">
                 <span class="h2-deco mr-md-2" data-text="on-air">on-air</span>
               </span>
@@ -183,7 +188,7 @@
             </h2>
 
             <ul class="row no-gutters mt-4 pt-2">
-              <li class="col-6 col-md-4 mb-5 px-4">
+              <li class="col-12 col-md-4 mb-4 mb-md-5 px-2 px-md-4">
                 <a>
                   <figure class="figure-hr-100 shadow-sm" style="background-image: url(public/index/school_news_5.jpg)"></figure>
                   <h4 class="text-h6 mt-4 mb-3">星搖籃 - 練習生形象照拍攝</h4>
@@ -192,7 +197,7 @@
                   </p>
                 </a>
               </li>
-              <li class="index-portfolios-item col-6 col-md-4 mb-5 px-4">
+              <li class="index-portfolios-item col-12 col-md-4 mb-4 mb-md-5 px-2 px-md-4">
                 <a>
                   <figure class="figure-hr-100 shadow-sm" style="background-image: url(public/index/activity1.jpg)"></figure>
                   <h4 class="text-h6 mt-4 mb-3">明星搖籃第一屆花蓮校藝大賽</h4>
@@ -201,7 +206,7 @@
                   </p>
                 </a>
               </li>
-              <li class="index-portfolios-item col-6 col-md-4 mb-5 px-4">
+              <li class="index-portfolios-item col-12 col-md-4 mb-4 mb-md-5 px-2 px-md-4">
                 <a>
                   <figure class="figure-hr-100 shadow-sm" style="background-image: url(public/activities/amazing-voice-2021/poster1.jpg)"></figure>
                   <h4 class="text-h6 mt-4 mb-3">必紅校際好歌聲</h4>
@@ -210,7 +215,7 @@
                   </p>
                 </a>
               </li>
-              <li class="index-portfolios-item col-6 col-md-4 mb-5 px-4">
+              <li class="index-portfolios-item col-12 col-md-4 mb-4 mb-md-5 px-2 px-md-4">
                 <a>
                   <figure class="figure-hr-100 shadow-sm" style="background-image: url(public/activities/on-air2.png)"></figure>
                   <h4 class="text-h6 mt-4 mb-3">必紅花蓮星搖籃</h4>
@@ -220,7 +225,7 @@
                   </p>
                 </a>
               </li>
-              <li class="index-portfolios-item col-6 col-md-4 mb-5 px-4">
+              <li class="index-portfolios-item col-12 col-md-4 mb-4 mb-md-5 px-2 px-md-4">
                 <a>
                   <figure class="figure-hr-100 shadow-sm" style="background-image: url(public/index/school_news_1.png)"></figure>
                   <h4 class="text-h6 mt-4 mb-3">必紅星搖籃計畫</h4>
@@ -233,24 +238,24 @@
             </ul>
           </div>
 
-          <div class="mx-4 mx-md-5">
-            <h2 class="text-h2 d-flex flex-column justify-content-center align-items-center flex-md-row mx-3 mt-md-4">
+          <div class="mx-2 mx-md-5">
+            <h2 class="text-h2 d-flex flex-column justify-content-center align-items-md-center flex-md-row mx-3 mt-md-4">
               <span class="">
                 <span class="h2-deco mr-md-2" data-text="what's up">what's up</span>
               </span>
               <span class='ml-md-4'>官方公告</span>
             </h2>
 
-            <div class="row no-gutters pb-4 mt-md-5">
-              <div id="newsApp" class="col-12 col-md-8 px-4">
+            <div class="row no-gutters pb-4 mt-md-4">
+              <div id="newsApp" class="col-12 col-md-8 px-2 px-md-4 mt-4">
                 <ul class="bg-white-box-50 h-100 shadow px-4 py-3">
                   <li v-for="news in newses" v-cloak>
                     <a href="#newsArtical" class="row no-gutters px-3 my-4" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
-                      <div class="col-3 pr-4">
+                      <div class="col-12 col-md-3 pr-md-4 mb-3">
                         <figure class="figure-hr-75" :style="'background-image: url('+ news['cover'] +')'"></figure>
                       </div>
-                      <div class="col">
-                        <time class="d-block text-time text-right mb-2">{{ news['year'] }}.{{ news['month'] }}.{{ news['date'] }}</time>
+                      <div class="col-12 col-md-9">
+                        <time class="d-block text-time text-md-right mb-2">{{ news['year'] }}.{{ news['month'] }}.{{ news['date'] }}</time>
                         <p class="text-h7">
                           {{ news['title'] }}
                         </p>
@@ -280,9 +285,9 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 px-4 pt-5 pt-md-4 pt-lg-0">
+              <div class="col-12 col-md-4 px-2 px-md-4 mt-4">
                 <div class="d-flex justify-content-center mx-auto">
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnetredbeauty&tabs=timeline&width=360&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="640" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="shadow"></iframe>
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnetredbeauty&tabs=timeline&width=360&height=640&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="640" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="w-100 shadow"></iframe>
                 </div>
               </div>
             </div>
@@ -296,31 +301,31 @@
     <footer class="footer">
       <div class="footer-background-blur"></div>
       <div class="footer-body pl-md-4">
-        <menu class="d-flex flex-wrap align-items-start">
-          <li class="d-flex mr-5 mb-5">
-            <div class="text-h6 text-white mr-4">大型活動 <span class="slash"></span></div>
-            <ul>
+        <menu class="d-flex flex-wrap justify-content-end justify-content-md-start text-right text-md-left mt-5 mt-md-0">
+          <li class="d-flex flex-column flex-md-row mb-3 mr-md-5 mb-md-5">
+            <div class="text-h6 text-white mr-md-4 mb-2">大型活動 <span class="slash"></span></div>
+            <ul class="text-right text-md-left">
               <li class="text-p-lg text-break mb-2"><a>音樂節</a></li>
               <li class="text-p-lg text-break mb-2"><a>鄉鎮市集活動</a></li>
             </ul>
           </li>
-          <li class="d-flex mr-5 mb-5">
-            <div class="text-h6 text-white mr-4">校園活動 <span class="slash"></span></div>
-            <ul>
+          <li class="d-flex flex-column flex-md-row mb-3 mr-md-5 mb-md-5">
+            <div class="text-h6 text-white mr-md-4 mb-2">校園活動 <span class="slash"></span></div>
+            <ul class="text-right text-md-left">
               <li class="text-p-lg text-break mb-2"><a>校園海選</a></li>
               <li class="text-p-lg text-break mb-2"><a>校園特派記者</a></li>
             </ul>
           </li>
-          <li class="d-flex mr-5 mb-5">
-            <div class="text-h6 text-white mr-4">培訓資源 <span class="slash"></span></div>
-            <ul>
+          <li class="d-flex flex-column flex-md-row mb-3 mr-md-5 mb-md-5">
+            <div class="text-h6 text-white mr-md-4 mb-2">培訓資源 <span class="slash"></span></div>
+            <ul class="text-right text-md-left">
               <li class="text-p-lg text-break mb-2"><a>線上教育平台</a></li>
               <li class="text-p-lg text-break mb-2"><a>共學教育平台</a></li>
             </ul>
           </li>
-          <li class="d-flex">
-            <div class="text-h6 text-white mr-4">聯盟組織 <span class="slash"></span></div>
-            <ul>
+          <li class="d-flex flex-column flex-md-row mb-3 mr-md-5 mb-md-5">
+            <div class="text-h6 text-white mr-md-4 mb-2">聯盟組織 <span class="slash"></span></div>
+            <ul class="text-right text-md-left">
               <li class="text-p-lg text-break mb-2"><a>國際合作企業發展 GS1 Taiwan</a></li>
               <li class="text-p-lg text-break mb-2"><a>我享平台</a></li>
               <li class="text-p-lg text-break mb-2"><a>必紅TV</a></li>
