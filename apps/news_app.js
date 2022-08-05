@@ -11,13 +11,19 @@ var newsApp = createApp({
     groupedNewses: function() {
       const groupedNewses = {};
 
-      this.newses.forEach((row) => {
+      this.latestNewses.forEach((row) => {
         groupedNewses[row['year']] ||= {}
         groupedNewses[row['year']][row['month']] ||= []
         groupedNewses[row['year']][row['month']].push(row)
       });
 
       return groupedNewses;
+    },
+    latestNewses: function () {
+      return this.newses.sort((a, b) => {
+        if (b['publish_at'] > a['publish_at']) return 1;
+        else return -1;
+      });
     }
   },
   methods: {

@@ -251,7 +251,7 @@
             <div class="row no-gutters pb-4 mt-md-4">
               <div id="newsApp" class="col-12 col-lg-8 px-lg-4 mt-4">
                 <ul class="bg-white-box-50 h-100 shadow px-4 py-3">
-                  <li v-for="news in newses" v-cloak>
+                  <li v-for="news in latestNewses" v-cloak>
                     <a href="#newsArtical" class="row no-gutters px-3 my-4" data-toggle="modal" data-target="#newsArtical" @click="currentNews = news">
                       <div class="col-12 col-md-3 pr-md-4 mb-3">
                         <figure class="figure-hr-75" :style="'background-image: url('+ news['cover'] +')'"></figure>
