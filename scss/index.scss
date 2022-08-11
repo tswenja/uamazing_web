@@ -1,18 +1,13 @@
 $index-content-width: 85%;
 
 .bg-purple {
-  background: url(../assets/bg-purple.jpg) bottom center/auto 100vh;
+  background: url(../assets/images/bg-purple.jpg) bottom center/auto 100vh;
 }
 
 .index-fixed-bg {
   padding-top: 59.0277778%;
   background: no-repeat top center/100% auto;
   overflow: auto;
-}
-.bg-slogan1 {
-  background-image: url(../assets/slogan_text1.svg), url(../public/index/slogan_bg1.jpg);
-  background-position: top 10.625vw left 12.8472222vw, top center;
-  background-size: 41.8055556%, 100% auto;
 }
 .kv-slogan1 {
   position: absolute;
@@ -167,7 +162,7 @@ $index-content-width: 85%;
 }
 
 .index-bg-press {
-  background: url(bg-star.svg) no-repeat 350% -10%/92.3611111% auto;
+  background: url(../assets/images/bg-star.svg) no-repeat 350% -10%/92.3611111% auto;
 }
 
 .bg-sky {
@@ -194,16 +189,16 @@ $index-content-width: 85%;
   }
 }
 .star-sm {
-  background-image: url(star-sm.svg);
+  background-image: url(../assets/images/star-sm.svg);
 }
 .star-lg {
-  background-image: url(star-lg.svg);
+  background-image: url(../assets/images/star-lg.svg);
 }
 .stargroup-sm {
-  background-image: url(stargroup-sm.svg);
+  background-image: url(../assets/images/stargroup-sm.svg);
 }
 .stargroup-lg {
-  background-image: url(stargroup-lg.svg);
+  background-image: url(../assets/images/stargroup-lg.svg);
 }
 .sky-left, .sky-right {
   margin-left: 6%;
@@ -387,8 +382,8 @@ $index-content-width: 85%;
   padding-right: .75rem;
   padding-left: 1.5rem;
   border-bottom: 1px solid white;
-  background: url(star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
-  background-image: url(star-sm.svg);
+  background: url(../assets/images/star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
+  background-image: url(../assets/images/star-sm.svg);
 
   &:active, &:focus, &:visited {
     color: #EAE9ED;

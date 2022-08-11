@@ -129,7 +129,7 @@ $logoWidth: 3.75rem;
 }
 
 .article-sketchDeco {
-  background: url(../assets/bg-deco.svg) no-repeat top left/3rem auto;
+  background: url(../assets/images/bg-deco.svg) no-repeat top left/3rem auto;
 
   & > .article-inner {
     padding-left: 3rem;
@@ -149,36 +149,6 @@ $logoWidth: 3.75rem;
   font-size: 1.5rem;
   letter-spacing: .06em;
   font-weight: 300;
-}
-.activity-h2-deco {
-  display: inline-block;
-  height: 3.5rem;
-  line-height: 1;
-  width: 100%;
-  background: no-repeat top center;
-  background-size: contain;
-
-  &.portfolio {
-    background-image: url(../assets/h2-deco-portfolio.svg);
-  }
-  &.teachors {
-    background-image: url(../assets/h2-deco-teachors.svg);
-  }
-  &.cource {
-    background-image: url(../assets/h2-deco-cource.svg);
-  }
-  &.on-air {
-    background-image: url(../assets/h2-deco-on-air.svg);
-  }
-  &.photos {
-    background-image: url(../assets/h2-deco-photos.svg);
-  }
-  &.press {
-    background-image: url(../assets/h2-deco-press.svg);
-  }
-  &.about {
-    background-image: url(../assets/h2-deco-about.svg);
-  }
 }
 
 .item-pill {

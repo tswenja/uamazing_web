@@ -66,7 +66,7 @@ $logoWidth: 5rem;
 .article-sketchDeco {
   position: relative;
   padding-bottom: 91.5384615%;
-  background: url(../assets/bg-deco.svg) no-repeat top center/contain;
+  background: url(../assets/images/bg-deco.svg) no-repeat top center/contain;
   color: #EAE9ED;
 
   & > .article-inner {
@@ -95,33 +95,6 @@ $logoWidth: 5rem;
 }
 .activity-h2 {
   font-size: 1.875rem;
-}
-.activity-h2-deco {
-  margin-right: 1.2rem;
-  background-position: top left;
-  background-size: auto;
-
-  &.portfolio {
-    width: 27.25rem;
-  }
-  &.teachors {
-    width: 25.375rem;
-  }
-  &.cource {
-    width: 20rem;
-  }
-  &.on-air {
-    width: 17.9375rem;
-  }
-  &.photos {
-    width: 19.9375rem;
-  }
-  &.press {
-    width: 15.4375rem;
-  }
-  &.about {
-    width: 16.875rem;
-  }
 }
 
 .activity-grid-title {

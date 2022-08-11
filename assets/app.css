@@ -289,22 +289,17 @@ body.activity, body.school, body.about {
     height: 150vh;
     background: blue; }
 
-.bgAnimation, .bgAnimation.bg-slogan1 {
+.bgAnimation {
   background-position: top 10.625vw left 12.8472222vw, top left;
   background-size: 41.8055556%, auto 100%; }
-  .bgAnimation.start, .bgAnimation.bg-slogan1.start {
+  .bgAnimation.start {
     background-size: 41.8055556%, auto 110%;
     transition: background-size 8s;
     transition-timing-function: linear; }
-  .bgAnimation.bg-slogan2, .bgAnimation.bg-slogan1.bg-slogan2 {
-    background-position: top 23.125vw left 12.9166667vw, top center;
-    background-size: 28.8888889%, auto 66vw; }
-    .bgAnimation.bg-slogan2.start, .bgAnimation.bg-slogan1.bg-slogan2.start {
-      background-size: 28.8888889%, auto 60vw; }
-  .bgAnimation.bg-kv2, .bgAnimation.bg-slogan1.bg-kv2 {
+  .bgAnimation.bg-kv2 {
     background-position: top center;
     background-size: auto 66vw; }
-    .bgAnimation.bg-kv2.start, .bgAnimation.bg-slogan1.bg-kv2.start {
+    .bgAnimation.bg-kv2.start {
       background-size: auto 60vw; }
 
 .kvAnimation > :not(.current) {
@@ -512,7 +507,7 @@ fieldset {
   max-width: 100%;
   padding-left: 0;
   padding-top: 20px;
-  background: url(../assets/h2Deco.svg) no-repeat left 4px top 0/0.333333333em auto;
+  background: url(../assets/images/h2Deco.svg) no-repeat left 4px top 0/0.333333333em auto;
   font-family: 'Josefin Sans';
   font-weight: 100;
   letter-spacing: .05em;
@@ -740,7 +735,7 @@ fieldset {
   background: linear-gradient(164.8deg, rgba(234, 233, 237, 0) 9.07%, rgba(234, 233, 237, 0.7) 89.32%); }
 
 .bg-balls {
-  background: url(../assets/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto; }
+  background: url(../assets/images/bg-balls.svg) no-repeat top left 30.555556%/104.1666667% auto; }
 
 .bg-bubble {
   background: url(../assets/images/bubble-blue.svg) no-repeat center/contain; }
@@ -1085,17 +1080,12 @@ fieldset {
   .d-lg-block {
     display: block; } }
 .bg-purple {
-  background: url(../assets/bg-purple.jpg) bottom center/auto 100vh; }
+  background: url(../assets/images/bg-purple.jpg) bottom center/auto 100vh; }
 
 .index-fixed-bg {
   padding-top: 59.0277778%;
   background: no-repeat top center/100% auto;
   overflow: auto; }
-
-.bg-slogan1 {
-  background-image: url(../assets/slogan_text1.svg), url(../public/index/slogan_bg1.jpg);
-  background-position: top 10.625vw left 12.8472222vw, top center;
-  background-size: 41.8055556%, 100% auto; }
 
 .kv-slogan1 {
   position: absolute;
@@ -1220,7 +1210,7 @@ fieldset {
       opacity: .67; }
 
 .index-bg-press {
-  background: url(bg-star.svg) no-repeat 350% -10%/92.3611111% auto; }
+  background: url(../assets/images/bg-star.svg) no-repeat 350% -10%/92.3611111% auto; }
 
 .bg-sky {
   background: linear-gradient(180deg, #241E20 0%, #3A3536 100%); }
@@ -1244,16 +1234,16 @@ fieldset {
     opacity: 1; }
 
 .star-sm {
-  background-image: url(star-sm.svg); }
+  background-image: url(../assets/images/star-sm.svg); }
 
 .star-lg {
-  background-image: url(star-lg.svg); }
+  background-image: url(../assets/images/star-lg.svg); }
 
 .stargroup-sm {
-  background-image: url(stargroup-sm.svg); }
+  background-image: url(../assets/images/stargroup-sm.svg); }
 
 .stargroup-lg {
-  background-image: url(stargroup-lg.svg); }
+  background-image: url(../assets/images/stargroup-lg.svg); }
 
 .sky-left, .sky-right {
   margin-left: 6%;
@@ -1392,8 +1382,8 @@ fieldset {
   padding-right: .75rem;
   padding-left: 1.5rem;
   border-bottom: 1px solid white;
-  background: url(star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
-  background-image: url(star-sm.svg); }
+  background: url(../assets/images/star-sm.svg) no-repeat left -5.875rem top -5.8125rem/12.875rem auto;
+  background-image: url(../assets/images/star-sm.svg); }
   .sky-link:active, .sky-link:focus, .sky-link:visited {
     color: #EAE9ED; }
   .sky-link:hover {
@@ -1522,7 +1512,7 @@ fieldset {
   width: 100%; }
 
 .article-sketchDeco {
-  background: url(../assets/bg-deco.svg) no-repeat top left/3rem auto; }
+  background: url(../assets/images/bg-deco.svg) no-repeat top left/3rem auto; }
   .article-sketchDeco > .article-inner {
     padding-left: 3rem; }
   .article-sketchDeco .article-title {
@@ -1537,28 +1527,6 @@ fieldset {
   font-size: 1.5rem;
   letter-spacing: .06em;
   font-weight: 300; }
-
-.activity-h2-deco {
-  display: inline-block;
-  height: 3.5rem;
-  line-height: 1;
-  width: 100%;
-  background: no-repeat top center;
-  background-size: contain; }
-  .activity-h2-deco.portfolio {
-    background-image: url(../assets/h2-deco-portfolio.svg); }
-  .activity-h2-deco.teachors {
-    background-image: url(../assets/h2-deco-teachors.svg); }
-  .activity-h2-deco.cource {
-    background-image: url(../assets/h2-deco-cource.svg); }
-  .activity-h2-deco.on-air {
-    background-image: url(../assets/h2-deco-on-air.svg); }
-  .activity-h2-deco.photos {
-    background-image: url(../assets/h2-deco-photos.svg); }
-  .activity-h2-deco.press {
-    background-image: url(../assets/h2-deco-press.svg); }
-  .activity-h2-deco.about {
-    background-image: url(../assets/h2-deco-about.svg); }
 
 .item-pill {
   font-size: 1.125rem;
@@ -1685,7 +1653,7 @@ fieldset {
   .article-sketchDeco {
     position: relative;
     padding-bottom: 91.5384615%;
-    background: url(../assets/bg-deco.svg) no-repeat top center/contain;
+    background: url(../assets/images/bg-deco.svg) no-repeat top center/contain;
     color: #EAE9ED; }
     .article-sketchDeco > .article-inner {
       position: absolute;
@@ -1708,25 +1676,6 @@ fieldset {
 
   .activity-h2 {
     font-size: 1.875rem; }
-
-  .activity-h2-deco {
-    margin-right: 1.2rem;
-    background-position: top left;
-    background-size: auto; }
-    .activity-h2-deco.portfolio {
-      width: 27.25rem; }
-    .activity-h2-deco.teachors {
-      width: 25.375rem; }
-    .activity-h2-deco.cource {
-      width: 20rem; }
-    .activity-h2-deco.on-air {
-      width: 17.9375rem; }
-    .activity-h2-deco.photos {
-      width: 19.9375rem; }
-    .activity-h2-deco.press {
-      width: 15.4375rem; }
-    .activity-h2-deco.about {
-      width: 16.875rem; }
 
   .activity-grid-title {
     font-size: 1.25rem;
@@ -2095,13 +2044,6 @@ fieldset {
     background-size: cover;
     overflow: auto; }
 
-  .bg-slogan1 {
-    background-position: top 18vh left 12.8472222vw, top center;
-    background-size: auto, cover; }
-
-  .bg-slogan2 {
-    background-size: auto, cover; }
-
   .bg-kv2 {
     background-size: cover; }
 
@@ -2111,22 +2053,17 @@ fieldset {
   .footer-body {
     padding: 4.375rem 0 2rem; }
 
-  .bgAnimation, .bgAnimation.bg-slogan1 {
+  .bgAnimation {
     background-position: top 18vh left 12.8472222vw, top left;
     background-size: auto, 100% auto; }
-    .bgAnimation.start, .bgAnimation.bg-slogan1.start {
+    .bgAnimation.start {
       background-size: auto, 110% auto;
       transition: background-size 8s;
       transition-timing-function: linear; }
-    .bgAnimation.bg-slogan2, .bgAnimation.bg-slogan1.bg-slogan2 {
-      background-position: top 23.125vw left 12.9166667vw, top right;
-      background-size: auto, auto 110%; }
-      .bgAnimation.bg-slogan2.start, .bgAnimation.bg-slogan1.bg-slogan2.start {
-        background-size: auto, auto 100%; }
-    .bgAnimation.bg-kv2, .bgAnimation.bg-slogan1.bg-kv2 {
+    .bgAnimation.bg-kv2 {
       background-position: top center;
       background-size: auto 110%; }
-      .bgAnimation.bg-kv2.start, .bgAnimation.bg-slogan1.bg-kv2.start {
+      .bgAnimation.bg-kv2.start {
         background-size: auto cover; } }
 @media (min-width: 768px) {
   .bg-purple {
