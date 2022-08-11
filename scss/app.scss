@@ -127,7 +127,7 @@ body.activity, body.school, body.about {
   &::after {
     content: '';
     background: no-repeat;
-    background-image: url(../assets/images/footer-deco-logo.jpg), url(../assets/images/footer-deco.svg);
+    background-image: url(../assets/logo@2x.png), url(../assets/images/footer-deco.svg);
     background-position: 44px 20px, left top;
     background-size: 102px, auto;
   }
