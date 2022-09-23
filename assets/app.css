@@ -1464,20 +1464,11 @@ fieldset {
       padding-left: .25rem; }
   .activityNavbar-light .activity-nav-link-secondary {
     color: #5D5C61;
-    opacity: 0.67; }
+    opacity: 0.5; }
     .activityNavbar-light .activity-nav-link-secondary:hover, .activityNavbar-light .activity-nav-link-secondary.hover, .activityNavbar-light .activity-nav-link-secondary:active, .activityNavbar-light .activity-nav-link-secondary.active, .activityNavbar-light .activity-nav-link-secondary:visited, .activityNavbar-light .activity-nav-link-secondary.visited {
       color: #5D5C61;
       opacity: 1;
       font-weight: 500; }
-  .activityNavbar-light .activity-nav-link-red-sparkle {
-    padding: calc(2px + .25rem) 1.25rem 0.25rem;
-    background: no-repeat;
-    background-image: url(../assets/images/star-sm-red.svg), url(../assets/images/star-sm-red.svg);
-    background-position: center left .25rem, center right .25rem;
-    border-bottom: 2px dashed #B3292C;
-    color: #B3292C;
-    font-weight: 700;
-    text-align: center; }
   .activityNavbar-light .activity-nav-icon.white {
     display: none; }
   .activityNavbar-light .activity-nav-icon.black {
@@ -1530,11 +1521,17 @@ fieldset {
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.37)); }
 
 .activity-nav-link, .activity-nav-link-secondary {
-  letter-spacing: 0.02em; }
+  letter-spacing: .062em; }
 
-.activity-nav-link {
+.activity-nav-link-red-sparkle {
+  padding: calc(2px + .25rem) 1.25rem 0.25rem;
+  background: no-repeat;
+  background-image: url(../assets/images/star-sm-red.svg), url(../assets/images/star-sm-red.svg);
+  background-position: center left .25rem, center right .25rem;
+  border-bottom: 2px dashed #B3292C;
+  color: #B3292C;
   font-weight: 500;
-  letter-spacing: .02em; }
+  text-align: center; }
 
 .activity-nav-icon {
   height: 1.25rem;
@@ -1744,6 +1741,12 @@ fieldset {
 
   .activityNavbar-light .activity-nav-link.current::before, .activityNavbar-light .activity-nav-link.current::after {
     content: ' / '; }
+
+  .activity-nav-link {
+    font-weight: 500; }
+
+  .activity-nav-link-red-sparkle {
+    font-weight: 700; }
 
   .activityNavbar, .activityBrand {
     padding: .75rem 1rem; }
