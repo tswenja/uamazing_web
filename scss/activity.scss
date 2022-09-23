@@ -19,14 +19,20 @@
   background-color: rgba(255,255,255,0.96);
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 
+  .activity-nav-link, .activity-nav-link-secondary {
+    opacity: 0.76;
+
+    &:hover, &.hover, &:active, &.active {
+      opacity: 1;
+    }
+  }
+
   .activity-nav-link {
     font-size: 1.125rem;
     color: #241E20;
-    opacity: 0.37;
 
-    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+    &:hover, &.hover, &:active, &.active {
       color: #241E20;
-      opacity: 1;
     }
 
     &.current {
@@ -51,10 +57,8 @@
   }
   .activity-nav-link-secondary {
     color: #5D5C61;
-    opacity: 0.5;
-    &:hover, &.hover, &:active, &.active, &:visited, &.visited {
+    &:hover, &.hover, &:active, &.active {
       color: #5D5C61;
-      opacity: 1;
       font-weight: 500;
     }
   }

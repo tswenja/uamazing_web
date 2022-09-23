@@ -18,6 +18,20 @@
 .activityNavbar {
   transition: background-color .3s;
 }
+.activityNavbar-light {
+  .activity-nav-link {
+    opacity: 0.37;
+    &:hover, &.hover, &:active, &.active {
+      opacity: 1;
+    }
+  }
+  .activity-nav-link-secondary {
+    opacity: 0.67;
+    &:hover, &.hover, &:active, &.active {
+      opacity: 1;
+    }
+  }
+}
 .activityNavbar.activityNavbar-md-dark {
   background-color: rgba(0, 0, 0, .2);
 
