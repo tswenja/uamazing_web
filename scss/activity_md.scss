@@ -23,6 +23,7 @@
 
   .activity-nav-link {
     color: #fff;
+
     &:hover, &.hover, &:active, &.active, &:visited, &.visited {
       color: #fff;
     }
@@ -42,6 +43,17 @@
     }
   }
 }
+
+.activityNavbar-light {
+  .activity-nav-link {
+    &.current {
+      &::before, &::after {
+        content: ' / ';
+      }
+    }
+  }
+}
+
 $logoWidth: 5rem;
 .activityNavbar, .activityBrand {
   padding: .75rem 1rem;
@@ -135,6 +147,37 @@ $logoWidth: 5rem;
   }
   .activitySection-imageArticle-portraitBg {
     background: linear-gradient(227.44deg, #EAE9ED 26.07%, rgba(234, 233, 237, 0.5) 78.32%);
+  }
+}
+
+
+.activities-kv {
+  .activities-kv-figure {
+    margin: 10% auto;
+    width: 60%;
+
+    & > img:first-child {
+      margin-top: 0;
+      height: auto;
+    }
+  }
+
+  .activities-kv-float {
+    position: absolute;
+
+    &.activities-kv-figcaption, &.-float1, &.-float2, &.-float3, &.-float4 {
+      margin: 0;
+    }
+
+    &.activities-kv-figcaption {
+      position: absolute;
+      max-width: 285px;
+      margin: 0;
+      right: -28.9381564%;
+      top: 5%;
+      padding: 24px;
+      z-index: 10;
+    }
   }
 }
 
