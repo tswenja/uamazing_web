@@ -125,6 +125,11 @@ $logoWidth: 3.75rem;
   height: $logoWidth;
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.37));
 }
+.activity-nav-link {
+  &:active, &.active, &:visited, &.visited {
+    font-weight: 500;
+  }
+}
 .activity-nav-link, .activity-nav-link-secondary {
   letter-spacing: .062em;
 }

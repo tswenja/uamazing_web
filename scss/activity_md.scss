@@ -54,13 +54,6 @@
   }
 }
 
-.activity-nav-link {
-  font-weight: 500;
-}
-.activity-nav-link-red-sparkle {
-  font-weight: 700;
-}
-
 
 $logoWidth: 5rem;
 .activityNavbar, .activityBrand {
@@ -72,6 +65,12 @@ $logoWidth: 5rem;
 .activityBrand > img {
   width: $logoWidth;
   height: $logoWidth;
+}
+.activity-nav-link {
+  font-weight: 500;
+}
+.activity-nav-link-red-sparkle {
+  font-weight: 700;
 }
 .activity-nav-icon {
   height: 1.5rem;
