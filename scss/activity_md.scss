@@ -82,6 +82,10 @@ $logoWidth: 5rem;
 }
 .activity-nav-link {
   font-weight: 500;
+
+  &:active, &.active {
+    font-weight: 500;
+  }
 }
 .activity-nav-link-red-sparkle {
   font-weight: 700;
