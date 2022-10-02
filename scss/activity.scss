@@ -314,35 +314,37 @@ $logoWidth: 3.75rem;
       position: relative;
       width: 80%;
       margin: 10%;
-      padding: 12% 10% 10%;
+      padding: 12% 12% 10%;
+
+      margin-top: -4%;
     }
 
     &.-float1 {
       width: 16.4527421%;
       top: -10%;
       right: 110%;
-      margin-top: calc(75vh - (-0.1) * 75vh);
+      xmargin-top: calc(75vh - (-0.2) * 75vh);
       margin-right: -30%;
     }
     &.-float2 {
       width: 23.3372229%;
       bottom: 10%;
       right: 103%;
-      margin-bottom: calc(-0.1 * 75vh);
+      xmargin-bottom: calc(-0.1 * 75vh);
       margin-right: -20%;
     }
     &.-float3 {
       width: 28.588098%;
       top: 42.7%;
       left: 106.5%;
-      margin-top: calc(75vh - 0.427 * 75vh);
+      xmargin-top: calc(75vh - 0.427 * 75vh);
       margin-left: -20%;
     }
     &.-float4 {
       width: 21.470245%;
       bottom: -12%;
       left: 97.4%;
-      margin-bottom: calc(0.12 * 75vh);
+      xmargin-bottom: calc(0.12 * 75vh);
       margin-left: -20%;
     }
   }
