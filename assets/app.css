@@ -1650,7 +1650,7 @@ fieldset {
   .activities-kv .activities-kv-figure > :first-child {
     display: block;
     width: 100%;
-    height: 75vh; }
+    height: 50vh; }
 .activities-kv .activities-kv-figcaption {
   min-height: 175px;
   padding: 24px;
@@ -1671,25 +1671,25 @@ fieldset {
     width: 16.4527421%;
     top: -10%;
     right: 110%;
-    margin-top: calc(75vh - (-0.25) * 75vh);
+    margin-top: calc(50vh - (-0) * 50vh);
     margin-right: -30%; }
   .activities-kv .activities-kv-float.-float2 {
     width: 23.3372229%;
     bottom: 10%;
     right: 103%;
-    margin-bottom: calc(-0.1 * 75vh);
+    margin-bottom: calc(-0.1 * 50vh);
     margin-right: -20%; }
   .activities-kv .activities-kv-float.-float3 {
     width: 28.588098%;
     top: 42.7%;
     left: 106.5%;
-    margin-top: calc(75vh - 0.527 * 75vh);
+    margin-top: calc(50vh - 0.527 * 50vh);
     margin-left: -20%; }
   .activities-kv .activities-kv-float.-float4 {
     width: 21.470245%;
     bottom: -12%;
     left: 97.4%;
-    margin-bottom: calc(0.12 * 75vh);
+    margin-bottom: calc(0.12 * 50vh);
     margin-left: -20%; }
 
 .blockAmiba {
