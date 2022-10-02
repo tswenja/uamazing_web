@@ -1694,8 +1694,9 @@ fieldset {
 
 .blockAmiba {
   padding-top: 2.6%;
-  padding-left: 8%;
-  background: url(../assets/images/amiba-round.svg) no-repeat left top/54%; }
+  padding-left: 10%;
+  padding-right: 10%;
+  background: url(../assets/images/amiba-round.svg) no-repeat left top/67%; }
 
 .blockAmiba-time {
   font-size: 30px;
@@ -1871,6 +1872,11 @@ fieldset {
       top: 5%;
       padding: 24px;
       z-index: 10; }
+
+  .blockAmiba {
+    padding-left: 8%;
+    padding-right: 0;
+    background-size: 54%; }
 
   .agenda-button {
     position: absolute;
