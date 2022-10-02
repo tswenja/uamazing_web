@@ -283,7 +283,7 @@ $logoWidth: 3.75rem;
     margin: 0 0 20%;
     width: 100%;
 
-    & > img:first-child {
+    & > :first-child {
       width: 100%;
       height: 75vh;
       object-fit: cover;
