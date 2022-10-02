@@ -1523,6 +1523,10 @@ fieldset {
   max-height: calc(100vh - 46px);
   overflow: auto; }
 
+.activity-nav-link, .activity-nav-link-secondary, .activity-nav-link-red-sparkle {
+  display: block;
+  padding: .5rem 1rem; }
+
 .activity-nav-link {
   font-size: 1.125rem; }
   .activity-nav-link.current {
