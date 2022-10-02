@@ -323,28 +323,28 @@ $logoWidth: 3.75rem;
       width: 16.4527421%;
       top: -10%;
       right: 110%;
-      xmargin-top: calc(75vh - (-0.2) * 75vh);
+      margin-top: calc(75vh - (-0.25) * 75vh);
       margin-right: -30%;
     }
     &.-float2 {
       width: 23.3372229%;
       bottom: 10%;
       right: 103%;
-      xmargin-bottom: calc(-0.1 * 75vh);
+      margin-bottom: calc(-0.1 * 75vh);
       margin-right: -20%;
     }
     &.-float3 {
       width: 28.588098%;
       top: 42.7%;
       left: 106.5%;
-      xmargin-top: calc(75vh - 0.427 * 75vh);
+      margin-top: calc(75vh - 0.527 * 75vh);
       margin-left: -20%;
     }
     &.-float4 {
       width: 21.470245%;
       bottom: -12%;
       left: 97.4%;
-      xmargin-bottom: calc(0.12 * 75vh);
+      margin-bottom: calc(0.12 * 75vh);
       margin-left: -20%;
     }
   }
