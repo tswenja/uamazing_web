@@ -1648,9 +1648,9 @@ fieldset {
   margin: 0 0 20%;
   width: 100%; }
   .activities-kv .activities-kv-figure > :first-child {
+    display: block;
     width: 100%;
-    height: 75vh;
-    object-fit: cover; }
+    height: 75vh; }
 .activities-kv .activities-kv-figcaption {
   min-height: 175px;
   padding: 24px;
