@@ -231,30 +231,30 @@ $__about__culture-brick-size: 165px;
 
 
 @media (min-width: $breakpoint-xl) {
-$collage-width: 100vw;
+$collage-width: min(100vw, 1440px);
 .__about__portrait-cocoon {
-  width: .3125 * $collage-width;
-  height: .3125 * $collage-width * $cocoon-ratio;
+  width: calc(.3125 * #{$collage-width});
+  height: calc(.3125 * #{$collage-width} * #{$cocoon-ratio});
 }
 .__about__portrait-cocoon-lg {
-  width: .340625 * $collage-width;
-  height: .340625 * $collage-width * $cocoon-ratio;
+  width: calc(.340625 * #{$collage-width});
+  height: calc(.340625 * #{$collage-width} * #{$cocoon-ratio});
 }
 .__about__portrait-cocoon-sm {
-  width: .256109022 * $collage-width;
-  height: .256109022 * $collage-width * $cocoon-ratio;
+  width: calc(.256109022 * #{$collage-width});
+  height: calc(.256109022 * #{$collage-width} * #{$cocoon-ratio});
 }
 .__about__collages-left {
   position: absolute;
 }
 .__about__collages-right {
-  margin-top: calc(1440px - 100vw);
+  margin-top: calc(1440px - #{$collage-width});
 }
 .__about__collage {
 
   &.__about__collage-1 {
     margin-top: 6.4583333%;
-    margin-left: 32.8472222%;
+    margin-left: calc(50vw + (.328472222 - 0.5) * #{$collage-width});
 
     & .__about__collage-object:nth-child(2) {
       bottom: 95%;
@@ -271,9 +271,13 @@ $collage-width: 100vw;
     }
   }
 
+  &.__about__collage-2 {
+    margin-left: calc(50vw + (.116666667 - 0.5) * #{$collage-width});
+  }
+
   &.__about__collage-3 {
     margin-top: 15.2777778%;
-    margin-right: calc(5.625% - (1440px - 100vw)/10);
+    margin-right: calc(50vw + (.05625 - 0.5) * #{$collage-width} - (1440px - #{$collage-width})/10);
     margin-left: auto;
 
     & .__about__collage-object:nth-child(2) {
@@ -293,7 +297,7 @@ $collage-width: 100vw;
   &.__about__collage-4 {
     margin-top: 7.7083333%;
     margin-top: 8%;
-    margin-right: 23.3333333%;
+    margin-right: calc(50vw + (.233333333 - 0.5) * #{$collage-width});
     margin-left: auto;
 
     & .__about__collage-object:nth-child(2) {

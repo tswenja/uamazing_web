@@ -753,7 +753,7 @@ fieldset {
   background: url(../assets/images/bg-neural-networks-2@2x.jpg) no-repeat top center/cover; }
 
 .bg-collage-wall {
-  background: url(../assets/images/bg-collage-wall@2x.jpg) no-repeat top center/cover; }
+  background: url(../assets/images/bg-collage-wall@2x.jpg) no-repeat top center/auto 110%; }
 
 .bg-shape-strip {
   background: url(../assets/images/shape-strip.png) no-repeat center/100% 100%; }
@@ -2074,7 +2074,7 @@ fieldset {
       top: 89.6226415%;
       right: 5%; }
   .__about__collage.__about__collage-3 {
-    margin-top: 272px;
+    margin-top: 232px;
     margin-right: 18px;
     margin-left: -16px; }
     .__about__collage.__about__collage-3 .__about__collage-object:nth-child(2) {
@@ -2530,26 +2530,26 @@ fieldset {
       right: auto; } }
 @media (min-width: 1200px) {
   .__about__portrait-cocoon {
-    width: 31.25vw;
-    height: 51.6917293125vw; }
+    width: calc(.3125 * min(100vw, 1440px));
+    height: calc(.3125 * min(100vw, 1440px) * 1.654135338); }
 
   .__about__portrait-cocoon-lg {
-    width: 34.0625vw;
-    height: 56.3439849506vw; }
+    width: calc(.340625 * min(100vw, 1440px));
+    height: calc(.340625 * min(100vw, 1440px) * 1.654135338); }
 
   .__about__portrait-cocoon-sm {
-    width: 25.6109022vw;
-    height: 42.3638983671vw; }
+    width: calc(.256109022 * min(100vw, 1440px));
+    height: calc(.256109022 * min(100vw, 1440px) * 1.654135338); }
 
   .__about__collages-left {
     position: absolute; }
 
   .__about__collages-right {
-    margin-top: calc(1440px - 100vw); }
+    margin-top: calc(1440px - min(100vw, 1440px)); }
 
   .__about__collage.__about__collage-1 {
     margin-top: 6.4583333%;
-    margin-left: 32.8472222%; }
+    margin-left: calc(50vw + (.328472222 - 0.5) * min(100vw, 1440px)); }
     .__about__collage.__about__collage-1 .__about__collage-object:nth-child(2) {
       bottom: 95%;
       right: 143.556701%; }
@@ -2560,9 +2560,11 @@ fieldset {
       z-index: 10;
       top: 95%;
       left: 67.0103093%; }
+  .__about__collage.__about__collage-2 {
+    margin-left: calc(50vw + (.116666667 - 0.5) * min(100vw, 1440px)); }
   .__about__collage.__about__collage-3 {
     margin-top: 15.2777778%;
-    margin-right: calc(5.625% - (1440px - 100vw)/10);
+    margin-right: calc(50vw + (.05625 - 0.5) * min(100vw, 1440px) - (1440px - min(100vw, 1440px))/10);
     margin-left: auto; }
     .__about__collage.__about__collage-3 .__about__collage-object:nth-child(2) {
       bottom: 90%;
@@ -2576,7 +2578,7 @@ fieldset {
   .__about__collage.__about__collage-4 {
     margin-top: 7.7083333%;
     margin-top: 8%;
-    margin-right: 23.3333333%;
+    margin-right: calc(50vw + (.233333333 - 0.5) * min(100vw, 1440px));
     margin-left: auto; }
     .__about__collage.__about__collage-4 .__about__collage-object:nth-child(2) {
       top: -66.0377358%;
