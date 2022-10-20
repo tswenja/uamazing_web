@@ -2,8 +2,7 @@
   // ========================== Plugin Initiation ==========================
   // AOS
   AOS.init({
-    duration: 600,
-    offset: 60
+    offset: 10
   });
 
 
