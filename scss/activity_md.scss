@@ -183,6 +183,7 @@ $logoWidth: 5rem;
 
     & > :first-child {
       margin-top: 0;
+      margin-left: -1.25rem;
       height: auto;
     }
   }
@@ -209,7 +210,7 @@ $logoWidth: 5rem;
 
 .blockAmiba {
   padding-left: 8%;
-  padding-right: 0;
+  padding-right: 8%;
   background-size: 54%
 }
 

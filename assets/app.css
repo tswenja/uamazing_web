@@ -1859,6 +1859,7 @@ fieldset {
     width: 60%; }
     .activities-kv .activities-kv-figure > :first-child {
       margin-top: 0;
+      margin-left: -1.25rem;
       height: auto; }
   .activities-kv .activities-kv-float {
     position: absolute; }
@@ -1875,7 +1876,7 @@ fieldset {
 
   .blockAmiba {
     padding-left: 8%;
-    padding-right: 0;
+    padding-right: 8%;
     background-size: 54%; }
 
   .agenda-button {
