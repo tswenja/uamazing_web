@@ -155,13 +155,13 @@
       </section>
 
 
-      <section class="activity-framing-x mt-5" v-if="events.length > 0">
+      <section class="activity-framing-x mt-5" v-if="events.length > 0" v-cloak>
         <h2 class="activity-h2 text-md-center ml-4 mx-sm-3 mx-md-5 mb-4">
           <span class="h2-deco mr-5 mr-md-4" data-text="events">events</span>
           <span class="d-inline-block">活動檔案</span>
         </h2>
         <div class="row no-gutters ml-4 mx-sm-3 mx-md-5">
-          <div class="" :class="{ 'col-6 col-md-3': (groupedEvents[year].length == 1), 'col-12 col-md-6': (groupedEvents[year].length == 2), 'col-12': (groupedEvents[year].length > 2) }" v-for="year in getReverseSortedKeys(groupedEvents)" v-cloak>
+          <div class="" :class="{ 'col-6 col-md-3': (groupedEvents[year].length == 1), 'col-12 col-md-6': (groupedEvents[year].length == 2), 'col-12': (groupedEvents[year].length > 2) }" v-for="year in getReverseSortedKeys(groupedEvents)">
             <div class="__activities__events-h2 px-sm-3 px-md-4 mb-2">{{ year }}</div>
             <ul class="row no-gutters">
               <li class="pr-4 p-sm-3 p-md-4" :class="{ 'col-12': (groupedEvents[year].length == 1), 'col-6': (groupedEvents[year].length == 2), 'col-6 col-md-3': (groupedEvents[year].length > 2) }" v-for="event in groupedEvents[year]">

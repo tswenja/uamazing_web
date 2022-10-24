@@ -56,7 +56,7 @@
                   colz.forEach((ele, ind) => {
                       row[ele] = (rowData.c[ind] != null) ? (rowData.c[ind].f || rowData.c[ind].v) : '';
                   })
-                  data.push(row);
+                  if (Object.keys(row).length > 0) data.push(row);
               })
               callback(processRows(data, keysMap));
           })
