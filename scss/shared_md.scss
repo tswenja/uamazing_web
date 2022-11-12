@@ -29,7 +29,7 @@ fieldset {
     left: $padding-left + 0.083333333em;
   }
   &::after {
-    left: $padding-left;
+    left: $padding-left + 0.05em;
   }
 }
 
