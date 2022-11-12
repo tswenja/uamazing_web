@@ -179,11 +179,10 @@ $logoWidth: 5rem;
 .activities-kv {
   .activities-kv-figure {
     margin: 10% auto;
-    width: 60%;
+    width: 61%;
 
-    & > :first-child {
+    & > .activities-kv-image {
       margin-top: 0;
-      margin-left: -1.25rem;
       height: auto;
     }
   }
@@ -198,8 +197,9 @@ $logoWidth: 5rem;
     &.activities-kv-figcaption {
       position: absolute;
       max-width: 285px;
+      width: 32.4232082%;
       margin: 0;
-      right: -28.9381564%;
+      right: calc(-140 / 876 * 100%);
       top: 5%;
       padding: 24px;
       z-index: 10;

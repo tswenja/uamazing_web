@@ -78,7 +78,7 @@ fieldset {
 
   font-family: 'Josefin Sans';
   font-weight: 100;
-  letter-spacing: .05em;
+  letter-spacing: .06em;
   vertical-align: text-bottom;
   color: inherit;
   opacity: .75;
@@ -96,10 +96,13 @@ fieldset {
   }
 
   &::after {
-    left: $padding-left;
+    left: $padding-left + 0.05em;
     font-weight: bold;
     letter-spacing: 0;
-    opacity: 0.37;
+    opacity: 0.2;
+  }
+  &.h2-deco-ls02::after {
+    letter-spacing: .02em;
   }
 }
 
@@ -286,6 +289,9 @@ fieldset {
 }
 .drop-shadow-short {
   filter: drop-shadow(0 .25rem .2rem rgba(0, 0, 0, 0.25));
+}
+.drop-shadow-sm {
+  filter: drop-shadow(0 .125rem .25rem rgba(0,0,0,.075));
 }
 .drop-shadow {
   filter: drop-shadow(0 .25rem 1.25rem rgba(0, 0, 0, 0.25));
