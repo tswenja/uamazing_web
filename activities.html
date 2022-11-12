@@ -114,8 +114,8 @@
 
       <section class="activity-framing-x">
         <h2 class="activity-h2 text-md-center activity-indent-x mb-5">
-          <span class="h2-deco h2-deco-ls02 align-middle mr-5 ml-md-n4 mr-md-4" data-text="on-air">on-air</span>
-          <span class="d-inline-block ml-2">近期活動</span>
+          <span class="h2-deco h2-deco-ls02" data-text="on-air">on-air</span>
+          <span class="d-block d-md-inline-block ml-2">近期活動</span>
         </h2>
 
         <div class="pt-lg-5"></div>
@@ -157,8 +157,8 @@
 
       <section class="activity-framing-x mt-5" v-if="events.length > 0" v-cloak>
         <h2 class="activity-h2 text-md-center ml-4 mx-sm-3 mx-md-5 mb-5">
-          <span class="h2-deco h2-deco-ls02 align-middle mr-5 mr-md-4" data-text="events">events</span>
-          <span class="d-inline-block ml-2">活動檔案</span>
+          <span class="h2-deco h2-deco-ls02" data-text="events">events</span>
+          <span class="d-block d-md-inline-block ml-2">活動檔案</span>
         </h2>
         <div class="row no-gutters ml-4 mx-sm-3 mx-md-5">
           <div class="" :class="{ 'col-6 col-md-3': (groupedEvents[year].length == 1), 'col-12 col-md-6': (groupedEvents[year].length == 2), 'col-12': (groupedEvents[year].length > 2) }" v-for="year in getReverseSortedKeys(groupedEvents)">
@@ -182,7 +182,7 @@
       <section class="bg-gray">
         <div class="activity-framing-x activity-framing-t">
           <h2 class="activity-h2 text-md-center ml-4 mx-sm-3 mx-md-5 mt-2 mb-4 my-md-0">
-            <span class="h2-deco align-middle mr-4" data-text="Press">Press</span>
+            <span class="h2-deco" data-text="Press">Press</span>
             <span class="d-block d-md-inline-block ml-2">媒體報導</span>
           </h2>
           <div class="activity-indent-x pb-3 pb-md-4">
@@ -230,9 +230,9 @@
 
       <section class="">
         <div class="activity-framing-x activity-framing-t">
-          <h2 class="activity-h2 text-center mt-2 mb-5 px-3 my-md-0 px-md-0">
-            <span class="h2-deco align-middle mr-5 mr-md-4" data-text="photos">photos</span>
-            <span class="d-inline-block ml-2">活動花絮</span>
+          <h2 class="activity-h2 text-md-center mt-2 mb-5 px-3 my-md-0 px-md-0">
+            <span class="h2-deco" data-text="photos">photos</span>
+            <span class="d-block d-md-inline-block ml-2">活動花絮</span>
           </h2>
           <div class="activity-indent-x mt-4 mt-md-5 pt-md-3 pb-md-5">
             <div class="row no-gutters">

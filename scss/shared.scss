@@ -64,22 +64,23 @@ fieldset {
 
 
 .h2-deco {
-  font-size: 3rem;
   line-height: 1;
   $padding-left: 0;
   $padding-top: 20px;
 
-  display: inline-block;
   position: relative;
+  margin-right: 1.5rem;
+  display: inline-block;
   max-width: 100%;
   padding-left: $padding-left;
   padding-top: $padding-top;
   background: url(../assets/images/h2Deco.svg) no-repeat left 4px top 0/0.333333333em auto;
 
+  font-size: 3rem;
   font-family: 'Josefin Sans';
   font-weight: 100;
   letter-spacing: .06em;
-  vertical-align: text-bottom;
+  vertical-align: middle;
   color: inherit;
   opacity: .75;
 
